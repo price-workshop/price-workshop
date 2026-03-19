@@ -21,30 +21,37 @@ The **PRICE** workshop brings together researchers, developers, and industry pro
 
 ```
 price-workshop/
-├── _config.yml           # Jekyll/GitHub Pages configuration
-├── _layouts/
-│   └── default.html      # Main HTML layout template
+├── hugo.toml           # Hugo configuration
+├── content/
+│   └── _index.md       # Home page content
+├── layouts/
+│   ├── _default/
+│   │   └── baseof.html # Base template
+│   └── partials/
+│       ├── header.html # Header/navigation
+│       └── footer.html # Footer
 ├── assets/
 │   ├── css/
-│   │   ├── main.css      # Main stylesheet with design tokens
-│   │   └── theme.css     # Theme customization (optional)
+│   │   ├── main.css    # Main stylesheet
+│   │   └── theme.css   # Theme customization
 │   └── js/
-│       └── main.js       # JavaScript functionality
+│       └── main.js     # JavaScript functionality
+├── public/             # Hugo build output (ignored)
 ├── agents/
-│   └── config.json       # AI agent configuration
-├── index.md              # Home page
-├── CNAME                 # Custom domain configuration
-├── Gemfile               # Ruby dependencies
-└── README.md             # This file
+│   └── config.json     # AI agent configuration
+└── README.md           # This file
 ```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Ruby 3.0+ (for running Jekyll locally)
-- Node.js 16+ (optional, for development)
-- Git
+- **Hugo** (extended version recommended for CSS processing)
+  - Download from: https://gohugo.io/getting-started/installing/
+  - Or install via package manager:
+    - **Windows:** `winget install Hugo.Hugo` or `choco install hugo-extended`
+    - **macOS:** `brew install hugo`
+    - **Linux:** `apt install hugo` or `dnf install hugo`
 
 ### Local Development
 
@@ -54,26 +61,21 @@ price-workshop/
    cd price-workshop
    ```
 
-2. **Install Ruby dependencies:**
+2. **Start the Hugo development server:**
    ```bash
-   bundle install
+   hugo server -D
    ```
 
-3. **Start the Jekyll development server:**
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-4. **Access the site locally:**
-   - Open [http://localhost:4000](http://localhost:4000)
+3. **Access the site locally:**
+   - Open [http://localhost:1313](http://localhost:1313)
 
 ### Building for Production
 
 ```bash
-JEKYLL_ENV=production bundle exec jekyll build
+hugo --minify --gc
 ```
 
-The built site will be in the `_site` directory.
+The built site will be in the `public` directory.
 
 ## 📄 Pages
 
@@ -106,31 +108,47 @@ The workshop website includes the following pages:
 
 ### GitHub Pages Setup
 
-1. **Enable GitHub Pages:**
-   - Go to your repository Settings → Pages
-   - Select `main` branch as the source
+Hugo sites work perfectly with GitHub Pages!
+
+1. **Push to GitHub:**
+   ```bash
+   git push origin main
+   ```
+
+2. **Enable GitHub Pages:**
+   - Go to repository Settings → Pages
+   - Source: `main` branch, root folder
    - Click "Save"
 
-2. **Custom Domain:**
-   - In your domain registrar (for price-workshop.org), add:
-     - **CNAME record:** `www` → `price-workshop.github.io`
-   - Or if using root domain:
-     - **CNAME record:** `@` → `price-workshop.github.io`
-
-3. **GitHub Settings:**
+3. **Custom Domain:**
    - In repository Settings → Pages → Custom Domain
    - Enter `price-workshop.org`
+   - Add CNAME record in your domain registrar:
+     - `@` → `price-workshop.github.io`
+     - `www` → `price-workshop.github.io`
    - Enable "Enforce HTTPS"
 
-### AI Agent Configuration
+### Adding New Pages
 
-The `agents/config.json` file defines how AI agents should assist with website development:
+To add a new page in Hugo:
 
-- **Overview Agent:** Architectural decisions and code review
-- **Content Agent:** Workshop descriptions and information
-- **Design Agent:** UI/UX design system
-- **Frontend Agent:** HTML/CSS/JavaScript implementation
-- **Deployment Agent:** GitHub Pages and CI/CD setup
+1. **Create content file:**
+   ```bash
+   hugo new pages/about.md
+   ```
+
+2. **Add front matter:**
+   ```yaml
+   ---
+   title: "About Us"
+   date: 2026-03-19
+   draft: false
+   ---
+   ```
+
+3. **Create layout** (if needed) in `layouts/pages/`
+
+4. **Add to menu** in `hugo.toml`
 
 ## 📅 Key Dates
 
@@ -149,6 +167,16 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 
 - **Email:** info@price-workshop.org
 - **GitHub:** [github.com/price-workshop](https://github.com/price-workshop)
+
+## 🤖 AI Agent Configuration
+
+The `agents/config.json` file defines how AI agents assist with website development:
+
+- **Overview Agent:** Architectural decisions and code review
+- **Content Agent:** Workshop descriptions and information
+- **Design Agent:** UI/UX design system
+- **Frontend Agent:** HTML/CSS/JavaScript implementation
+- **Deployment Agent:** GitHub Pages and CI/CD setup
 
 ## 📝 License
 

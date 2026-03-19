@@ -1,10 +1,14 @@
-# Jekyll Build
-_site/
+# Hugo Build
+public/
+resources/
+hugo_stats.json
+
+# Editor directories and files
 *.swp
 *.swo
 *~
 
-# Gem files
+# Gem files (Jekyll - removed)
 *.gemspec
 Gemfile.lock
 

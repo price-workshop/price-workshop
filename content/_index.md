@@ -1,8 +1,9 @@
 ---
-layout: default
 title: "Performance, Rendering, and Interaction for Competitive Esports"
 subtitle: "SIGGRAPH 2026 Technical Workshop"
 description: "Join us for the PRICE workshop at SIGGRAPH 2026, exploring performance, rendering, and interaction techniques for competitive esports."
+date: 2026-08-09
+draft: false
 ---
 
 <!-- Hero Section -->
@@ -78,21 +79,21 @@ description: "Join us for the PRICE workshop at SIGGRAPH 2026, exploring perform
     
     <div class="dates-container">
       <div class="date-card">
-        <div class="date-month">April 15</div>
+        <div class="date-month">April</div>
         <div class="date-number">15</div>
         <div class="date-title">Abstract Submission</div>
         <div class="date-description">Submit your workshop paper abstract</div>
       </div>
       
       <div class="date-card">
-        <div class="date-month">May 1</div>
+        <div class="date-month">May</div>
         <div class="date-number">01</div>
         <div class="date-title">Notification</div>
         <div class="date-description">Acceptance notification sent</div>
       </div>
       
       <div class="date-card highlight">
-        <div class="date-month">May 15</div>
+        <div class="date-month">May</div>
         <div class="date-number">15</div>
         <div class="date-title">Camera-Ready</div>
         <div class="date-description">Final paper submission deadline</div>
@@ -174,26 +175,3 @@ description: "Join us for the PRICE workshop at SIGGRAPH 2026, exploring perform
     <a href="/contact" class="btn btn-primary">Get in Touch</a>
   </div>
 </section>
-
-<!-- Scripts for countdown (can be removed if not needed) -->
-<script>
-  // Simple countdown to workshop date
-  document.addEventListener('DOMContentLoaded', function() {
-    const workshopDate = new Date('2026-08-09T09:00:00').getTime();
-    
-    // Update countdown every second
-    setInterval(function() {
-      const now = new Date().getTime();
-      const distance = workshopDate - now;
-      
-      if (distance < 0) {
-        const dateElements = document.querySelectorAll('.date-card.highlight .date-description');
-        dateElements.forEach(el => {
-          if (el.textContent.includes('Final paper submission')) {
-            el.textContent = 'Workshop has started!';
-          }
-        });
-      }
-    }, 1000);
-  });
-</script>
