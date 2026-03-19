@@ -1,0 +1,119 @@
+{
+  "workshop": {
+    "name": "PRICE",
+    "fullName": "Performance, Rendering, and Interaction for Competitive Esports",
+    "conference": "SIGGRAPH 2026",
+    "type": "Technical Workshop"
+  },
+  "hosting": {
+    "platform": "github-pages",
+    "repository": "price-workshop",
+    "domain": "price-workshop.org",
+    "subdomain": "www",
+    "branch": "main"
+  },
+  "agents": {
+    "overview": {
+      "role": "Lead Developer",
+      "responsibilities": [
+        "Architectural decisions",
+        "Code review oversight",
+        "Integration management"
+      ]
+    },
+    "content": {
+      "role": "Content Specialist",
+      "responsibilities": [
+        "Workshop description and abstracts",
+        "Schedule and timeline creation",
+        "Speaker bios and session descriptions",
+        "Registration information"
+      ],
+      "focus": "Create clear, engaging content for SIGGRAPH audience"
+    },
+    "design": {
+      "role": "UI/UX Designer",
+      "responsibilities": [
+        "Visual design system",
+        "Accessibility compliance",
+        "Responsive layout design",
+        "Color palette and typography"
+      ],
+      "focus": "Professional, modern design matching SIGGRAPH standards"
+    },
+    "frontend": {
+      "role": "Frontend Developer",
+      "responsibilities": [
+        "HTML/CSS/JavaScript implementation",
+        "Navigation and interactivity",
+        "Performance optimization",
+        "Cross-browser compatibility"
+      ],
+      "techStack": ["HTML5", "CSS3", "JavaScript", "Webpack"]
+    },
+    "deployment": {
+      "role": "DevOps Engineer",
+      "responsibilities": [
+        "GitHub Pages configuration",
+        "Custom domain setup",
+        "CI/CD pipeline",
+        "Performance monitoring"
+      ],
+      "focus": "Ensure reliable, fast deployment pipeline"
+    }
+  },
+  "website": {
+    "pages": [
+      {
+        "name": "Home",
+        "path": "/",
+        "sections": ["hero", "about", "key-dates", "registration"]
+      },
+      {
+        "name": "About",
+        "path": "/about",
+        "sections": ["workshop-info", "organizers", "committee"]
+      },
+      {
+        "name": "Program",
+        "path": "/program",
+        "sections": ["schedule", "accepted-papers", "presentations"]
+      },
+      {
+        "name": "Speakers",
+        "path": "/speakers",
+        "sections": ["keynotes", "presenters"]
+      },
+      {
+        "name": "Registration",
+        "path": "/registration",
+        "sections": ["details", "fees", "faq"]
+      },
+      {
+        "name": "Venue",
+        "path": "/venue",
+        "sections": ["location", "hotel", "transport"]
+      },
+      {
+        "name": "Contact",
+        "path": "/contact",
+        "sections": ["form", "information"]
+      }
+    ],
+    "features": [
+      "Responsive design",
+      "Search functionality",
+      "Email notifications",
+      "Social media integration",
+      "PDF paper downloads"
+    ]
+  },
+  "git": {
+    "repository": "price-workshop",
+    "branches": {
+      "main": "Production site",
+      "dev": "Development branch"
+    },
+    "workflow": "Git Flow"
+  }
+}
