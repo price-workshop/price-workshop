@@ -1,11 +1,17 @@
 ---
 title: "Schedule"
-date: 2026-03-19
+date: 2026-03-20
 ---
 
-## Proposed Event Schedule
+## Event Details
 
-The PRICE Workshop will run as a 3.5 hour half-day session designed to encourage discussion and community building. The format includes keynotes, technical paper presentations, panel discussions, and networking breaks.
+**Date & Time:** July 19-23, 2026  
+**Venue:** Los Angeles Convention Center, Los Angeles, CA  
+**Format:** Half-day technical workshop (3.5 hours)
+
+The PRICE Workshop features keynotes, peer-reviewed technical sketches, panel discussions, and networking breaks. All presentations are in-person only—there is no virtual participation option.
+
+## Proposed Event Schedule
 
 | Start Time | Duration | Event |
 |:-----------|:---------|:------|
@@ -25,13 +31,25 @@ The PRICE Workshop will run as a 3.5 hour half-day session designed to encourage
 A one-hour keynote presentation from a leading industry or research figure in esports technology.
 
 ### Technical Sketch Sessions
-Peer-reviewed presentations of research sketches highlighting the latest scientific contributions. We plan for 6 talks with up to 12 minutes per presentation, including a 2-minute question and answer period.
+
+Peer-reviewed presentations of research sketches highlighting the latest scientific contributions in esports technology. 12-minute presentations include 10 minutes for the talk plus 2 minutes for questions and answers.
 
 ### Sketch Panels
-Two 15-minute panel discussions related to issues raised by the technical sketches, featuring panelists and organizers.
+
+Two 15-minute panel discussions bringing together sketch authors to discuss research directions and emerging topics in esports technology. Panelists and workshop organizers facilitate discussion on themes from the presented sketches.
+
+**Panel Participation:** All sketch authors are expected to remain for the panel discussions immediately following their presentation session.
 
 ### Breaks
 Two breaks between sessions for discussion among attendees to further research ideas and collaborations.
+
+---
+
+## Attendance & Travel
+
+**In-Person Attendance Required:** This is a fully in-person workshop. There is no virtual or remote attendance option. All presenters and attendees are expected to be present at the Los Angeles Convention Center.
+
+**Travel & Accommodation:** Attendees are responsible for their own travel and accommodation. SIGGRAPH 2026 will have hotel partnerships and travel information available on the main conference website.
 
 ---
 
