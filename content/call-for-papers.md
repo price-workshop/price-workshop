@@ -6,7 +6,7 @@ date: 2026-03-20
 ## Ready to Submit?
 
 <div class="cta-section" style="margin-bottom: 2rem;">
-<div style="margin-top: 0;">We're accepting technical workshop sketch submissions on esports technology and competitive gaming for SIGGRAPH 2026.</div>
+<div style="margin-top: 0;">We're accepting technical workshop sketch submissions on esports technology and competitive gaming for <a href="https://s2026.siggraph.org/" target="_blank">SIGGRAPH 2026</a>.</div>
 <div class="cta-buttons-group" style="justify-content: center; margin-top: 1.5rem;">
 <a href="https://ssl.linklings.net/conferences/siggraph/?page=Submit&id=TechnicalWorkshopSketchesSubmission&site=siggraph2026" class="cta-button" target="_blank">Submit Now</a>
 <a href="#submission-deadlines" class="cta-button-secondary">View Deadlines</a>
@@ -52,7 +52,7 @@ We invite submissions on a broad range of topics related to the technology of es
 
 ## Submission Guidelines
 
-This is a SIGGRAPH 2026 Technical Workshop following the "Workshop Sketches" format. We welcome novel research ideas and industry insights that advance our understanding of esports technology. All accepted papers will be published in the conference's proceedings.
+This is a [SIGGRAPH 2026 Technical Workshop](https://s2026.siggraph.org/program/technical-workshops/) following the "Workshop Sketches" format. We welcome novel research ideas and industry insights that advance our understanding of esports technology. All accepted papers will be published in the conference's proceedings.
 
 ### Formatting Requirements
 
@@ -116,7 +116,7 @@ Accepted submissions will be processed through the TAPS system for publication i
 
 ## Presentation Requirements
 
-**In-Person Attendance Required:** All accepted authors must present their work in-person at SIGGRAPH 2026 in Los Angeles (July 19-23, 2026) at the Los Angeles Convention Center. Virtual participation is not available.
+**In-Person Attendance Required:** All accepted authors must present their work in-person at [SIGGRAPH 2026](https://s2026.siggraph.org/) in Los Angeles (July 19-23, 2026) at the Los Angeles Convention Center. Virtual participation is not available.
 
 **Panel Participation:** After presenting your sketch, you'll participate in a panel discussion with other sketch authors to discuss research directions and ideas in esports technology.
 

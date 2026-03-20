@@ -16,27 +16,30 @@ For general inquiries, submissions, and partnership opportunities:
 ### Follow Us
 
 - **Website:** https://price-workshop.org
-- **SIGGRAPH 2026:** [SIGGRAPH Conference Website]
+- **SIGGRAPH 2026:** [https://s2026.siggraph.org/](https://s2026.siggraph.org/)
 
 ### Frequently Asked Questions
 
 **Q: What format should my submission be in?**  
-A: More details will be available on our submission portal. Check back soon!
+A: Submissions should be 4-8 pages of single-column format (excluding references) using the [ACM authoring template](https://www.acm.org/publications/proceedings-template). See our [Call for Papers](/call-for-papers/) for complete formatting requirements.
 
 **Q: Can I present work from industry?**  
 A: Absolutely! We welcome submissions from both academic researchers and industry professionals.
 
-**Q: What is the registration cost?**  
-A: Registration information will be available closer to the workshop date.
+**Q: Is the workshop in-person or virtual?**  
+A: The PRICE Workshop is fully in-person at the Los Angeles Convention Center during SIGGRAPH 2026 (July 19-23, 2026). There is no virtual or remote attendance option.
 
-**Q: Will the workshop be recorded or available online?**  
-A: Details about virtual attendance and recordings will be announced soon.
+**Q: What if I'm accepted—what are my responsibilities?**  
+A: All accepted authors must present their work in-person and participate in panel discussions with other sketch authors to discuss research directions in esports technology.
 
 ### Workshop Location and Dates
 
-The PRICE Workshop will be held as part of **SIGGRAPH 2026**.
+**Date:** July 19-23, 2026  
+**Location:** Los Angeles Convention Center, Los Angeles, CA  
+**Format:** Half-day technical workshop (3.5 hours)  
+**Conference:** [SIGGRAPH 2026](https://s2026.siggraph.org/)
 
-More details coming soon!
+For more information, visit the [SIGGRAPH Technical Workshops](https://s2026.siggraph.org/program/technical-workshops/) page.
 
 ---
 
