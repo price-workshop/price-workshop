@@ -14,6 +14,24 @@ date: 2026-03-20
 
 The PRICE Workshop features keynotes, peer-reviewed technical sketches, panel discussions, and networking breaks. All presentations are in-person only—there is no virtual participation option.
 
+## Workshop Format
+
+### Invited Keynote
+A one-hour keynote presentation from a leading industry or research figure in esports technology.
+
+### Technical Sketch Sessions
+
+Peer-reviewed presentations of research sketches highlighting the latest scientific contributions in esports technology. 12-minute presentations include 10 minutes for the talk plus 2 minutes for questions and answers.
+
+### Sketch Panels
+
+Two 15-minute panel discussions bringing together sketch authors to discuss research directions and emerging topics in esports technology. Panelists and workshop organizers facilitate discussion on themes from the presented sketches.
+
+**Panel Participation:** All sketch authors are expected to remain for the panel discussions immediately following their presentation session.
+
+### Breaks
+Two breaks between sessions for discussion among attendees to further research ideas and collaborations.
+
 ## Attendance & Travel
 
 **In-Person Attendance Required:** This is a fully in-person workshop. There is no virtual or remote attendance option. All presenters and attendees are expected to be present at the Los Angeles Convention Center.
@@ -27,7 +45,7 @@ The PRICE Workshop features keynotes, peer-reviewed technical sketches, panel di
 <details>
 <summary style="cursor: pointer; font-weight: bold; padding: 0.5rem 0;">📋 View Tentative Schedule</summary>
 
-Below is a rough draft of the proposed workshop format. This is not finalized and may change significantly.
+Below is a rough draft of the proposed workshop timing and structure. This is not finalized and may change significantly.
 
 ### Proposed Event Schedule
 
@@ -42,24 +60,6 @@ Below is a rough draft of the proposed workshop format. This is not finalized an
 | 2:24 | 0:36 | Technical Sketches (6 talks × 12 min each) |
 | 3:00 | 0:15 | Sketch Panel Discussion |
 | 3:15 | -- | End |
-
-### Format Details
-
-#### Invited Keynote
-A one-hour keynote presentation from a leading industry or research figure in esports technology.
-
-#### Technical Sketch Sessions
-
-Peer-reviewed presentations of research sketches highlighting the latest scientific contributions in esports technology. 12-minute presentations include 10 minutes for the talk plus 2 minutes for questions and answers.
-
-#### Sketch Panels
-
-Two 15-minute panel discussions bringing together sketch authors to discuss research directions and emerging topics in esports technology. Panelists and workshop organizers facilitate discussion on themes from the presented sketches.
-
-**Panel Participation:** All sketch authors are expected to remain for the panel discussions immediately following their presentation session.
-
-#### Breaks
-Two breaks between sessions for discussion among attendees to further research ideas and collaborations.
 
 </details>
 
