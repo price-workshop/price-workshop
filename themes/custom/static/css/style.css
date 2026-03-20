@@ -332,13 +332,13 @@ tr:hover {
 /* Category Cards Grid (SIGGRAPH-inspired) */
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.5rem;
   margin: 2rem 0;
 }
 
 .category-card {
-  background: linear-gradient(135deg, var(--dark-alt) 0%, rgba(26, 31, 58, 0.6) 100%);
+  background: linear-gradient(135deg, var(--dark-alt) 0%, rgba(85, 104, 110, 0.08) 100%);
   border: 2px solid var(--border-color);
   border-radius: 8px;
   padding: 2rem 1.5rem;
@@ -557,6 +557,12 @@ footer p {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
