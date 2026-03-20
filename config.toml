@@ -14,6 +14,12 @@ pygmentsUseClasses = true
   home = ["HTML"]
   page = ["HTML"]
 
+# Markdown rendering (allow HTML in content for component layout)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 # Menu configuration
 [menu]
   [[menu.main]]
