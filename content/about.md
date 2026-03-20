@@ -15,15 +15,15 @@ Currently, research in this domain is fragmented, with relevant work appearing i
 
 SIGGRAPH is an ideal home for an esports workshop. As the premier conference for computer graphics and interactive techniques, it attracts a unique mix of leading academic researchers and industry pioneers from game studios, hardware manufacturers, and engine developers. 
 
-By situating the workshop at SIGGRAPH, we can bridge the gap between academic inquiry and industrial application, fostering crucial dialogue that will drive innovation in this rapidly evolving field. This workshop will provide a much-needed focal point for this emerging research area.
+The workshop will bridge the gap between academic inquiry and industrial application, fostering crucial dialogue that drives innovation in this rapidly evolving field. This provides a much-needed focal point for this emerging research area.
 
 ## Target Audience
 
-This workshop will be of interest to a broad audience, including:
+This workshop is of interest to a broad audience, including:
 
 - **Academic researchers and graduate students** in graphics, HCI, systems, and related fields
 - **Industry professionals**, including game engine developers, graphics programmers, and game designers
 - **Hardware engineers and researchers** from GPU, CPU, and peripheral manufacturers
 - **Esports professionals**, including analysts, coaches, and technology consultants
 
-We anticipate an audience of 50-100 participants, fostering an environment for close interaction and networking.
+We hope to create an environment for close personal interaction and meaningful networking among participants.
