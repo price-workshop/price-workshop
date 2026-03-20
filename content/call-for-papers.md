@@ -87,12 +87,6 @@ This is a [SIGGRAPH 2026 Technical Workshop](https://s2026.siggraph.org/program/
 <div class="deadline-status upcoming">Submissions Open</div>
 </div>
 <div class="deadline-card">
-<div class="deadline-type">📋 Reviews Due</div>
-<div class="deadline-title">BBS Discussion Opens</div>
-<div class="deadline-date">April 28, 2026</div>
-<div class="deadline-status upcoming">Coming Soon</div>
-</div>
-<div class="deadline-card">
 <div class="deadline-type">✅ Decision Notification</div>
 <div class="deadline-title">Acceptance Decisions</div>
 <div class="deadline-date">May 5, 2026</div>
@@ -120,16 +114,6 @@ Accepted submissions will be processed through the TAPS system for publication i
 
 **Panel Participation:** After presenting your sketch, you'll participate in a panel discussion with other sketch authors to discuss research directions and ideas in esports technology.
 
-## Review Process
-
-Submissions are reviewed using the TAPS system following a similar process to SIGGRAPH Specialized Conferences:
-
-- Workshop organizers serve as program chairs
-- An assembled review committee provides editorial review for relevance and quality
-- BBS-style discussion phase allows reviewer feedback and discussion
-- No rebuttal phase
-- Organizers make final decisions on accepted submissions
-
 ## Questions?
 
-If you have any questions about submissions, topics, or guidelines, [please contact us](/contact/).
+If you have any questions about submissions, topics, or guidelines, please reach out to us. Email **contact@price-workshop.org** or visit our [contact page](/contact/) for more information.
