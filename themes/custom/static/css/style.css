@@ -137,8 +137,8 @@ nav .container {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 3rem;
-  padding: 4rem 0;
-  min-height: 70vh;
+  padding: 2rem 0;
+  min-height: 50vh;
 }
 
 .hero-content h1 {
@@ -179,12 +179,12 @@ nav .container {
 
 /* Main Content Areas */
 main {
-  padding: 3rem 0;
+  padding: 2rem 0;
   min-height: calc(100vh - 200px);
 }
 
 .content-section {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* Lists */
@@ -341,7 +341,7 @@ tr:hover {
   background: linear-gradient(135deg, var(--dark-alt) 0%, rgba(85, 104, 110, 0.08) 100%);
   border: 2px solid var(--border-color);
   border-radius: 8px;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.2rem;
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
