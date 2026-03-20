@@ -1,0 +1,12 @@
+name = "Custom PRICE Theme"
+license = "MIT"
+licenselink = "https://github.com"
+description = "A modern, gaming-inspired custom theme for PRICE Workshop"
+homepage = "https://price-workshop.org"
+tags = ["responsive", "gaming", "modern"]
+features = []
+min_version = "0.87.0"
+
+[author]
+  name = "PRICE Workshop"
+  homepage = "https://price-workshop.org"

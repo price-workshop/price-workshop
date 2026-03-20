@@ -1,0 +1,52 @@
+baseURL = "https://price-workshop.org/"
+languageCode = "en-us"
+title = "PRICE Workshop"
+theme = "custom"
+paginate = 10
+
+# Enable syntax highlighting
+pygmentsUseClasses = true
+
+# Output formats
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+
+# Menu configuration
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    name = "Call for Papers"
+    url = "/call-for-papers/"
+    weight = 30
+  [[menu.main]]
+    name = "Schedule"
+    url = "/schedule/"
+    weight = 40
+  [[menu.main]]
+    name = "Organizers"
+    url = "/organizers/"
+    weight = 50
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 60
+
+# Site parameters
+[params]
+  description = "SIGGRAPH Workshop on Performance and Rendering in Competitive Esports (PRICE)"
+  author = "PRICE Workshop Organizers"
+  
+  # Gaming-inspired colors
+  primaryColor = "#00D4FF"      # Neon cyan
+  secondaryColor = "#FF006E"    # Neon pink
+  accentColor = "#FFB703"       # Neon orange
+  darkBg = "#0A0E27"            # Dark blue-black
+  lightText = "#F5F5F5"         # Light gray

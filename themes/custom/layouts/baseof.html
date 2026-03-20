@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%2300D4FF' font-weight='bold'>P</text></svg>">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
+</head>
+<body>
+    {{ partial "header" . }}
+    
+    <main class="container">
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    {{ partial "footer" . }}
+</body>
+</html>

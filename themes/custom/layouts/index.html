@@ -1,0 +1,45 @@
+{{ define "main" }}
+<section class="hero">
+    <div class="hero-content">
+        <h1>{{ .Site.Title }}</h1>
+        <p>{{ .Site.Params.description }}</p>
+        <p>Performance and Rendering in Competitive Esports Workshop at SIGGRAPH 2026</p>
+        <a href="/call-for-papers/" class="cta-button">Submit Your Work</a>
+    </div>
+    <div class="hero-visual">🎮</div>
+</section>
+
+<section class="content-section" style="margin-top: 4rem;">
+    <h2>About PRICE Workshop</h2>
+    <div class="card">
+        <p>The PRICE Workshop brings together researchers and practitioners from graphics, systems, networking, and HCI to address the unique technical challenges of competitive esports.</p>
+        <p>Esports is a major cultural and economic force, with competitions requiring cutting-edge technology for optimal performance. This workshop focuses on the intersection of hardware capabilities, software optimizations, and human perception that make competitive gaming possible.</p>
+    </div>
+</section>
+
+<section class="content-section">
+    <h2>Quick Links</h2>
+    <div class="topics-grid">
+        <div class="topic-box">
+            <h4>📋 Call for Papers</h4>
+            <p>Submit your research sketches on esports technology</p>
+            <a href="/call-for-papers/">Learn more →</a>
+        </div>
+        <div class="topic-box">
+            <h4>📅 Schedule</h4>
+            <p>See the workshop agenda and timeline</p>
+            <a href="/schedule/">View schedule →</a>
+        </div>
+        <div class="topic-box">
+            <h4>👥 Organizers</h4>
+            <p>Meet the workshop organizers and speakers</p>
+            <a href="/organizers/">Meet the team →</a>
+        </div>
+        <div class="topic-box">
+            <h4>📧 Contact</h4>
+            <p>Questions or suggestions? Get in touch</p>
+            <a href="/contact/">Contact us →</a>
+        </div>
+    </div>
+</section>
+{{ end }}

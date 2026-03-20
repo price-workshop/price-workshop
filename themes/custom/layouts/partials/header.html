@@ -1,0 +1,14 @@
+<header>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="/">PRICE</a>
+            </div>
+            <ul class="nav-menu">
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </nav>
+</header>
