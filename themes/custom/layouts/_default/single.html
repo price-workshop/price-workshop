@@ -1,11 +1,27 @@
-{{ define "main" }}
-<article class="content-section">
-    <header>
-        <h1>{{ .Title }}</h1>
-    </header>
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
     
-    <div class="article-content">
-        {{ .Content }}
-    </div>
-</article>
-{{ end }}
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%2300D4FF' font-weight='bold'>P</text></svg>">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
+</head>
+<body>
+    {{ partial "header" . }}
+    
+    <main class="container">
+        <article class="content-section">
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+        </article>
+    </main>
+    
+    {{ partial "footer" . }}
+</body>
+</html>

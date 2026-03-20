@@ -2,7 +2,9 @@ baseURL = "https://price-workshop.org/"
 languageCode = "en-us"
 title = "PRICE Workshop"
 theme = "custom"
-paginate = 10
+
+[pagination]
+pagerSize = 10
 
 # Enable syntax highlighting
 pygmentsUseClasses = true
