@@ -136,14 +136,14 @@ nav .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 3rem;
-  padding: 2rem 0;
+  gap: 2rem;
+  padding: 1.5rem 0;
   min-height: 50vh;
 }
 
 .hero-content h1 {
   font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero-content p {
@@ -333,15 +333,15 @@ tr:hover {
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
-  margin: 2rem 0;
+  gap: 1rem;
+  margin: 1.5rem 0;
 }
 
 .category-card {
   background: linear-gradient(135deg, var(--dark-alt) 0%, rgba(85, 104, 110, 0.08) 100%);
   border: 2px solid var(--border-color);
   border-radius: 8px;
-  padding: 1.5rem 1.2rem;
+  padding: 1rem 0.8rem;
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
@@ -373,19 +373,20 @@ tr:hover {
 
 .category-icon {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
   display: inline-block;
 }
 
 .category-card h3 {
   color: var(--primary);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
 .category-card p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--gray-text);
+  line-height: 1.4;
 }
 
 /* Deadline Tracking Cards */
