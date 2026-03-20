@@ -5,9 +5,12 @@ date: 2026-03-20
 
 ## Event Details
 
-**Date & Time:** July 19-23, 2026 at [SIGGRAPH 2026](https://s2026.siggraph.org/)  
+**Date & Time (Tentative):** July 23, 2026 (afternoon) at [SIGGRAPH 2026](https://s2026.siggraph.org/)  
+**Conference Dates:** July 19-23, 2026  
 **Venue:** Los Angeles Convention Center, Los Angeles, CA  
 **Format:** [Half-day technical workshop](https://s2026.siggraph.org/program/technical-workshops/) (3.5 hours)
+
+*Note: The workshop date and time are tentative and have not yet been formally confirmed. We will announce the official schedule once details are finalized.*
 
 The PRICE Workshop features keynotes, peer-reviewed technical sketches, panel discussions, and networking breaks. All presentations are in-person only—there is no virtual participation option.
 
@@ -53,4 +56,4 @@ Two breaks between sessions for discussion among attendees to further research i
 
 ---
 
-*Schedule is subject to change. Depending on the level of interest in sketch contributions and the quality of submissions, we may adjust the format to allow more or less time for specific components.*
+*Schedule is tentative and subject to change. The agenda below represents our planned format, but specific timings may be adjusted. We will confirm the firm workshop date, time, and final schedule once details are finalized with SIGGRAPH organizers.*
