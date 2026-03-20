@@ -52,6 +52,11 @@ minify = false
   url = "/contact"
   weight = 6
 
+[[menu.main]]
+  name = "Submissions"
+  url = "/call-for-submissions"
+  weight = 7
+
 # Markup configuration
 [markup]
   [markup.goldmark]

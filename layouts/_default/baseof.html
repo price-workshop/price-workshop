@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
+    {{ partial "header.html" . }}
     {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
     <script src="/js/main.js"></script>
 </body>
 </html>

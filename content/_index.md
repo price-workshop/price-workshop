@@ -14,7 +14,8 @@ draft: false
     <p class="hero-dates">August 9-13, 2026 • Denver, Colorado</p>
     
     <div class="hero-btns">
-      <a href="/registration" class="btn btn-primary btn-lg">Register Now</a>
+      <a href="/call-for-submissions" class="btn btn-primary btn-lg">Call for Submissions</a>
+      <a href="/registration" class="btn btn-outline btn-lg">Register Now</a>
       <a href="/program" class="btn btn-outline btn-lg">View Program</a>
     </div>
   </div>
@@ -34,6 +35,11 @@ draft: false
         at SIGGRAPH 2026 brings together researchers, developers, and industry professionals to explore 
         cutting-edge techniques in real-time graphics, performance optimization, and human-computer interaction 
         specifically tailored for competitive esports environments.
+      </p>
+      
+      <p>
+        We invite submissions using the ACM single-column format of 4-8 pages (excluding references) on all related topics.
+        <a href="/call-for-submissions" class="btn btn-outline">Learn more about submission guidelines</a>
       </p>
       
       <p>
