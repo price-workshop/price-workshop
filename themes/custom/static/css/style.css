@@ -1,14 +1,14 @@
-/* Gaming-Inspired Theme for PRICE Workshop */
+/* SIGGRAPH 2026 Theme for PRICE Workshop */
 
 :root {
-  --primary: #00D4FF;
-  --secondary: #FF006E;
-  --accent: #FFB703;
-  --dark-bg: #0A0E27;
-  --dark-alt: #1A1F3A;
-  --light-text: #F5F5F5;
-  --gray-text: #B0B0B0;
-  --border-color: #2A2F4A;
+  --primary: #55686e;
+  --secondary: #D2C5B2;
+  --accent: #2A4249;
+  --dark-bg: #F1EFE3;
+  --dark-alt: #E9E4DB;
+  --light-text: #2A4249;
+  --gray-text: #55686e;
+  --border-color: #d9d7ce;
 }
 
 * {
@@ -39,10 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3rem;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--light-text);
 }
 
 h2 {
@@ -164,12 +161,12 @@ nav .container {
 
 .cta-button {
   display: inline-block;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: var(--primary);
   color: var(--dark-bg);
   padding: 0.75rem 2rem;
   border-radius: 5px;
   font-weight: 700;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   border: none;
   cursor: pointer;
   font-size: 1rem;
@@ -501,12 +498,12 @@ tr:hover {
 
 .cta-button-accent {
   display: inline-block;
-  background: linear-gradient(135deg, var(--accent), var(--secondary));
+  background: var(--accent);
   color: var(--dark-bg);
   padding: 0.75rem 2rem;
   border-radius: 5px;
   font-weight: 700;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   border: none;
   cursor: pointer;
   font-size: 1rem;
