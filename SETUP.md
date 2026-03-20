@@ -1,14 +1,18 @@
-# Quick Start Guide
+# PRICE Workshop Website - Setup & Development Guide
 
-## Your Hugo Website is Ready! 🚀
+## Overview
 
-Your PRICE Workshop website has been set up with a modern, responsive design and gaming-inspired aesthetics.
+The PRICE Workshop website is built with **Hugo** and deployed to **GitHub Pages** at [price-workshop.org](https://price-workshop.org). The site features a themed design based on SIGGRAPH 2026's professional layout combined with a custom gaming-inspired aesthetic.
 
-## Next Steps
+**Current Theme:** SIGGRAPH 2026 colors with light background (#F1EFE3) and dark text (#2A4249)
 
-### 1. Test Locally (Optional)
+---
 
-To preview your site before pushing to GitHub:
+## Quick Start
+
+### 1. Local Development
+
+To preview the site locally:
 
 ```bash
 # Install Hugo (if not already installed)
@@ -16,103 +20,108 @@ To preview your site before pushing to GitHub:
 # macOS: brew install hugo
 # Linux: sudo apt-get install hugo
 
-# From your repository directory
+# From the repository directory
 hugo server
 
 # Open http://localhost:1313 in your browser
 ```
 
-### 2. Push to GitHub
+The site will hot-reload as you make changes.
 
-```bash
-cd c:\Users\jbspj\Documents\GitHub\price-workshop
+### 2. Making Content Changes
 
-# Add all files
-git add .
+All content pages are in the `content/` directory as Markdown files:
 
-# Commit
-git commit -m "Initial Hugo website setup"
-
-# Push to main branch
-git push origin main
-```
-
-### 3. Configure GitHub Pages
-
-1. Go to your repository on GitHub
-2. Navigate to **Settings** → **Pages**
-3. Under "Source", select:
-   - **Branch:** `main`
-   - **Folder:** `/` (root) or `/docs` depending on your setup
-4. Save
-
-The workflow in `.github/workflows/hugo-deploy.yml` will automatically:
-- Build your Hugo site
-- Deploy to GitHub Pages
-- Be triggered on every push to `main`
-
-### 4. Set Custom Domain (CNAME)
-
-Since you mentioned `price-workshop.org` is already configured:
-
-1. In repository **Settings** → **Pages**
-2. Under "Custom domain", enter: `price-workshop.org`
-3. Save (this creates a CNAME file)
-4. Ensure your domain registrar's DNS is pointing to GitHub Pages
-
-**GitHub Pages DNS settings:**
-```
-A record: 185.199.108.153
-A record: 185.199.109.153
-A record: 185.199.110.153
-A record: 185.199.111.153
-```
-
-Or use CNAME if your registrar allows:
-```
-CNAME: yourusername.github.io
-```
-
-### 5. Customize Content
-
-All pages are in `content/`:
 - `about.md` - Workshop overview
-- `call-for-papers.md` - Submission guidelines
+- `call-for-papers.md` - Call for submissions with deadlines
 - `schedule.md` - Workshop timeline
 - `organizers.md` - Team bios
 - `contact.md` - Contact information
 
-Edit these files in Markdown format and commit changes.
+Edit these files, commit, and push to `main`. GitHub Actions will automatically build and deploy.
 
-### 6. Update Config (Optional)
+### 3. Publishing Changes
 
-Edit `config.toml` to customize:
+```bash
+# Make your edits to content or theme files
+# Stage and commit
+git add .
+git commit -m "Brief description of changes"
 
-```toml
-baseURL = "https://price-workshop.org/"
-title = "PRICE Workshop"
-languageCode = "en-us"
+# Push to main branch
+git push origin main
 
-[params]
-  description = "Your workshop description"
-  author = "Author name"
+# GitHub Actions will automatically build and deploy to GitHub Pages
+# Check Actions tab to see deployment status
 ```
 
-## Customization Options
+---
+
+## Site Structure
+
+```
+price-workshop/
+├── .github/
+│   ├── workflows/
+│   │   └── hugo-deploy.yml          # Automated deployment workflow
+│   ├── instructions/
+│   │   ├── css.instructions.md       # CSS editing guidelines
+│   │   └── markdown.instructions.md  # Content editing guidelines
+│   ├── AGENTS.md                    # Copilot agent specs
+│   └── copilot-instructions.md      # Project conventions
+│
+├── content/                          # Markdown pages (the actual content)
+│   ├── about.md
+│   ├── call-for-papers.md
+│   ├── schedule.md
+│   ├── organizers.md
+│   └── contact.md
+│
+├── themes/custom/                    # Custom Hugo theme
+│   ├── layouts/
+│   │   ├── baseof.html              # Base template wrapper
+│   │   ├── index.html               # Homepage
+│   │   ├── _default/
+│   │   │   └── single.html          # Page template
+│   │   └── partials/
+│   │       ├── header.html          # Navigation
+│   │       └── footer.html          # Footer
+│   ├── static/css/
+│   │   └── style.css                # All styling
+│   └── theme.toml
+│
+├── static/                          # Static assets (images, documents)
+├── docs/                            # Exploration & research documentation
+│   └── SIGGRAPH_DESIGN_EXPLORATION.md
+│
+├── config.toml                      # Hugo site configuration
+├── README.md                        # Project overview
+├── SETUP.md                         # This file
+└── .gitignore
+```
+
+---
+
+## Customization
 
 ### Colors
 
-Edit colors in `themes/custom/static/css/style.css`:
+Colors are defined as CSS variables in `themes/custom/static/css/style.css`:
 
 ```css
 :root {
-  --primary: #00D4FF;      /* Neon cyan - main accent */
-  --secondary: #FF006E;    /* Neon pink - secondary accent */
-  --accent: #FFB703;       /* Neon orange - tertiary accent */
-  --dark-bg: #0A0E27;      /* Dark blue-black background */
-  --light-text: #F5F5F5;   /* Light gray text */
+  --primary: #55686e;          /* Greenish-gray - buttons, accents */
+  --secondary: #D2C5B2;        /* Warm beige - secondary accent */
+  --accent: #2A4249;           /* Dark greenish-gray - dark accents */
+  --dark-bg: #F1EFE3;          /* Light cream - main background */
+  --dark-alt: #E9E4DB;         /* Slightly darker cream - card backgrounds */
+  --light-text: #2A4249;       /* Dark text */
+  --gray-text: #55686e;        /* Muted text */
+  --border-color: #d9d7ce;     /* Light borders */
 }
 ```
+
+To change colors, update these variables. All components automatically use them. See [CSS instructions](.github/instructions/css.instructions.md) for guidelines.
 
 ### Navigation Menu
 
@@ -121,83 +130,199 @@ Edit in `config.toml`:
 ```toml
 [menu]
   [[menu.main]]
-    name = "Page Name"
-    url = "/page-slug/"
-    weight = 10  # Higher weight = appears later
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  # Add more menu items as needed
 ```
+
+The `weight` parameter controls menu order (lower = appears first).
 
 ### Adding New Pages
 
-1. Create `content/new-page.md`:
-```yaml
+1. Create a new file in `content/`: `content/new-page.md`
+2. Add frontmatter:
+   ```yaml
+   ---
+   title: "Page Title"
+   date: 2026-03-20
+   ---
+   
+   Your content in Markdown here...
+   ```
+3. (Optional) Add to menu in `config.toml`
+4. Commit and push
+
+### Styling Changes
+
+All CSS is in `themes/custom/static/css/style.css`. The file is organized by section with comments:
+
+- `:root {...}` - CSS variables
+- `Typography` - Headings, text, links
+- `Navigation` - Header and menu
+- `Hero Section` - Main banner
+- `Category Cards` - 5-item grids
+- `Buttons` - CTA button styles
+- `Responsive Design` - Mobile breakpoints
+
+Use CSS variables consistently. See [CSS instructions](.github/instructions/css.instructions.md) for best practices.
+
 ---
-title: "Page Title"
-date: 2026-03-19
+
+## Key Components
+
+### Category Cards Grid
+5-column responsive grid displaying workshop topics/categories. Defined in CSS as `.categories-grid` and `.category-card`. Stacks to 3 columns on tablet and 2 on mobile.
+
+### CTA Buttons
+Multiple button styles for different actions:
+- `.cta-button` - Primary action (submit, register)
+- `.cta-button-secondary` - Secondary action (view schedule)
+- `.cta-button-accent` - Alternative action (ask questions)
+
+### Deadline Cards
+Grid showing submission deadlines with status indicators (open/upcoming/closed). Used on the call-for-papers page.
+
 ---
 
-Your content here...
-```
+## GitHub Pages Configuration
 
-2. Add to menu in `config.toml` if you want it in navigation
+The site is configured to deploy from the `/` (root) of the `main` branch:
 
-## File Structure
+1. Repository Settings → Pages
+2. Source: `main` branch, `/` (root)
+3. Custom domain: `price-workshop.org`
+4. GitHub Actions workflow (`hugo-deploy.yml`) builds and publishes automatically
 
-```
-price-workshop/
-├── .github/workflows/
-│   └── hugo-deploy.yml       # GitHub Actions deployment
-├── content/                  # Your markdown pages
-│   ├── about.md
-│   ├── call-for-papers.md
-│   ├── schedule.md
-│   ├── organizers.md
-│   └── contact.md
-├── themes/custom/            # Custom theme
-│   ├── layouts/
-│   │   ├── baseof.html       # Base template
-│   │   ├── index.html        # Home page
-│   │   ├── _default/
-│   │   │   └── single.html   # Regular page template
-│   │   └── partials/
-│   │       ├── header.html   # Navigation
-│   │       └── footer.html   # Footer
-│   ├── static/css/
-│   │   └── style.css         # All styling
-│   └── theme.toml
-├── static/                   # Static files (images, docs, etc.)
-├── config.toml               # Hugo configuration
-├── README.md                 # Project documentation
-├── SETUP.md                  # This file
-└── .gitignore               # Git ignore rules
-```
+**DNS Configuration (already set):**
+- Domain registrar's DNS points to GitHub Pages IP addresses
+- CNAME record set up for `price-workshop.org`
+
+---
+
+## Deployment
+
+### Automatic Deployment (CI/CD)
+- **Trigger:** Push to `main` branch
+- **Process:** GitHub Actions runs the workflow in `.github/workflows/hugo-deploy.yml`
+- **Steps:**
+  1. Hugo builds the site
+  2. Generated `public/` folder is deployed to GitHub Pages
+  3. Available at https://price-workshop.org within seconds
+- **Logs:** Check Actions tab in repository if deployment fails
+
+### Monitoring
+- GitHub Actions tab shows workflow runs
+- Click a run to see build logs
+- Check the Deployments section to see deployment history
+
+### Rollback
+If something breaks:
+1. Identify the problematic commit
+2. Revert: `git revert [commit-hash]` or reset: `git reset --hard [good-commit]`
+3. Push: `git push origin main`
+4. New deployment will be triggered automatically
+
+---
 
 ## Troubleshooting
 
-### Site not deploying?
-- Check the GitHub Actions tab in your repository
-- Look for workflow run logs
-- Ensure `config.toml` has correct `baseURL`
+### Build Fails
+- Check GitHub Actions logs (Actions tab → workflow run)
+- Common issues:
+  - Invalid Markdown YAML frontmatter (check for proper spacing)
+  - Missing closing tags in HTML
+  - File encoding issues (use UTF-8)
 
-### Colors not showing?
-- Clear browser cache (Ctrl+Shift+Delete)
-- Check CSS file path in browser DevTools
+### Site Not Updating
+- Wait 30 seconds for deployment
+- Hard refresh browser (Ctrl+Shift+R or Cmd+Shift+R)
+- Check GitHub Actions to verify deployment succeeded
+- Clear CloudFlare cache if using it
 
-### Navigation not working?
-- Verify menu items in `config.toml` have correct `url` values
-- URLs should start with `/` and end with `/`
+### Colors Not Showing
+- Check CSS file: `themes/custom/static/css/style.css`
+- Verify CSS variables are spelled correctly
+- Hard refresh browser cache
 
-### Custom domain not working?
-- Wait 24 hours for DNS propagation
-- Verify CNAME/A records at your domain registrar
-- Check repository Settings → Pages for CNAME file
+### Links Broken
+- Internal links should use relative paths: `/about/`, `/schedule/`
+- Not absolute URLs or missing trailing slashes
+- Check the generated `public/` folder structure
 
-## Next Updates
+### Navigation Not Showing
+- Verify menu items in `config.toml` match content filenames
+- URLs must start with `/` and end with `/`
+- Set `weight` parameter for correct order
 
-Consider adding:
-- `static/images/` - Add workshop logo, speaker photos
-- `static/documents/` - Call for papers PDF, schedule PDF
-- Contact form (with service like Formspree)
-- Blog section for news/updates
+---
+
+## Documentation
+
+- **[README.md](README.md)** - Project overview and feature list
+- **[.github/copilot-instructions.md](.github/copilot-instructions.md)** - Project conventions and guidelines
+- **[.github/instructions/](. github/instructions/)** - Detailed guidelines for CSS and Markdown editing
+- **[docs/SIGGRAPH_DESIGN_EXPLORATION.md](docs/SIGGRAPH_DESIGN_EXPLORATION.md)** - Research on SIGGRAPH theme merging
+
+---
+
+## Development Tips
+
+### Local Hugo Commands
+```bash
+# Start development server with live reload
+hugo server
+
+# Build site (generates public/ folder)
+hugo
+
+# Build with draft content included
+hugo -D
+
+# Check for errors
+hugo --logLevel debug
+```
+
+### Content Best Practices
+- Use Markdown for all content pages
+- Keep paragraphs short (2-3 lines)
+- Use headers to organize sections
+- Link to other pages with relative paths: `/about/`
+- Test locally before pushing
+
+### Git Workflow
+```bash
+# Create feature branch for significant changes
+git checkout -b feature/new-feature
+
+# Make commits with clear messages
+git commit -m "Add new section to call-for-papers"
+
+# Push to GitHub
+git push origin feature/new-feature
+
+# Create Pull Request on GitHub for review
+# Merge when ready
+```
+
+---
+
+## Further Resources
+
+- [Hugo Documentation](https://gohugo.io/documentation/)
+- [Markdown Guide](https://www.markdownguide.org/)
+- [GitHub Pages Help](https://docs.github.com/en/pages)
+- [CSS Variables (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
+
+---
+
+**Last Updated:** March 20, 2026  
+**Current Version:** Hugo with custom SIGGRAPH-inspired theme
+
 - Past workshop archive
 
 ## Resources
