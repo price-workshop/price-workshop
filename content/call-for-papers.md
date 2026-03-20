@@ -83,7 +83,7 @@ This is a [SIGGRAPH 2026 Technical Workshop](https://s2026.siggraph.org/program/
 <div class="deadline-card">
 <div class="deadline-type">📤 Submission Deadline</div>
 <div class="deadline-title">Workshop Sketches Due</div>
-<div class="deadline-date">April 7, 2026 (22:00 UTC/GMT)</div>
+<div class="deadline-date">April 14, 2026 (22:00 UTC/GMT)</div>
 <div class="deadline-status upcoming">Submissions Open</div>
 </div>
 <div class="deadline-card">
