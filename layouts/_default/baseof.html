@@ -1,51 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
-  <meta name="author" content="{{ .Site.Author }}">
-  
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
-  
-  <!-- Open Graph / Social Media -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:description" content="{{ .Description }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:image" content="{{ .Site.BaseURL }}assets/images/og-image.jpg">
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ .Title }}">
-  <meta name="twitter:description" content="{{ .Description }}">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="{{ "assets/images/favicon.png" | relURL }}">
-  <link rel="apple-touch-icon" href="{{ "assets/images/apple-touch-icon.png" | relURL }}">
-  
-  <!-- Stylesheets -->
-  {{ $mainCSS := resources.Get "css/main.css" }}
-  {{ $themeCSS := resources.Get "css/theme.css" }}
-  {{ $css := slice $mainCSS $themeCSS | resources.Concat "css/main.css" | minify }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <!-- Skip to main content for accessibility -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  
-  {{ partial "header.html" . }}
-  
-  <!-- Main Content -->
-  <main id="main-content" role="main">
     {{ block "main" . }}{{ end }}
-  </main>
-  
-  {{ partial "footer.html" . }}
+    <script src="/js/main.js"></script>
 </body>
 </html>
