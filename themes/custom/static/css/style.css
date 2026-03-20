@@ -332,6 +332,211 @@ tr:hover {
   margin-left: 1.5rem;
 }
 
+/* Category Cards Grid (SIGGRAPH-inspired) */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.category-card {
+  background: linear-gradient(135deg, var(--dark-alt) 0%, rgba(26, 31, 58, 0.6) 100%);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.category-card:hover::before {
+  transform: scaleX(1);
+}
+
+.category-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.category-card h3 {
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.category-card p {
+  font-size: 0.95rem;
+  color: var(--gray-text);
+}
+
+/* Deadline Tracking Cards */
+.deadlines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.deadline-card {
+  background-color: var(--dark-alt);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.deadline-card::left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+  border-radius: 8px 0 0 8px;
+}
+
+.deadline-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 5px 25px rgba(0, 212, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.deadline-type {
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.deadline-title {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.deadline-date {
+  color: var(--light-text);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.deadline-status {
+  font-size: 0.9rem;
+  color: var(--gray-text);
+  padding: 0.5rem;
+  background-color: rgba(0, 212, 255, 0.1);
+  border-radius: 4px;
+  margin-top: 0.75rem;
+}
+
+.deadline-status.open {
+  background-color: rgba(0, 212, 255, 0.15);
+  color: var(--primary);
+}
+
+.deadline-status.upcoming {
+  background-color: rgba(255, 183, 3, 0.15);
+  color: var(--accent);
+}
+
+.deadline-status.closed {
+  background-color: rgba(255, 0, 110, 0.15);
+  color: var(--secondary);
+}
+
+/* CTA Button Variations */
+.cta-buttons-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.cta-button-secondary {
+  display: inline-block;
+  background: transparent;
+  color: var(--primary);
+  padding: 0.75rem 2rem;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cta-button-secondary:hover {
+  background: var(--primary);
+  color: var(--dark-bg);
+  box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.cta-button-accent {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), var(--secondary));
+  color: var(--dark-bg);
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cta-button-accent:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 183, 3, 0.3);
+}
+
+/* Center CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(255, 0, 110, 0.05));
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.cta-section h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
 /* Footer */
 footer {
   background-color: var(--dark-alt);
@@ -386,12 +591,40 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .deadlines-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons-group {
+    flex-direction: column;
+  }
+
+  .cta-button,
+  .cta-button-secondary,
+  .cta-button-accent {
+    width: 100%;
+    text-align: center;
+  }
+
   table {
     font-size: 0.9rem;
   }
 
   th, td {
     padding: 0.5rem;
+  }
+
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -416,5 +649,29 @@ footer p {
   .cta-button {
     padding: 0.5rem 1.5rem;
     font-size: 0.9rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .category-icon {
+    font-size: 2rem;
+  }
+
+  .deadline-card {
+    padding: 1rem;
+  }
+
+  .cta-section {
+    border-radius: 6px;
+  }
+
+  .deadline-date {
+    font-size: 1.1rem;
   }
 }

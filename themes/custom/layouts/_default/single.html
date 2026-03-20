@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <meta name="description" content="{{ .Site.Params.description }}">
+    <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="website">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%2300D4FF' font-weight='bold'>P</text></svg>">
@@ -18,8 +22,23 @@
     <main class="container">
         <article class="content-section">
             <h1>{{ .Title }}</h1>
+            
+            <!-- Breadcrumb Navigation -->
+            <div style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+                <a href="/">Home</a> / <span style="color: var(--gray-text);">{{ .Title }}</span>
+            </div>
+            
             {{ .Content }}
         </article>
+
+        <!-- Related Navigation -->
+        <div class="cta-section" style="margin-top: 3rem;">
+            <h3 style="color: var(--primary); margin-bottom: 1.5rem;">More Information</h3>
+            <div class="cta-buttons-group" style="justify-content: center;">
+                <a href="/" class="cta-button-secondary">← Back to Home</a>
+                <a href="/contact/" class="cta-button">Have Questions?</a>
+            </div>
+        </div>
     </main>
     
     {{ partial "footer" . }}
