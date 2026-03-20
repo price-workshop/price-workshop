@@ -299,6 +299,29 @@ tr:hover {
   margin-bottom: 1rem;
 }
 
+.organizer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.organizer-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 0.5rem;
+  color: var(--light-text);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.organizer-links a:hover {
+  color: var(--accent);
+  transform: scale(1.15);
+}
+
 /* Topics Grid */
 .topics-grid {
   display: grid;
