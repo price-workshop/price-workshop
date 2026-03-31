@@ -1,6 +1,7 @@
 ---
 title: "About PRICE Workshop"
 date: 2026-03-19
+summary = "Overview of the PRICE Workshop motivations and goals."
 ---
 
 ## Motivation and Rationale

@@ -1,5 +1,5 @@
 baseURL = "https://price-workshop.org/"
-languageCode = "en-us"
+languageCode = "en-US"
 title = "PRICE Workshop"
 theme = "custom"
 

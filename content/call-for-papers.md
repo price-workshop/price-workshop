@@ -5,13 +5,7 @@ date: 2026-03-20
 
 ## Ready to Submit?
 
-<div class="cta-section" style="margin-bottom: 2rem;">
-<div style="margin-top: 0;">We're accepting technical workshop sketch submissions on esports technology and competitive gaming for <a href="https://s2026.siggraph.org/" target="_blank">SIGGRAPH 2026</a>.</div>
-<div class="cta-buttons-group" style="justify-content: center; margin-top: 1.5rem;">
-<a href="https://ssl.linklings.net/conferences/siggraph/?page=Submit&id=TechnicalWorkshopSketchesSubmission&site=siggraph2026" class="cta-button" target="_blank">Submit Now</a>
-<a href="#submission-deadlines" class="cta-button-secondary">View Deadlines</a>
-</div>
-</div>
+{{< cta "Submit Now" "https://ssl.linklings.net/conferences/siggraph/?page=Submit&id=TechnicalWorkshopSketchesSubmission&site=siggraph2026" >}}
 
 ## Topics of Interest
 

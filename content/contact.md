@@ -1,6 +1,7 @@
 ---
 title: "Contact"
 date: 2026-03-19
+summary = "Contact information and FAQ for the PRICE Workshop"
 ---
 
 ## Get in Touch

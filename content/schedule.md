@@ -1,5 +1,6 @@
 ---
 title: "Schedule"
+summary = "Schedule and format of the PRICE Workshop (times TBD)"
 date: 2026-03-20
 ---
 
@@ -51,15 +52,17 @@ Below is a rough draft of the proposed workshop timing and structure. This is no
 
 | Start Time | Duration | Event |
 |:-----------|:---------|:------|
-| 0:00 | 0:05 | Introduction |
-| 0:05 | 1:00 | Keynote Presentation |
-| 1:05 | 0:14 | Break |
-| 1:19 | 0:36 | Technical Sketches (6 talks × 12 min each) |
-| 1:55 | 0:15 | Sketch Panel Discussion |
-| 2:10 | 0:14 | Break |
-| 2:24 | 0:36 | Technical Sketches (6 talks × 12 min each) |
-| 3:00 | 0:15 | Sketch Panel Discussion |
-| 3:15 | -- | End |
+| TBD | 0:05 | Introduction |
+| TBD | 1:00 | Keynote Presentation |
+| TBD | 0:14 | Break |
+| TBD | 0:36 | Technical Sketches (6 talks × 12 min each) |
+| TBD | 0:15 | Sketch Panel Discussion |
+| TBD | 0:14 | Break |
+| TBD | 0:36 | Technical Sketches (6 talks × 12 min each) |
+| TBD | 0:15 | Sketch Panel Discussion |
+| TBD | -- | End |
+
+*Times are to be determined (TBD).*
 
 </details>
 
