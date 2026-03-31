@@ -3,6 +3,8 @@ title: "Call for Papers"
 date: 2026-03-20
 ---
 
+**The workshop is part of [SIGGRAPH 2026](https://s2026.siggraph.org/).**
+
 ## Ready to Submit?
 
 {{< cta "Submit Now" "https://ssl.linklings.net/conferences/siggraph/?page=Submit&id=TechnicalWorkshopSketchesSubmission&site=siggraph2026" >}}
