@@ -21,6 +21,7 @@ date: 2026-03-19
     <h3>Benjamin Watson</h3>
     <p class="organizer-title">Associate Professor at NC State</p>
     <div class="organizer-links">
+      <a href="https://watson.csc.ncsu.edu/" title="Website"><i class="fa-solid fa-house"></i></a>
       <a href="https://scholar.google.com/citations?user=yfYYAMQAAAAJ" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
       <a href="https://www.linkedin.com/in/benjaminallenwatson/" title="LinkedIn"><i class="fa-brands fa-square-linkedin"></i></a>
     </div>
@@ -50,6 +51,7 @@ date: 2026-03-19
     <h3>Mark Claypool</h3>
     <p class="organizer-title">Professor in Computer Science and Interactive Media & Game Development at Worcester Polytechnic Institute (WPI)</p>
     <div class="organizer-links">
+      <a href="https://web.cs.wpi.edu/~claypool/" title="Website"><i class="fa-solid fa-house"></i></a>
       <a href="https://scholar.google.com/citations?user=KsSGzrQAAAAJ" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
       <a href="https://www.linkedin.com/in/markclaypool/" title="LinkedIn"><i class="fa-brands fa-square-linkedin"></i></a>
     </div>
