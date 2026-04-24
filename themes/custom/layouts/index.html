@@ -34,6 +34,24 @@
     </section>
     {{ end }}
 
+    {{ with .Params.keynote }}
+    <section class="content-section">
+        <h2>Keynote Speaker</h2>
+        {{ if .speaker }}
+        <div class="card keynote-card">
+            <h3>{{ .speaker }}</h3>
+            {{ with .title }}<p class="organizer-title">{{ . }}</p>{{ end }}
+            {{ with .abstract }}<p>{{ . }}</p>{{ end }}
+        </div>
+        {{ else }}
+        <div class="card">
+            <p><em>The keynote speaker will be announced soon. Check back for updates.</em></p>
+            <a href="/schedule/">View schedule details →</a>
+        </div>
+        {{ end }}
+    </section>
+    {{ end }}
+
     <section class="content-section">
         <h2>Submission Information</h2>
         <div class="cta-section">

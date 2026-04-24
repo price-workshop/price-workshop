@@ -20,6 +20,11 @@ categories:
     title: "Emerging Technologies"
     description: "VR, AR, and next-generation esports technologies"
 
+keynote:
+  speaker: ""
+  title: ""
+  abstract: ""
+
 deadlines:
   - type: "🎯 Call Opens"
     title: "Submissions Open"

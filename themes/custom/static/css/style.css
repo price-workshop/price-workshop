@@ -321,6 +321,12 @@ tr:hover {
   transform: scale(1.15);
 }
 
+/* Keynote Card */
+.keynote-card h3 {
+  color: var(--accent);
+  font-size: 1.75rem;
+}
+
 /* Topics Grid */
 .topics-grid {
   display: grid;
