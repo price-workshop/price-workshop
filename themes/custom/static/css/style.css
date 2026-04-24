@@ -96,6 +96,22 @@ nav .container {
   background-clip: text;
 }
 
+.logo a {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.1;
+  gap: 0.1rem;
+  text-decoration: none;
+}
+
+.logo-tagline {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
 .nav-menu {
   display: flex;
   list-style: none;

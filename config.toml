@@ -23,10 +23,6 @@ pygmentsUseClasses = true
 # Menu configuration
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 10
-  [[menu.main]]
     name = "About"
     url = "/about/"
     weight = 20
