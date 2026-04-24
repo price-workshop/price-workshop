@@ -721,7 +721,7 @@ footer p {
   }
 
   .nav-menu.nav-open {
-    max-height: 300px;
+    max-height: 400px;
     padding: 0.75rem 0;
     border-top: 1px solid var(--border-color);
     margin-top: 0.5rem;
