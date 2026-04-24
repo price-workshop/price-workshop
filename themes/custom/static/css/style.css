@@ -98,18 +98,26 @@ nav .container {
 
 .logo a {
   display: inline-flex;
-  flex-direction: column;
-  line-height: 1.1;
-  gap: 0.1rem;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
 }
 
+.logo-divider {
+  display: inline-block;
+  width: 1px;
+  height: 1rem;
+  background-color: var(--primary);
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+
 .logo-tagline {
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  opacity: 0.75;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--gray-text);
+  -webkit-text-fill-color: var(--gray-text);
 }
 
 .nav-menu {
