@@ -10,7 +10,7 @@ This is the official workspace for the PRICE Workshop website, built with Hugo a
 
 - **Site**: https://price-workshop.org (GitHub Pages hosted)
 - **Tech Stack**: Hugo + Custom Theme (no external dependencies)
-- **Theme**: Gaming-inspired dark theme with neon accents (cyan, pink, orange)
+- **Theme**: SIGGRAPH 2026-inspired light theme (cream background, dark greenish-gray text)
 - **Audience**: Academic researchers, industry professionals, esports professionals
 - **Tone**: Professional/Technical with accessibility focus
 
@@ -68,13 +68,14 @@ Content here...
 ### Color Scheme
 All colors defined in CSS root variables:
 ```css
---primary: #00D4FF;      /* Neon cyan */
---secondary: #FF006E;    /* Neon pink */
---accent: #FFB703;       /* Neon orange */
---dark-bg: #0A0E27;      /* Dark background */
---light-text: #F5F5F5;   /* Light text */
---gray-text: #B0B0B0;    /* Gray text */
---border-color: #2A2F4A; /* Border color */
+--primary: #55686e;      /* Greenish-gray - buttons, accents */
+--secondary: #D2C5B2;    /* Warm beige - secondary accent */
+--accent: #2A4249;       /* Dark greenish-gray - dark accents */
+--dark-bg: #F1EFE3;      /* Light cream - main background */
+--dark-alt: #E9E4DB;     /* Slightly darker cream - card backgrounds */
+--light-text: #2A4249;   /* Dark text */
+--gray-text: #55686e;    /* Muted text */
+--border-color: #d9d7ce; /* Light borders */
 ```
 
 ### Configuration

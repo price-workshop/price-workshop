@@ -19,14 +19,14 @@ Files matching: `themes/custom/static/css/*.css`
 
 ```css
 :root {
-  --primary: #00D4FF;      /* Neon cyan - buttons, accents */
-  --secondary: #FF006E;    /* Neon pink - borders, highlights */
-  --accent: #FFB703;       /* Neon orange - alt highlights */
-  --dark-bg: #0A0E27;      /* Main background */
-  --dark-alt: #1A1F3A;     /* Card backgrounds */
-  --light-text: #F5F5F5;   /* Body text */
-  --gray-text: #B0B0B0;    /* Muted text */
-  --border-color: #2A2F4A; /* Borders, dividers */
+  --primary: #55686e;      /* Greenish-gray - buttons, accents */
+  --secondary: #D2C5B2;    /* Warm beige - secondary accent */
+  --accent: #2A4249;       /* Dark greenish-gray - dark accents */
+  --dark-bg: #F1EFE3;      /* Light cream - main background */
+  --dark-alt: #E9E4DB;     /* Slightly darker cream - card backgrounds */
+  --light-text: #2A4249;   /* Body text */
+  --gray-text: #55686e;    /* Muted text */
+  --border-color: #d9d7ce; /* Borders, dividers */
 }
 ```
 
@@ -214,7 +214,7 @@ Use browser DevTools to test responsiveness:
 - [ ] Hover states work
 - [ ] No `!important` used
 - [ ] Transitions are smooth (0.2-0.3s)
-- [ ] Dark theme maintained
+- [ ] Light theme maintained (cream background, dark text)
 - [ ] Consistent with design system
 
 ---

@@ -67,11 +67,10 @@ The site is configured to use the custom domain `price-workshop.org`. Ensure you
 
 ## Website Features
 
-### Modern Gaming-Inspired Design
-- Neon color scheme (cyan, pink, orange) on a dark background
+### Design
+- SIGGRAPH 2026-inspired color scheme (light cream background, dark greenish-gray text)
 - Responsive layout that works on all devices
 - Smooth animations and hover effects
-- Gaming aesthetic with modern typography
 
 ### Pages
 
@@ -90,13 +89,14 @@ Edit the CSS custom properties in `themes/custom/static/css/style.css`:
 
 ```css
 :root {
-  --primary: #00D4FF;      /* Neon cyan */
-  --secondary: #FF006E;    /* Neon pink */
-  --accent: #FFB703;       /* Neon orange */
-  --dark-bg: #0A0E27;      /* Dark background */
-  --light-text: #F5F5F5;   /* Light text */
-  --gray-text: #B0B0B0;    /* Gray text */
-  --border-color: #2A2F4A; /* Border color */
+  --primary: #55686e;      /* Greenish-gray - buttons, accents */
+  --secondary: #D2C5B2;    /* Warm beige - secondary accent */
+  --accent: #2A4249;       /* Dark greenish-gray - dark accents */
+  --dark-bg: #F1EFE3;      /* Light cream - main background */
+  --dark-alt: #E9E4DB;     /* Slightly darker cream - card backgrounds */
+  --light-text: #2A4249;   /* Dark text */
+  --gray-text: #55686e;    /* Muted text */
+  --border-color: #d9d7ce; /* Light borders */
 }
 ```
 
