@@ -37,6 +37,20 @@ Hugo's template lookup governs rendering:
 
 The homepage is data-driven: `content/_index.md` supplies frontmatter params (`categories`, `deadlines`, `heroSubtitle`, `submissionMessage`) that `index.html` iterates over with `{{ with .Params.X }}` / `{{ range . }}`. The page body (`.Content`) renders as the "About the Workshop" blurb. Add or update homepage sections by editing `_index.md` frontmatter — not the template.
 
+### Theme vs. content rules
+
+**Content** (all visible text, data, and URLs) belongs in `content/` files — never in `themes/`:
+- Paragraph text, labels, button text, link destinations
+- Structured data: prices, dates, names, descriptions
+- For the homepage, all text goes in `_index.md` frontmatter params and is rendered via `{{ .Params.X }}` or `{{ .Params.X | markdownify }}` for markdown-formatted strings
+
+**Theme** (`themes/custom/`) is for structure only:
+- HTML element nesting and CSS classes
+- Conditional logic (`{{ if }}`) and iteration (`{{ range }}`)
+- Layout decisions (grid, card, section wrappers)
+
+If adding a new homepage section with text content: add the text as a frontmatter param in `_index.md`, then add a template block in `index.html` that renders only that param. Never write literal English sentences inside a template.
+
 ### CSS
 
 Single file: `themes/custom/static/css/style.css`. All colors are CSS custom properties in `:root`; never hard-code hex values. Current theme is SIGGRAPH 2026-inspired (light cream background `#F1EFE3`, dark text `#2A4249`). Responsive breakpoints: mobile-first, tablet at `769px`, desktop at `1025px`, large at `1441px`.

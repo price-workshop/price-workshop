@@ -62,4 +62,14 @@
         {{ end }}
         <p>{{ .Params.submissionMessage }} <a href="/call-for-papers/">Submission guidelines →</a></p>
     </section>
+
+    {{ with .Params.registration }}
+    <section class="content-section">
+        <h2>Registration</h2>
+        <div class="card">
+            {{ .body | markdownify }}
+            <a href="{{ .url }}" class="cta-button-secondary" target="_blank" rel="noopener noreferrer">Full registration details at SIGGRAPH 2026 →</a>
+        </div>
+    </section>
+    {{ end }}
 {{ end }}

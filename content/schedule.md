@@ -5,12 +5,10 @@ date: 2026-03-20
 
 ## Event Details
 
-**Date & Time (Tentative):** July 23, 2026 (afternoon) at [SIGGRAPH 2026](https://s2026.siggraph.org/)  
+**Date & Time:** July 23, 2026, 2:00–5:15 PM at [SIGGRAPH 2026](https://s2026.siggraph.org/)  
 **Conference Dates:** July 19-23, 2026  
 **Venue:** Los Angeles Convention Center, Los Angeles, CA  
-**Format:** [Half-day technical workshop](https://s2026.siggraph.org/program/technical-workshops/) (3.5 hours)
-
-*Note: The workshop date and time are tentative and have not yet been formally confirmed. We will announce the official schedule once details are finalized.*
+**Format:** [Half-day technical workshop](https://s2026.siggraph.org/program/technical-workshops/) (3 hours 15 minutes)
 
 ---
 
@@ -26,23 +24,21 @@ date: 2026-03-20
 
 ---
 
-## Tentative Agenda
+## Agenda
 
-Below is the planned structure for the workshop. Timing and session assignments will be finalized after decisions are sent.
+| Time | Duration | Event |
+|:-----|:---------|:------|
+| 2:00 PM | 5 min | Introduction |
+| 2:05 PM | 60 min | Keynote Presentation |
+| 3:05 PM | 14 min | Break |
+| 3:19 PM | 36 min | Technical Sketch Session 1 (3 talks × 12 min) |
+| 3:55 PM | 15 min | Panel Discussion |
+| 4:10 PM | 14 min | Break |
+| 4:24 PM | 36 min | Technical Sketch Session 2 (3 talks × 12 min) |
+| 5:00 PM | 15 min | Panel Discussion |
+| 5:15 PM | — | End |
 
-| Start Time | Duration | Event |
-|:-----------|:---------|:------|
-| 0:00 | 0:05 | Introduction |
-| 0:05 | 1:00 | Keynote Presentation |
-| 1:05 | 0:14 | Break |
-| 1:19 | 0:36 | Technical Sketch Session 1 (3 talks × 12 min) |
-| 1:55 | 0:15 | Panel Discussion |
-| 2:10 | 0:14 | Break |
-| 2:24 | 0:36 | Technical Sketch Session 2 (3 talks × 12 min) |
-| 3:00 | 0:15 | Panel Discussion |
-| 3:15 | — | End |
-
-*Specific timings and number of talks per session may be adjusted once accepted papers are confirmed.*
+*Speaker assignments and the number of talks per session will be finalized after acceptance decisions are sent.*
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "PRICE Workshop"
-heroSubtitle: "July 23, 2026 · Los Angeles Convention Center"
+heroSubtitle: "July 23, 2026 (Afternoon) · Los Angeles Convention Center"
 submissionMessage: "The submission period for technical workshop sketch submissions to the PRICE Workshop at SIGGRAPH 2026 has now closed."
 
 categories:
@@ -38,6 +38,26 @@ deadlines:
     title: "Acceptance Decisions"
     date: "May 5, 2026"
     status: "upcoming"
+  - type: "💰 Early Registration"
+    title: "SIGGRAPH Early Rate Deadline"
+    date: "May 8, 2026"
+    status: "upcoming"
+  - type: "📅 Advance Registration"
+    title: "SIGGRAPH Advance Rate Deadline"
+    date: "June 12, 2026"
+    status: "upcoming"
+
+  - type: "🗓️ Workshop Day"
+    title: "PRICE Workshop"
+    date: "July 23, 2026"
+    status: "upcoming"
+
+registration:
+  url: "https://s2026.siggraph.org/register/"
+  body: |
+    Attending the PRICE Workshop requires **Full Conference** registration. If you plan to attend only on July 23, the **Full Conference One-Day** pass is the most cost-effective option — priced at $550 (member), $640 (non-member), or $215 (student member) with no early/advance pricing tiers.
+
+    Full Conference passes have tiered pricing: register by **May 8** for early rates or by **June 12** for advance rates (late/on-site rates apply after June 12). "Member" rates apply to ACM and/or SIGGRAPH members.
 ---
 
 The PRICE Workshop brings together researchers and practitioners from graphics, systems, networking, and HCI to address the unique technical challenges of competitive esports.
