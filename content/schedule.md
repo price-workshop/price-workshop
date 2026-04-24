@@ -66,6 +66,20 @@ Two breaks between sessions for discussion and collaboration.
 
 ## Attendance & Travel
 
-**In-Person Attendance Required:** This is a fully in-person workshop. There is no virtual or remote attendance option. All presenters and attendees are expected to be present at the Los Angeles Convention Center.
+**In-Person Attendance Required:** This is a fully in-person workshop with no virtual or remote participation option. All presenters and attendees must be present at the Los Angeles Convention Center.
 
-**Travel & Accommodation:** Attendees are responsible for their own travel and accommodation. [SIGGRAPH 2026](https://s2026.siggraph.org/) will have hotel partnerships and travel information on the main conference website.
+### Hotels
+
+[OnPeak](https://s2026.siggraph.org/hotels/) is the only official hotel provider for SIGGRAPH 2026. Discounted conference rates are available through **June 22, 2026** — book early as availability is not guaranteed after that date.
+
+[**Book hotels via OnPeak →**](https://compass.onpeak.com/e/012607856)
+
+### Getting There
+
+Los Angeles International Airport (LAX) is the primary gateway. The LA Metro Blue/Expo Line stops at **Pico Station**, directly across from the convention center. Parking is available at the West and South Hall garages; see the [LACC parking page](https://www.laconventioncenter.com/parking) for details.
+
+Full transport and local information: [SIGGRAPH 2026 Travel & Accommodations](https://s2026.siggraph.org/travel-accommodations/)
+
+### International Visitors
+
+Visa and travel documentation guidance is on the [SIGGRAPH 2026 International Visitors page](https://s2026.siggraph.org/international-visitors/).
