@@ -6,9 +6,8 @@ date: 2026-03-20
 ## Ready to Submit?
 
 <div class="cta-section" style="margin-bottom: 2rem;">
-<div style="margin-top: 0;">We're accepting technical workshop sketch submissions on esports technology and competitive gaming for <a href="https://s2026.siggraph.org/" target="_blank">SIGGRAPH 2026</a>.</div>
+<div style="margin-top: 0;">The submission period for technical workshop sketch submissions on esports technology and competitive gaming for <a href="https://s2026.siggraph.org/" target="_blank">SIGGRAPH 2026</a> has now closed.</div>
 <div class="cta-buttons-group" style="justify-content: center; margin-top: 1.5rem;">
-<a href="https://ssl.linklings.net/conferences/siggraph/?page=Submit&id=TechnicalWorkshopSketchesSubmission&site=siggraph2026" class="cta-button" target="_blank">Submit Now</a>
 <a href="#submission-deadlines" class="cta-button-secondary">View Deadlines</a>
 </div>
 </div>
@@ -78,13 +77,13 @@ This is a [SIGGRAPH 2026 Technical Workshop](https://s2026.siggraph.org/program/
 <div class="deadline-type">🎯 Call Opens</div>
 <div class="deadline-title">Submissions Open</div>
 <div class="deadline-date">March 10, 2026</div>
-<div class="deadline-status open">Now Open</div>
+<div class="deadline-status closed">Closed</div>
 </div>
 <div class="deadline-card">
 <div class="deadline-type">📤 Submission Deadline</div>
 <div class="deadline-title">Workshop Sketches Due</div>
 <div class="deadline-date"><s>April 14</s> April 17, 2026 (22:00 UTC/GMT)</div>
-<div class="deadline-status upcoming">Submissions Open</div>
+<div class="deadline-status closed">Closed</div>
 </div>
 <div class="deadline-card">
 <div class="deadline-type">✅ Decision Notification</div>
