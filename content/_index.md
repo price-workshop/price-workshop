@@ -3,6 +3,14 @@ title: "PRICE Workshop"
 heroSubtitle: "July 23, 2026 (Afternoon) · Los Angeles Convention Center"
 submissionMessage: "The submission period for technical workshop sketch submissions to the PRICE Workshop at SIGGRAPH 2026 has now closed."
 
+cta:
+  - label: "View Schedule"
+    url: "/schedule/"
+    style: "primary"
+  - label: "Submission Info"
+    url: "/call-for-papers/"
+    style: "secondary"
+
 categories:
   - icon: "📊"
     title: "Performance Analysis"
@@ -54,6 +62,7 @@ deadlines:
 
 registration:
   url: "https://s2026.siggraph.org/register/"
+  linkText: "Full registration details at SIGGRAPH 2026 →"
   body: |
     Attending the PRICE Workshop requires **Full Conference** registration. If you plan to attend only on July 23, the **Full Conference One-Day** pass is the most cost-effective option — priced at $550 (member), $640 (non-member), or $215 (student member) with no early/advance pricing tiers.
 

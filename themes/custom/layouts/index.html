@@ -4,10 +4,13 @@
             <h1>{{ .Site.Title }}</h1>
             {{ with .Params.heroSubtitle }}<p class="hero-subtitle">{{ . }}</p>{{ end }}
             {{ .Content }}
+            {{ with .Params.cta }}
             <div class="cta-buttons-group">
-                <a href="/schedule/" class="cta-button">View Schedule</a>
-                <a href="/call-for-papers/" class="cta-button-secondary">Submission Info</a>
+                {{ range . }}
+                <a href="{{ .url }}" class="cta-button{{ if eq .style "secondary" }}-secondary{{ end }}">{{ .label }}</a>
+                {{ end }}
             </div>
+            {{ end }}
         </div>
     </section>
 
@@ -68,7 +71,7 @@
         <h2>Registration</h2>
         <div class="card">
             {{ .body | markdownify }}
-            <a href="{{ .url }}" class="cta-button-secondary" target="_blank" rel="noopener noreferrer">Full registration details at SIGGRAPH 2026 →</a>
+            <a href="{{ .url }}" class="cta-button-secondary" target="_blank" rel="noopener noreferrer">{{ .linkText }}</a>
         </div>
     </section>
     {{ end }}

@@ -18,7 +18,7 @@ hugo -D
 hugo --logLevel debug
 ```
 
-No tests or linting tools are configured — validate changes by running `hugo server` and checking the browser at `http://localhost:1313`.
+No tests or linting tools are configured — always run `hugo server` and verify the affected pages in a browser at `http://localhost:1313` before considering a task complete.
 
 ## Architecture
 
@@ -35,7 +35,18 @@ Hugo's template lookup governs rendering:
 
 ### Homepage content vs. template split
 
-The homepage is data-driven: `content/_index.md` supplies frontmatter params (`categories`, `deadlines`, `heroSubtitle`, `submissionMessage`) that `index.html` iterates over with `{{ with .Params.X }}` / `{{ range . }}`. The page body (`.Content`) renders as the "About the Workshop" blurb. Add or update homepage sections by editing `_index.md` frontmatter — not the template.
+The homepage is data-driven: `content/_index.md` supplies frontmatter params that `index.html` renders via `{{ with .Params.X }}` / `{{ range . }}`. The page body (`.Content`) renders as the "About the Workshop" blurb. Add or update homepage sections by editing `_index.md` frontmatter — not the template.
+
+Current params in `_index.md`:
+- `heroSubtitle` — subtitle line in the hero
+- `cta` — list of hero buttons, each with `label`, `url`, and `style` (`"primary"` or `"secondary"`)
+- `submissionMessage` — text shown below the Key Dates grid
+- `categories` — Workshop Topics grid cards (each: `icon`, `title`, `description`)
+- `keynote` — keynote speaker block (`speaker`, `title`, `abstract`; leave all empty to show TBA placeholder)
+- `deadlines` — Key Dates grid cards (each: `type`, `title`, `date`, `status`)
+- `registration` — Registration section (`url`, `linkText`, `body` as markdown string)
+
+`deadlines[].status` controls the badge label and CSS class — valid values are `"closed"`, `"open"`, or `"upcoming"`. Any other value renders as "Coming Soon" with no CSS match.
 
 ### Theme vs. content rules
 
