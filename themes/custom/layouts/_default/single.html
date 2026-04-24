@@ -1,19 +1,6 @@
 {{ define "main" }}
     <article class="content-section">
         <h1>{{ .Title }}</h1>
-
-        <div style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
-            <a href="/">Home</a> / <span style="color: var(--gray-text);">{{ .Title }}</span>
-        </div>
-
         {{ .Content }}
     </article>
-
-    <div class="cta-section" style="margin-top: 3rem;">
-        <h3 style="color: var(--primary); margin-bottom: 1.5rem;">More Information</h3>
-        <div class="cta-buttons-group" style="justify-content: center;">
-            <a href="/" class="cta-button-secondary">← Back to Home</a>
-            <a href="/contact/" class="cta-button">Have Questions?</a>
-        </div>
-    </div>
 {{ end }}
