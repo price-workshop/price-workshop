@@ -489,7 +489,7 @@ tr:hover {
 
 .deadline-status.closed {
   background-color: rgba(255, 0, 110, 0.15);
-  color: var(--secondary);
+  color: var(--accent);
 }
 
 /* CTA Button Variations */
