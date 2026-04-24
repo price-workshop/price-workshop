@@ -57,7 +57,7 @@ h3 {
 
 p {
   margin-bottom: 1rem;
-  color: var(--gray-text);
+  color: var(--light-text);
 }
 
 a {
@@ -68,7 +68,6 @@ a {
 
 a:hover {
   color: var(--accent);
-  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 
 /* Navigation */
@@ -79,7 +78,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(85, 104, 110, 0.15);
 }
 
 nav .container {
@@ -174,7 +173,7 @@ nav .container {
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(85, 104, 110, 0.3);
 }
 
 /* Main Content Areas */
@@ -228,7 +227,7 @@ pre {
 
 .card:hover {
   border-color: var(--primary);
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 4px 16px rgba(85, 104, 110, 0.2);
 }
 
 .card h3 {
@@ -262,7 +261,7 @@ td {
 }
 
 tr:hover {
-  background-color: rgba(0, 212, 255, 0.05);
+  background-color: rgba(85, 104, 110, 0.07);
 }
 
 /* Organizers Grid */
@@ -285,7 +284,7 @@ tr:hover {
 .organizer-card:hover {
   border-color: var(--accent);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(255, 183, 3, 0.2);
+  box-shadow: 0 8px 24px rgba(85, 104, 110, 0.2);
 }
 
 .organizer-card h3 {
@@ -340,7 +339,7 @@ tr:hover {
 
 .topic-box:hover {
   border-left-color: var(--accent);
-  box-shadow: 0 5px 20px rgba(255, 183, 3, 0.2);
+  box-shadow: 0 4px 16px rgba(85, 104, 110, 0.18);
 }
 
 .topic-box h4 {
@@ -386,7 +385,7 @@ tr:hover {
 
 .category-card:hover {
   border-color: var(--primary);
-  box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(85, 104, 110, 0.22);
   transform: translateY(-5px);
 }
 
@@ -441,7 +440,7 @@ tr:hover {
 
 .deadline-card:hover {
   border-color: var(--primary);
-  box-shadow: 0 5px 25px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 4px 16px rgba(85, 104, 110, 0.2);
   transform: translateY(-3px);
 }
 
@@ -472,24 +471,24 @@ tr:hover {
   font-size: 0.9rem;
   color: var(--gray-text);
   padding: 0.5rem;
-  background-color: rgba(0, 212, 255, 0.1);
+  background-color: rgba(85, 104, 110, 0.1);
   border-radius: 4px;
   margin-top: 0.75rem;
 }
 
 .deadline-status.open {
-  background-color: rgba(0, 212, 255, 0.15);
+  background-color: rgba(85, 104, 110, 0.15);
   color: var(--primary);
 }
 
 .deadline-status.upcoming {
-  background-color: rgba(255, 183, 3, 0.15);
+  background-color: rgba(210, 197, 178, 0.5);
   color: var(--accent);
 }
 
 .deadline-status.closed {
-  background-color: rgba(255, 0, 110, 0.15);
-  color: var(--accent);
+  background-color: rgba(85, 104, 110, 0.12);
+  color: var(--gray-text);
 }
 
 /* CTA Button Variations */
@@ -516,7 +515,7 @@ tr:hover {
 .cta-button-secondary:hover {
   background: var(--primary);
   color: var(--dark-bg);
-  box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 5px 16px rgba(85, 104, 110, 0.25);
   transform: translateY(-2px);
 }
 
@@ -535,14 +534,14 @@ tr:hover {
 
 .cta-button-accent:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(255, 183, 3, 0.3);
+  box-shadow: 0 8px 24px rgba(42, 66, 73, 0.3);
 }
 
 /* Center CTA Section */
 .cta-section {
   text-align: center;
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(255, 0, 110, 0.05));
+  background: linear-gradient(135deg, rgba(85, 104, 110, 0.06), rgba(42, 66, 73, 0.06));
   border: 1px solid var(--border-color);
   border-radius: 8px;
   margin: 2rem 0;
