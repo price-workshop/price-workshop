@@ -4,6 +4,11 @@
             <div class="logo">
                 <a href="/">PRICE</a>
             </div>
+            <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
             <ul class="nav-menu">
                 {{ range .Site.Menus.main }}
                 <li><a href="{{ .URL }}">{{ .Name }}</a></li>
@@ -12,3 +17,32 @@
         </div>
     </nav>
 </header>
+<script>
+(function () {
+    var toggle = document.querySelector('.nav-toggle');
+    var menu = document.querySelector('.nav-menu');
+    if (!toggle || !menu) return;
+
+    toggle.addEventListener('click', function () {
+        var isOpen = menu.classList.toggle('nav-open');
+        toggle.classList.toggle('nav-toggle--open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    menu.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+            menu.classList.remove('nav-open');
+            toggle.classList.remove('nav-toggle--open');
+            toggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('nav')) {
+            menu.classList.remove('nav-open');
+            toggle.classList.remove('nav-toggle--open');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+}());
+</script>
