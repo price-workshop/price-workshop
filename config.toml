@@ -51,10 +51,3 @@ pygmentsUseClasses = true
 [params]
   description = "SIGGRAPH Workshop on Performance and Rendering in Competitive Esports (PRICE)"
   author = "PRICE Workshop Organizers"
-  
-  # Gaming-inspired colors
-  primaryColor = "#00D4FF"      # Neon cyan
-  secondaryColor = "#FF006E"    # Neon pink
-  accentColor = "#FFB703"       # Neon orange
-  darkBg = "#0A0E27"            # Dark blue-black
-  lightText = "#F5F5F5"         # Light gray

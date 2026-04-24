@@ -311,7 +311,7 @@ tr:hover {
   align-items: center;
   justify-content: center;
   width: 1.5rem;
-  height: 0.5rem;
+  height: 1.5rem;
   color: var(--light-text);
   transition: all 0.2s ease;
   text-decoration: none;
@@ -429,7 +429,7 @@ tr:hover {
   position: relative;
 }
 
-.deadline-card::left {
+.deadline-card::before {
   position: absolute;
   left: 0;
   top: 0;

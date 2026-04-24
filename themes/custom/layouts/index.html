@@ -1,133 +1,89 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }}</title>
-    <meta name="description" content="{{ .Site.Params.description }}">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%2300D4FF' font-weight='bold'>P</text></svg>">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
-</head>
-<body>
-    {{ partial "header" . }}
-    
-    <main class="container">
-        <section class="hero">
-            <div class="hero-content">
-                <h1>{{ .Site.Title }}</h1>
-                <p>{{ .Site.Params.description }}</p>
-                <p>Performance and Rendering in Competitive Esports Workshop at SIGGRAPH 2026</p>
-                <div class="cta-buttons-group">
-<a href="/call-for-papers/" class="cta-button">View Call for Papers</a>
-                    <a href="/schedule/" class="cta-button-secondary">View Schedule</a>
-                </div>
+{{ define "main" }}
+    <section class="hero">
+        <div class="hero-content">
+            <h1>{{ .Site.Title }}</h1>
+            <p>{{ .Site.Params.description }}</p>
+            {{ with .Params.heroSubtitle }}<p>{{ . }}</p>{{ end }}
+            <div class="cta-buttons-group">
+                <a href="/call-for-papers/" class="cta-button">View Call for Papers</a>
+                <a href="/schedule/" class="cta-button-secondary">View Schedule</a>
             </div>
-            <div class="hero-visual">🎮</div>
-        </section>
+        </div>
+        <div class="hero-visual">🎮</div>
+    </section>
 
-        <section class="content-section">
-            <h2>About the Workshop</h2>
-            <div class="card">
-                <p>The PRICE Workshop brings together researchers and practitioners from graphics, systems, networking, and HCI to address the unique technical challenges of competitive esports.</p>
-                <p>Esports is a major cultural and economic force, with competitions requiring cutting-edge technology for optimal performance. This workshop focuses on the intersection of hardware capabilities, software optimizations, and human perception that make competitive gaming possible.</p>
-            </div>
-        </section>
+    <section class="content-section">
+        <h2>About the Workshop</h2>
+        <div class="card">
+            {{ .Content }}
+        </div>
+    </section>
 
-        <section class="content-section">
-            <h2>Workshop Categories</h2>
-            <div class="categories-grid">
-                <div class="category-card">
-                    <div class="category-icon">📊</div>
-                    <h3>Performance Analysis</h3>
-                    <p>Graphics optimization and rendering techniques for competitive advantage</p>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">🌐</div>
-                    <h3>Networking & Latency</h3>
-                    <p>Low-latency systems and network optimization for esports</p>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">🔧</div>
-                    <h3>Systems & Hardware</h3>
-                    <p>Hardware capabilities and system-level optimizations</p>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">👁️</div>
-                    <h3>Perception & HCI</h3>
-                    <p>Human perception and interaction in competitive gaming</p>
-                </div>
-                <div class="category-card">
-                    <div class="category-icon">🎨</div>
-                    <h3>Emerging Technologies</h3>
-                    <p>VR, AR, and next-generation esports technologies</p>
-                </div>
+    {{ with .Params.categories }}
+    <section class="content-section">
+        <h2>Workshop Categories</h2>
+        <div class="categories-grid">
+            {{ range . }}
+            <div class="category-card">
+                <div class="category-icon">{{ .icon }}</div>
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
             </div>
-        </section>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
 
-        <section class="content-section">
-            <h2>Submission Information</h2>
-            <div class="cta-section">
-                <h2 style="margin-top: 0; border: none; padding: 0; font-size: 1.75rem;">Ready to Share Your Research?</h2>
-<p>The submission period for technical workshop sketch submissions to the PRICE Workshop at SIGGRAPH 2026 has now closed.</p>
-<div class="cta-buttons-group" style="justify-content: center;">
-    <a href="/call-for-papers/" class="cta-button-secondary">Submission Guidelines</a>
-</div>
+    <section class="content-section">
+        <h2>Submission Information</h2>
+        <div class="cta-section">
+            <h2 style="margin-top: 0; border: none; padding: 0; font-size: 1.75rem;">Ready to Share Your Research?</h2>
+            <p>{{ .Params.submissionMessage }}</p>
+            <div class="cta-buttons-group" style="justify-content: center;">
+                <a href="/call-for-papers/" class="cta-button-secondary">Submission Guidelines</a>
             </div>
+        </div>
 
-            <h3>Key Deadlines</h3>
-            <div class="deadlines-grid">
-                <div class="deadline-card">
-<div class="deadline-type">🎯 Call Opens</div>
-<div class="deadline-title">Submissions Open</div>
-<div class="deadline-date">March 10, 2026</div>
-<div class="deadline-status closed">Closed</div>
-                </div>
-                <div class="deadline-card">
-<div class="deadline-type">📤 Submission Deadline</div>
-<div class="deadline-title">Workshop Sketches Due</div>
-<div class="deadline-date">April 17, 2026</div>
-<div class="deadline-status closed">Closed</div>
-                </div>
-                <div class="deadline-card">
-                    <div class="deadline-type">✅ Decision Notification</div>
-                    <div class="deadline-title">Acceptance Decisions</div>
-                    <div class="deadline-date">May 5, 2026</div>
-                    <div class="deadline-status upcoming">Coming Soon</div>
+        {{ with .Params.deadlines }}
+        <h3>Key Deadlines</h3>
+        <div class="deadlines-grid">
+            {{ range . }}
+            <div class="deadline-card">
+                <div class="deadline-type">{{ .type }}</div>
+                <div class="deadline-title">{{ .title }}</div>
+                <div class="deadline-date">{{ .date }}</div>
+                <div class="deadline-status {{ .status }}">
+                    {{ if eq .status "closed" }}Closed{{ else if eq .status "open" }}Open{{ else }}Coming Soon{{ end }}
                 </div>
             </div>
-        </section>
+            {{ end }}
+        </div>
+        {{ end }}
+    </section>
 
-        <section class="content-section">
-            <h2>Quick Navigation</h2>
-            <div class="topics-grid">
-                <div class="topic-box">
-                    <h4>📋 Call for Papers</h4>
-                    <p>Submission guidelines, topics, and format requirements</p>
-                    <a href="/call-for-papers/">Learn more →</a>
-                </div>
-                <div class="topic-box">
-                    <h4>📅 Schedule</h4>
-                    <p>Workshop agenda and timeline</p>
-                    <a href="/schedule/">View schedule →</a>
-                </div>
-                <div class="topic-box">
-                    <h4>👥 Organizers</h4>
-                    <p>Meet the workshop organizers and speakers</p>
-                    <a href="/organizers/">Meet the team →</a>
-                </div>
-                <div class="topic-box">
-                    <h4>📧 Contact</h4>
-                    <p>Questions or suggestions? Get in touch</p>
-                    <a href="/contact/">Contact us →</a>
-                </div>
+    <section class="content-section">
+        <h2>Quick Navigation</h2>
+        <div class="topics-grid">
+            <div class="topic-box">
+                <h4>📋 Call for Papers</h4>
+                <p>Submission guidelines, topics, and format requirements</p>
+                <a href="/call-for-papers/">Learn more →</a>
             </div>
-        </section>
-    </main>
-    
-    {{ partial "footer" . }}
-</body>
-</html>
+            <div class="topic-box">
+                <h4>📅 Schedule</h4>
+                <p>Workshop agenda and timeline</p>
+                <a href="/schedule/">View schedule →</a>
+            </div>
+            <div class="topic-box">
+                <h4>👥 Organizers</h4>
+                <p>Meet the workshop organizers and speakers</p>
+                <a href="/organizers/">Meet the team →</a>
+            </div>
+            <div class="topic-box">
+                <h4>📧 Contact</h4>
+                <p>Questions or suggestions? Get in touch</p>
+                <a href="/contact/">Contact us →</a>
+            </div>
+        </div>
+    </section>
+{{ end }}
