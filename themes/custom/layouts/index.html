@@ -2,37 +2,14 @@
     <section class="hero">
         <div class="hero-content">
             <h1>{{ .Site.Title }}</h1>
-            <p>{{ .Site.Params.description }}</p>
-            {{ with .Params.heroSubtitle }}<p>{{ . }}</p>{{ end }}
+            {{ with .Params.heroSubtitle }}<p class="hero-subtitle">{{ . }}</p>{{ end }}
+            {{ .Content }}
             <div class="cta-buttons-group">
                 <a href="/schedule/" class="cta-button">View Schedule</a>
                 <a href="/call-for-papers/" class="cta-button-secondary">Submission Info</a>
             </div>
         </div>
-        <div class="hero-visual">🎮</div>
     </section>
-
-    <section class="content-section">
-        <h2>About the Workshop</h2>
-        <div class="card">
-            {{ .Content }}
-        </div>
-    </section>
-
-    {{ with .Params.categories }}
-    <section class="content-section">
-        <h2>Workshop Categories</h2>
-        <div class="categories-grid">
-            {{ range . }}
-            <div class="category-card">
-                <div class="category-icon">{{ .icon }}</div>
-                <h3>{{ .title }}</h3>
-                <p>{{ .description }}</p>
-            </div>
-            {{ end }}
-        </div>
-    </section>
-    {{ end }}
 
     {{ with .Params.keynote }}
     <section class="content-section">
@@ -52,18 +29,24 @@
     </section>
     {{ end }}
 
+    {{ with .Params.categories }}
     <section class="content-section">
-        <h2>Submission Information</h2>
-        <div class="cta-section">
-            <h2 style="margin-top: 0; border: none; padding: 0; font-size: 1.75rem;">Ready to Share Your Research?</h2>
-            <p>{{ .Params.submissionMessage }}</p>
-            <div class="cta-buttons-group" style="justify-content: center;">
-                <a href="/call-for-papers/" class="cta-button-secondary">Submission Guidelines</a>
+        <h2>Workshop Topics</h2>
+        <div class="categories-grid">
+            {{ range . }}
+            <div class="category-card">
+                <div class="category-icon">{{ .icon }}</div>
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
             </div>
+            {{ end }}
         </div>
+    </section>
+    {{ end }}
 
+    <section class="content-section">
+        <h2>Key Dates</h2>
         {{ with .Params.deadlines }}
-        <h3>Key Deadlines</h3>
         <div class="deadlines-grid">
             {{ range . }}
             <div class="deadline-card">
@@ -77,31 +60,6 @@
             {{ end }}
         </div>
         {{ end }}
-    </section>
-
-    <section class="content-section">
-        <h2>Quick Navigation</h2>
-        <div class="topics-grid">
-            <div class="topic-box">
-                <h4>📋 Call for Papers</h4>
-                <p>Submission guidelines, topics, and format requirements</p>
-                <a href="/call-for-papers/">Learn more →</a>
-            </div>
-            <div class="topic-box">
-                <h4>📅 Schedule</h4>
-                <p>Workshop agenda and timeline</p>
-                <a href="/schedule/">View schedule →</a>
-            </div>
-            <div class="topic-box">
-                <h4>👥 Organizers</h4>
-                <p>Meet the workshop organizers and speakers</p>
-                <a href="/organizers/">Meet the team →</a>
-            </div>
-            <div class="topic-box">
-                <h4>📧 Contact</h4>
-                <p>Questions or suggestions? Get in touch</p>
-                <a href="/contact/">Contact us →</a>
-            </div>
-        </div>
+        <p>{{ .Params.submissionMessage }} <a href="/call-for-papers/">Submission guidelines →</a></p>
     </section>
 {{ end }}

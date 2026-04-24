@@ -1,6 +1,6 @@
 ---
 title: "PRICE Workshop"
-heroSubtitle: "Performance and Rendering in Competitive Esports Workshop at SIGGRAPH 2026"
+heroSubtitle: "July 23, 2026 · Los Angeles Convention Center"
 submissionMessage: "The submission period for technical workshop sketch submissions to the PRICE Workshop at SIGGRAPH 2026 has now closed."
 
 categories:
