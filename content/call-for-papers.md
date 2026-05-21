@@ -1,16 +1,7 @@
 ---
 title: "Call for Papers"
-date: 2026-03-20
+date: 2026-05-20
 ---
-
-## Ready to Submit?
-
-<div class="cta-section" style="margin-bottom: 2rem;">
-<div style="margin-top: 0;">The submission period for technical workshop sketch submissions on esports technology and competitive gaming for <a href="https://s2026.siggraph.org/" target="_blank">SIGGRAPH 2026</a> has now closed.</div>
-<div class="cta-buttons-group" style="justify-content: center; margin-top: 1.5rem;">
-<a href="#submission-deadlines" class="cta-button-secondary">View Deadlines</a>
-</div>
-</div>
 
 ## Topics of Interest
 
@@ -82,30 +73,30 @@ This is a [SIGGRAPH 2026 Technical Workshop](https://s2026.siggraph.org/program/
 <div class="deadline-card">
 <div class="deadline-type">📤 Submission Deadline</div>
 <div class="deadline-title">Workshop Sketches Due</div>
-<div class="deadline-date"><s>April 14</s> April 17, 2026 (22:00 UTC/GMT)</div>
+<div class="deadline-date"><s>April 14</s> April 17, 2026</div>
 <div class="deadline-status closed">Closed</div>
 </div>
 <div class="deadline-card">
 <div class="deadline-type">✅ Decision Notification</div>
 <div class="deadline-title">Acceptance Decisions</div>
 <div class="deadline-date">May 5, 2026</div>
-<div class="deadline-status upcoming">Coming Soon</div>
+<div class="deadline-status closed">Complete</div>
 </div>
 <div class="deadline-card">
 <div class="deadline-type">🔧 TAPS Final Upload</div>
 <div class="deadline-title">Camera-Ready Deadline</div>
 <div class="deadline-date">May 19, 2026</div>
-<div class="deadline-status upcoming">Coming Soon</div>
+<div class="deadline-status closed">Closed</div>
 </div>
 </div>
 
 ## Acceptance & Publication
 
-**Decision Notification:** May 5, 2026
+**Decision Notification:** May 5, 2026 - <span style="color: green; font-weight: bold;">Completed</span>
 
-**Final Upload to TAPS:** Tuesday, May 19, 2026
+**Final Upload to TAPS:** Tuesday, May 19, 2026 - <span style="color: green; font-weight: bold;">Completed</span>
 
-Accepted submissions will be processed through the TAPS system for publication in the conference proceedings.
+Accepted submissions have been processed through the TAPS system for publication in the conference proceedings.
 
 ## Presentation Requirements
 
