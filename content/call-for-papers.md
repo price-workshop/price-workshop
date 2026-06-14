@@ -92,9 +92,9 @@ This is a [SIGGRAPH 2026 Technical Workshop](https://s2026.siggraph.org/program/
 
 ## Acceptance & Publication
 
-**Decision Notification:** May 5, 2026 - <span style="color: green; font-weight: bold;">Completed</span>
+**Decision Notification:** May 5, 2026 - <span class="status-complete">Completed</span>
 
-**Final Upload to TAPS:** Tuesday, May 19, 2026 - <span style="color: green; font-weight: bold;">Completed</span>
+**Final Upload to TAPS:** Tuesday, May 19, 2026 - <span class="status-complete">Completed</span>
 
 Accepted submissions have been processed through the TAPS system for publication in the conference proceedings.
 

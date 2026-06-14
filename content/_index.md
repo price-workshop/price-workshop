@@ -1,6 +1,6 @@
 ---
 title: "PRICE Workshop"
-heroSubtitle: "July 23, 2026 (Afternoon) · Los Angeles Convention Center"
+heroSubtitle: "Part of SIGGRAPH 2026 · July 19–23, Los Angeles · Workshop Day: July 23 (Afternoon)"
 submissionMessage: "The submission period for technical workshop sketch submissions to the PRICE Workshop at SIGGRAPH 2026 has now closed."
 
 cta:

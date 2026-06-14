@@ -3,8 +3,6 @@ title: "Organizers"
 date: 2026-03-19
 ---
 
-<script src="https://kit.fontawesome.com/66fbfb51b0.js" crossorigin="anonymous"></script>
-
 <div class="organizers-grid">
   <div class="organizer-card">
     <h3>Josef Spjut</h3>

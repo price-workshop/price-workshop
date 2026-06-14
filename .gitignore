@@ -2,6 +2,7 @@
 /public/
 /resources/
 .hugo_build.lock
+config.toml.local
 
 # OS
 .DS_Store

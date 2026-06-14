@@ -27,16 +27,19 @@ A: Submissions should be 4-8 pages of single-column format (excluding references
 A: Absolutely! We welcome submissions from both academic researchers and industry professionals.
 
 **Q: Is the workshop in-person or virtual?**  
-A: The PRICE Workshop is fully in-person at the Los Angeles Convention Center during SIGGRAPH 2026 (July 19-23, 2026). There is no virtual or remote attendance option.
+A: The PRICE Workshop is fully in-person at the Los Angeles Convention Center on July 23, 2026 (as part of SIGGRAPH 2026, July 19–23). There is no virtual or remote attendance option.
 
 **Q: What if I'm accepted—what are my responsibilities?**  
-A: All accepted authors must present their work in-person and participate in panel discussions with other sketch authors to discuss research directions in esports technology.
+A: All accepted authors must present their work in-person at the Los Angeles Convention Center on July 23, 2026 (as part of SIGGRAPH 2026, July 19–23) and participate in panel discussions with other sketch authors to discuss research directions in esports technology.
 
 ### Workshop Location and Dates
 
-**Date:** July 19-23, 2026  
-**Location:** Los Angeles Convention Center, Los Angeles, CA  
-**Format:** Half-day technical workshop (3.5 hours)  
+**Workshop Date:** July 23, 2026 (Afternoon session)
+
+SIGGRAPH 2026 runs July 19–23, 2026 at the Los Angeles Convention Center. While the PRICE Workshop is only on July 23, we invite you to attend the full conference to explore the broader technical program.
+
+**Format:** Half-day technical workshop (3.5 hours)
+
 **Conference:** [SIGGRAPH 2026](https://s2026.siggraph.org/)
 
 For more information, visit the [SIGGRAPH Technical Workshops](https://s2026.siggraph.org/program/technical-workshops/) page.

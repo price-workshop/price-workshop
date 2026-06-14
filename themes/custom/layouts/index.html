@@ -38,7 +38,7 @@
         <div class="categories-grid">
             {{ range . }}
             <div class="category-card">
-                <div class="category-icon">{{ .icon }}</div>
+                <div class="category-icon" aria-label="{{ .icon }} {{ .title }}">{{ .icon }}</div>
                 <h3>{{ .title }}</h3>
                 <p>{{ .description }}</p>
             </div>

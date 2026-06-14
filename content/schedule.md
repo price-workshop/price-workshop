@@ -5,8 +5,8 @@ date: 2026-03-20
 
 ## Event Details
 
-**Date & Time:** July 23, 2026, 2:00–5:15 PM at [SIGGRAPH 2026](https://s2026.siggraph.org/)  
-**Conference Dates:** July 19-23, 2026  
+**Workshop Date & Time:** July 23, 2026, 2:00–5:15 PM at [SIGGRAPH 2026](https://s2026.siggraph.org/)  
+**SIGGRAPH 2026 Conference Dates:** July 19–23, 2026 — we invite you to attend the full conference.  
 **Venue:** Los Angeles Convention Center, Los Angeles, CA  
 **Format:** [Half-day technical workshop](https://s2026.siggraph.org/program/technical-workshops/) (3 hours 15 minutes)
 

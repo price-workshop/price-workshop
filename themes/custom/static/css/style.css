@@ -4,10 +4,10 @@
   --primary: #55686e;
   --secondary: #D2C5B2;
   --accent: #2A4249;
-  --dark-bg: #F1EFE3;
-  --dark-alt: #E9E4DB;
-  --light-text: #2A4249;
-  --gray-text: #55686e;
+  --bg: #F1EFE3;
+  --bg-alt: #E9E4DB;
+  --text: #2A4249;
+  --text-muted: #55686e;
   --border-color: #d9d7ce;
 }
 
@@ -22,8 +22,8 @@ html {
 }
 
 body {
-  background-color: var(--dark-bg);
-  color: var(--light-text);
+  background-color: var(--bg);
+  color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
   font-size: 16px;
@@ -34,12 +34,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: var(--light-text);
+  color: var(--text);
 }
 
 h1 {
   font-size: 3rem;
-  color: var(--light-text);
+  color: var(--text);
 }
 
 h2 {
@@ -57,7 +57,7 @@ h3 {
 
 p {
   margin-bottom: 1rem;
-  color: var(--light-text);
+  color: var(--text);
 }
 
 a {
@@ -72,7 +72,7 @@ a:hover {
 
 /* Navigation */
 nav {
-  background-color: var(--dark-alt);
+  background-color: var(--bg-alt);
   border-bottom: 2px solid var(--primary);
   padding: 1rem 0;
   position: sticky;
@@ -116,8 +116,8 @@ nav .container {
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.04em;
-  color: var(--gray-text);
-  -webkit-text-fill-color: var(--gray-text);
+  color: var(--text-muted);
+  -webkit-text-fill-color: var(--text-muted);
 }
 
 .nav-menu {
@@ -127,7 +127,7 @@ nav .container {
 }
 
 .nav-menu a {
-  color: var(--light-text);
+  color: var(--text);
   font-weight: 500;
   position: relative;
 }
@@ -169,7 +169,7 @@ nav .container {
 }
 
 .hero-subtitle {
-  color: var(--gray-text);
+  color: var(--text-muted);
   font-size: 1rem !important;
   margin-bottom: 1rem;
 }
@@ -185,7 +185,7 @@ nav .container {
 .cta-button {
   display: inline-block;
   background: var(--primary);
-  color: var(--dark-bg);
+  color: var(--bg);
   padding: 0.75rem 2rem;
   border-radius: 5px;
   font-weight: 700;
@@ -217,12 +217,12 @@ ul, ol {
 
 li {
   margin-bottom: 0.5rem;
-  color: var(--gray-text);
+  color: var(--text-muted);
 }
 
 /* Code and Pre */
 code {
-  background-color: var(--dark-alt);
+  background-color: var(--bg-alt);
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
   font-family: "Courier New", monospace;
@@ -230,7 +230,7 @@ code {
 }
 
 pre {
-  background-color: var(--dark-alt);
+  background-color: var(--bg-alt);
   padding: 1rem;
   border-radius: 5px;
   overflow-x: auto;
@@ -240,7 +240,7 @@ pre {
 
 /* Boxes and Cards */
 .card {
-  background-color: var(--dark-alt);
+  background-color: var(--bg-alt);
   border: 2px solid var(--border-color);
   border-radius: 8px;
   padding: 2rem;
@@ -266,7 +266,7 @@ table {
 }
 
 thead {
-  background-color: var(--dark-alt);
+  background-color: var(--bg-alt);
   border-bottom: 3px solid var(--primary);
 }
 
@@ -280,7 +280,7 @@ th {
 td {
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--border-color);
-  color: var(--gray-text);
+  color: var(--text-muted);
 }
 
 tr:hover {
@@ -296,7 +296,7 @@ tr:hover {
 }
 
 .organizer-card {
-  background-color: var(--dark-alt);
+  background-color: var(--bg-alt);
   border: 2px solid var(--border-color);
   border-radius: 8px;
   padding: 2rem;
@@ -334,7 +334,7 @@ tr:hover {
   justify-content: center;
   width: 1.5rem;
   height: 1.5rem;
-  color: var(--light-text);
+  color: var(--text);
   transition: all 0.2s ease;
   text-decoration: none;
 }
@@ -359,7 +359,7 @@ tr:hover {
 }
 
 .topic-box {
-  background-color: var(--dark-alt);
+  background-color: var(--bg-alt);
   border-left: 4px solid var(--primary);
   border-radius: 5px;
   padding: 1.5rem;
@@ -389,7 +389,7 @@ tr:hover {
 }
 
 .category-card {
-  background: linear-gradient(135deg, var(--dark-alt) 0%, rgba(85, 104, 110, 0.08) 100%);
+  background: linear-gradient(135deg, var(--bg-alt) 0%, rgba(85, 104, 110, 0.08) 100%);
   border: 2px solid var(--border-color);
   border-radius: 8px;
   padding: 1rem 0.8rem;
@@ -436,7 +436,7 @@ tr:hover {
 
 .category-card p {
   font-size: 0.9rem;
-  color: var(--gray-text);
+  color: var(--text-muted);
   line-height: 1.4;
 }
 
@@ -449,7 +449,7 @@ tr:hover {
 }
 
 .deadline-card {
-  background-color: var(--dark-alt);
+  background-color: var(--bg-alt);
   border: 2px solid var(--border-color);
   border-radius: 8px;
   padding: 1.5rem;
@@ -490,7 +490,7 @@ tr:hover {
 }
 
 .deadline-date {
-  color: var(--light-text);
+  color: var(--text);
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -498,7 +498,7 @@ tr:hover {
 
 .deadline-status {
   font-size: 0.9rem;
-  color: var(--gray-text);
+  color: var(--text-muted);
   padding: 0.5rem;
   background-color: rgba(85, 104, 110, 0.1);
   border-radius: 4px;
@@ -517,7 +517,7 @@ tr:hover {
 
 .deadline-status.closed {
   background-color: rgba(85, 104, 110, 0.12);
-  color: var(--gray-text);
+  color: var(--text-muted);
 }
 
 /* CTA Button Variations */
@@ -543,7 +543,7 @@ tr:hover {
 
 .cta-button-secondary:hover {
   background: var(--primary);
-  color: var(--dark-bg);
+  color: var(--bg);
   box-shadow: 0 5px 16px rgba(85, 104, 110, 0.25);
   transform: translateY(-2px);
 }
@@ -551,7 +551,7 @@ tr:hover {
 .cta-button-accent {
   display: inline-block;
   background: var(--accent);
-  color: var(--dark-bg);
+  color: var(--bg);
   padding: 0.75rem 2rem;
   border-radius: 5px;
   font-weight: 700;
@@ -588,16 +588,27 @@ tr:hover {
 
 /* Footer */
 footer {
-  background-color: var(--dark-alt);
+  background-color: var(--bg-alt);
   border-top: 2px solid var(--secondary);
   padding: 2rem 0;
   margin-top: 4rem;
   text-align: center;
-  color: var(--gray-text);
+  color: var(--text-muted);
 }
 
 footer p {
   margin-bottom: 0.5rem;
+}
+
+.footer-byline {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+
+.status-complete {
+  color: var(--text);
+  font-weight: 700;
 }
 
 .footer-links {
@@ -626,7 +637,7 @@ footer p {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: var(--light-text);
+  background-color: var(--text);
   border-radius: 2px;
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
@@ -797,4 +808,13 @@ footer p {
   .deadline-date {
     font-size: 1.1rem;
   }
+}
+
+/* Focus styles for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+.cta-button:focus-visible,
+.cta-button-secondary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
