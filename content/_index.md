@@ -29,9 +29,9 @@ categories:
     description: "VR, AR, and next-generation esports technologies"
 
 keynote:
-  speaker: ""
-  title: ""
-  abstract: ""
+  speaker: "Mark Claypool"
+  title: "To be announced"
+  abstract: "To be announced"
 
 deadlines:
   - type: "🎯 Call Opens"

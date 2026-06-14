@@ -17,7 +17,7 @@ date: 2026-03-20
 | Time | Duration | Event |
 |:-----|:---------|:------|
 | 2:00 PM | 5 min | Introduction |
-| 2:05 PM | 60 min | Keynote Presentation: To Be Announced |
+| 2:05 PM | 60 min | Keynote Presentation: Mark Claypool | |
 | 3:05 PM | 10 min | Break |
 | 3:15 PM | 36 min | **Technical Sketch Session 1**<br>• Towards Field Experiments in Esports Competition (Madhusudan)<br>• What Do Competitive Players Do With Their Settings? (Rajpurohit)<br>• *[Invited]* Tactical Telemetry: Using Replay Files for Gameplay Analytics (Xenopoulos) |
 | 3:51 PM | 19 min | Panel Discussion |
@@ -30,7 +30,8 @@ Note that the order of sessions and talks is subject to change as needed.
 
 ## Keynote Speaker
 
-*To be announced. We will update this page once the keynote speaker is confirmed.*
+**Mark Claypool**
+Professor in Computer Science and Interactive Media & Game Development at Worcester Polytechnic Institute (WPI). Mark is an expert on the effects of latency on computer games, with over 75 peer-reviewed publications in this area. His research has been supported by NSF, MIT Lincoln Labs, Intel, Microsoft, Google, Viasat, and NVIDIA.
 
 ---
 
