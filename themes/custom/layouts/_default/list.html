@@ -1,0 +1,121 @@
+{{ define "main" }}
+{{ if eq .RelPermalink "/2026/" }}
+    <section class="hero">
+        <div class="hero-content">
+            <h1>{{ .Site.Title }}</h1>
+            {{ with .Params.heroSubtitle }}<p class="hero-subtitle">{{ . }}</p>{{ end }}
+            {{ .Content }}
+            {{ with .Params.cta }}
+            <div class="cta-buttons-group">
+                {{ range . }}
+                <a href="{{ .url }}" class="cta-button{{ if eq .style "secondary" }}-secondary{{ end }}">{{ .label }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </section>
+
+    {{ with .Params.keynote }}
+    <section class="content-section">
+        <h2>Keynote Speaker</h2>
+        {{ if .speaker }}
+        <div class="card keynote-card">
+            <h3>{{ .speaker }}</h3>
+            {{ with .title }}<p class="organizer-title">{{ . }}</p>{{ end }}
+            {{ with .abstract }}<p>{{ . }}</p>{{ end }}
+        </div>
+        {{ else }}
+        <div class="card">
+            <p><em>The keynote speaker will be announced soon. Check back for updates.</em></p>
+            <a href="/2026/schedule/">View schedule details &rarr;</a>
+        </div>
+        {{ end }}
+    </section>
+    {{ end }}
+
+    {{ with .Params.categories }}
+    <section class="content-section">
+        <h2>Workshop Topics</h2>
+        <div class="categories-grid">
+            {{ range . }}
+            <div class="category-card">
+                <div class="category-icon" aria-label="{{ .icon }} {{ .title }}">{{ .icon }}</div>
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+    <section class="content-section">
+        <h2>Key Dates</h2>
+        {{ with .Params.deadlines }}
+        <div class="deadlines-grid">
+            {{ range . }}
+            <div class="deadline-card">
+                <div class="deadline-type">{{ .type }}</div>
+                <div class="deadline-title">{{ .title }}</div>
+                <div class="deadline-date">{{ .date }}</div>
+                <div class="deadline-status {{ .status }}">
+                    {{ if eq .status "closed" }}Closed{{ else if eq .status "open" }}Open{{ else }}Coming Soon{{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+        <p>{{ .Params.submissionMessage }} <a href="/2026/call-for-papers/">Submission guidelines &rarr;</a></p>
+    </section>
+
+    {{ with .Params.registration }}
+    <section class="content-section">
+        <h2>Registration</h2>
+        <div class="card">
+            {{ .body | markdownify }}
+            <a href="{{ .url }}" class="cta-button-secondary" target="_blank" rel="noopener noreferrer">{{ .linkText }}</a>
+        </div>
+    </section>
+    {{ end }}
+
+{{ else if eq .RelPermalink "/2026/schedule/" }}
+    <article class="content-section schedule-page">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+        {{- $presentations := where site.RegularPages ".Params.authors" "ne" nil -}}
+        <div class="accepted-presentations">
+            {{- range ($presentations.ByWeight) -}}
+                {{ partial "schedule-card.html" (dict "page" . "anchor" .Title) }}
+            {{- end -}}
+        </div>
+    </article>
+
+{{ else if and (eq .Kind "section") (or (eq .RelPermalink "/2026/presentations/") (eq .RelPermalink "/presentations/")) }}
+    <section class="content-section">
+        <div class="presentations-header">
+            <h1>{{ .Title }}</h1>
+            <a href="/2026/schedule/">&larr; Back to Schedule</a>
+        </div>
+        <div class="presentations-list-grid">
+            {{ range .Pages }}
+            <article class="presentation-card">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p class="presentation-card-authors">
+                    {{- $authors := .Params.authors -}}
+                    {{- range $i, $a := $authors -}}
+                    {{ if gt $i 0 }}, {{ end }}{{ $a.name }}
+                    {{- end }}
+                </p>
+                <p>{{ .Params.abstract | plainify | truncate 200 }}</p>
+                <p><a href="{{ .RelPermalink }}">Read more &rarr;</a></p>
+            </article>
+            {{ end }}
+        </div>
+    </section>
+
+{{ else }}
+    <article class="content-section">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+    </article>
+{{ end }}
+{{ end }}

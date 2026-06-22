@@ -74,6 +74,3 @@ Full transport and local information: [SIGGRAPH 2026 Travel & Accommodations](ht
 Visa and travel documentation guidance is on the [SIGGRAPH 2026 International Visitors page](https://s2026.siggraph.org/international-visitors/).
 
 ---
-
-## Accepted Presentations
-

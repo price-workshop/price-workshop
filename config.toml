@@ -13,6 +13,7 @@ pygmentsUseClasses = true
 [outputs]
   home = ["HTML"]
   page = ["HTML"]
+  section = ["HTML"]
 
 # Markdown rendering (allow HTML in content for component layout)
 [markup]
@@ -20,30 +21,61 @@ pygmentsUseClasses = true
     [markup.goldmark.renderer]
       unsafe = true
 
-# Menu configuration
-[menu]
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 20
-  [[menu.main]]
-    name = "Call for Papers"
-    url = "/call-for-papers/"
-    weight = 30
-  [[menu.main]]
-    name = "Schedule"
-    url = "/schedule/"
-    weight = 40
-  [[menu.main]]
-    name = "Organizers"
-    url = "/organizers/"
-    weight = 50
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 60
-
 # Site parameters
 [params]
   description = "SIGGRAPH Workshop on Performance and Rendering in Competitive Esports (PRICE)"
   author = "PRICE Workshop Organizers"
+
+# Navigation
+[menu]
+  [[menu.main]]
+    name = "Contact"
+    pageRef = "/contact/"
+    weight = 25
+  [[menu.main]]
+    name = "Year"
+    identifier = "year-dropdown"
+    weight = 30
+  [[menu.main]]
+    name = "2023"
+    identifier = "year-2023"
+    url = "/2023/"
+    weight = 31
+  [[menu.main]]
+    name = "2025"
+    identifier = "year-2025"
+    url = "/2025/"
+    weight = 32
+  [[menu.main]]
+    name = "2026"
+    identifier = "year-2026"
+    url = "/2026/"
+    weight = 33
+
+  [[menu.main_2026]]
+    name = "About"
+    pageRef = "/2026/about/"
+    weight = 5
+  [[menu.main_2026]]
+    name = "Call for Papers"
+    pageRef = "/2026/call-for-papers/"
+    weight = 10
+  [[menu.main_2026]]
+    name = "Schedule"
+    pageRef = "/2026/schedule/"
+    weight = 15
+  [[menu.main_2026]]
+    name = "Organizers"
+    pageRef = "/2026/organizers/"
+    weight = 20
+
+  [[menu.main_2025]]
+
+  [[menu.main_2023]]
+    name = "Schedule"
+    pageRef = "/2023/schedule/"
+    weight = 10
+  [[menu.main_2023]]
+    name = "Speakers"
+    pageRef = "/2023/speakers/"
+    weight = 20

@@ -2,7 +2,7 @@
     <nav>
         <div class="container">
             <div class="logo">
-                <a href="/">
+                <a href="/2026/">
                     <span class="logo-name">PRICE</span>
                     <span class="logo-divider" aria-hidden="true"></span>
                     <span class="logo-tagline">Esports at SIGGRAPH</span>
@@ -14,39 +14,84 @@
                 <span class="hamburger-bar"></span>
             </button>
             <ul class="nav-menu">
-                {{ range .Site.Menus.main }}
+                {{ $menuName := "" }}
+                {{ if hasPrefix .Section "20" }}
+                    {{ $menuName = printf "main_%s" (substr .Section 0 4) }}
+                {{ end }}
+                {{ if not $menuName }}{{ $menuName = "main" }}{{ end }}
+                {{ $useGlobal := true }}
+                {{ if eq $menuName "main" }}{{ $useGlobal = false }}{{ end }}
+                {{ $merged := slice }}
+                {{ $seen := dict }}
+                {{ range index .Site.Menus $menuName }}
+                    {{ if .Name }}
+                        {{ $merged = $merged | append . }}
+                        {{ $seen = merge $seen (dict (printf "%s|%s" .Name .URL) true) }}
+                    {{ end }}
+                {{ end }}
+                {{ if and $useGlobal (index .Site.Menus "main") }}
+                {{ range index .Site.Menus "main" }}
+                    {{ $key := printf "%s|%s" .Name .URL }}
+                    {{ if not (index $seen $key) }}
+                        {{ $merged = $merged | append . }}
+                        {{ $seen = merge $seen (dict $key true) }}
+                    {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ $yearItems := slice }}
+                {{ range $merged }}
+                    {{ if and (hasPrefix .Identifier "year-") (ne .Identifier "year-dropdown") }}
+                        {{ $yearItems = $yearItems | append . }}
+                    {{ end }}
+                {{ end }}
+                {{ range $merged }}
+                {{ $isYear := hasPrefix .Identifier "year-" }}
+                {{ if eq .Identifier "year-dropdown" }}
+                <li>
+                    <details class="year-dropdown">
+                        <summary>{{ .Name }}</summary>
+                        <ul>
+                        {{ range $yearItems }}
+                            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        {{ end }}
+                        </ul>
+                    </details>
+                </li>
+                {{ else if not $isYear }}
                 <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
                 {{ end }}
             </ul>
         </div>
     </nav>
-</header>
-<script>
-(function () {
-    var toggle = document.querySelector('.nav-toggle');
-    var menu = document.querySelector('.nav-menu');
-    if (!toggle || !menu) return;
+    <script>
+    (function () {
+        var toggle = document.querySelector('.nav-toggle');
+        var menu = document.querySelector('.nav-menu');
+        if (!toggle || !menu) return;
 
-    toggle.addEventListener('click', function () {
-        var isOpen = menu.classList.toggle('nav-open');
-        toggle.classList.toggle('nav-toggle--open');
-        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-
-    menu.querySelectorAll('a').forEach(function (a) {
-        a.addEventListener('click', function () {
-            menu.classList.remove('nav-open');
-            toggle.classList.remove('nav-toggle--open');
-            toggle.setAttribute('aria-expanded', 'false');
+        toggle.addEventListener('click', function () {
+            menu.classList.toggle('nav-open');
+            toggle.classList.toggle('nav-toggle--open');
+            var isOpen = menu.classList.contains('nav-open');
+            toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
-    });
 
-    document.addEventListener('click', function (e) {
-        if (!e.target.closest('nav')) {
-            menu.classList.remove('nav-open');
-            toggle.classList.remove('nav-toggle--open');
-            toggle.setAttribute('aria-expanded', 'false');
-        }
-    });
-}());
-</script>
+        menu.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', function () {
+                menu.classList.remove('nav-open');
+                toggle.classList.remove('nav-toggle--open');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('nav')) {
+                menu.classList.remove('nav-open');
+                toggle.classList.remove('nav-toggle--open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }());
+    </script>
+</header>

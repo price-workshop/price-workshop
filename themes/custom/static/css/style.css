@@ -124,6 +124,7 @@ nav .container {
   display: flex;
   list-style: none;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-menu a {
@@ -145,6 +146,67 @@ nav .container {
 
 .nav-menu a:hover::after {
   width: 100%;
+}
+
+/* Year Dropdown */
+.year-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.year-dropdown summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.year-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.year-dropdown summary::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.3rem;
+  vertical-align: 0.2em;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  transition: transform 0.2s ease;
+}
+
+.year-dropdown[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.year-dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--bg-alt);
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  list-style: none;
+  padding: 0.25rem 0;
+  min-width: 120px;
+  box-shadow: 0 4px 16px rgba(85, 104, 110, 0.15);
+  z-index: 10;
+  margin: 0.25rem 0 0;
+}
+
+.year-dropdown ul li a {
+  display: block;
+  padding: 0.4rem 1rem;
+  font-size: 0.95rem;
+}
+
+.year-dropdown ul li a::after {
+  display: none;
+}
+
+.year-dropdown ul li a:hover {
+  color: var(--accent);
 }
 
 /* Container */
@@ -912,6 +974,15 @@ footer p {
 
   .nav-menu a::after {
     display: none;
+  }
+
+  .year-dropdown ul {
+    position: static;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    padding: 0 0 0 1rem;
+    margin: 0;
   }
 }
 
