@@ -53,7 +53,7 @@ deadlines:
   - type: "📅 Advance Registration"
     title: "SIGGRAPH Advance Rate Deadline"
     date: "June 12, 2026"
-    status: "upcoming"
+    status: "closed"
 
   - type: "🗓️ Workshop Day"
     title: "PRICE Workshop"

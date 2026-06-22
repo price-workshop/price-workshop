@@ -68,13 +68,13 @@ This is a [SIGGRAPH 2026 Technical Workshop](https://s2026.siggraph.org/program/
 <div class="deadline-type">🎯 Call Opens</div>
 <div class="deadline-title">Submissions Open</div>
 <div class="deadline-date">March 10, 2026</div>
-<div class="deadline-status closed">Closed</div>
+<div class="deadline-status closed">Complete</div>
 </div>
 <div class="deadline-card">
 <div class="deadline-type">📤 Submission Deadline</div>
 <div class="deadline-title">Workshop Sketches Due</div>
 <div class="deadline-date"><s>April 14</s> April 17, 2026</div>
-<div class="deadline-status closed">Closed</div>
+<div class="deadline-status closed">Complete</div>
 </div>
 <div class="deadline-card">
 <div class="deadline-type">✅ Decision Notification</div>
@@ -86,7 +86,7 @@ This is a [SIGGRAPH 2026 Technical Workshop](https://s2026.siggraph.org/program/
 <div class="deadline-type">🔧 TAPS Final Upload</div>
 <div class="deadline-title">Camera-Ready Deadline</div>
 <div class="deadline-date">May 19, 2026</div>
-<div class="deadline-status closed">Closed</div>
+<div class="deadline-status closed">Complete</div>
 </div>
 </div>
 
