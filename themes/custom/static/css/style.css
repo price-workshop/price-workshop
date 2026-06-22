@@ -654,6 +654,154 @@ footer p {
   transform: translateY(-10px) rotate(-45deg);
 }
 
+/* Presentations Section */
+.presentations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.presentations-header h1 {
+  margin-bottom: 0;
+}
+
+.presentations-header a {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.presentations-header a:hover {
+  color: var(--accent);
+}
+
+.presentations-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Presentation Pages */
+.presentation-page {
+  max-width: 800px;
+}
+
+.presentation-authors {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.presentation-authors span[title] {
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+
+.presentation-authors span[title]:hover {
+  color: var(--accent);
+}
+
+.presentation-presenter {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+
+.presentation-invited {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.presentation-abstract {
+  background-color: var(--bg-alt);
+  border-left: 4px solid var(--primary);
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.presentation-abstract p:first-child {
+  margin-top: 0;
+}
+
+.presentation-nav {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.presentation-nav a {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.presentation-nav a:hover {
+  color: var(--accent);
+}
+
+.schedule-page .accepted-presentations {
+  margin-top: 2rem;
+}
+
+.accepted-presentation-card {
+  background-color: var(--bg-alt);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.accepted-presentation-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 16px rgba(85, 104, 110, 0.2);
+}
+
+.accepted-presentation-card > h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.paper-authors {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.paper-authors span[title] {
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+
+.paper-authors span[title]:hover {
+  color: var(--accent);
+}
+
+.paper-track {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.paper-presenter {
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.paper-abstract {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .categories-grid {

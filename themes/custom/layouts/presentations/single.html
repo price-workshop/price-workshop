@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article class="content-section presentation-page">
+    <h1>{{ .Title }}</h1>
+
+    <p class="presentation-authors">
+        {{ $authors := .Params.authors }}
+        {{- range $i, $a := $authors }}{{- if gt $i 0 }}, {{ end -}}{{ $a.name }}{{- end }}
+    </p>
+
+    <div class="presentation-abstract">
+        {{ if eq .Params.track "Invited" }}<p class="presentation-invited">[Invited]</p>{{ end }}
+        {{ with .Params.presenter }}<p class="presentation-presenter">Presenter: {{ . }}</p>{{ end }}
+        <p>{{ .Params.abstract | markdownify }}</p>
+    </div>
+
+    <nav class="presentation-nav">
+        {{ $schedule := site.GetPage "schedule" }}
+        <a href="{{ with $schedule }}{{ .RelPermalink }}{{ end }}">&larr; Back to Schedule</a>
+    </nav>
+</article>
+{{ end }}

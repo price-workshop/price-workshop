@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="content-section">
+    <div class="presentations-header">
+        <h1>{{ .Title }}</h1>
+        {{ $schedule := site.GetPage "schedule" }}
+        <a href="{{ with $schedule }}{{ .RelPermalink }}{{ end }}">&larr; Back to Schedule</a>
+    </div>
+    <div class="presentations-list-grid">
+        {{ range .Pages }}
+        <article class="presentation-card">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p class="presentation-card-authors">
+                {{- $authors := .Params.authors -}}
+                {{- range $i, $a := $authors -}}
+                {{ if gt $i 0 }}, {{ end }}{{ $a.name }}
+                {{- end }}
+            </p>
+            <p>{{ .Params.abstract | plainify | truncate 200 }}</p>
+            <p><a href="{{ .RelPermalink }}">Read more &rarr;</a></p>
+        </article>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

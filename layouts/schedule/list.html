@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="content-section schedule-page">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{- $presentations := where site.RegularPages "Section" "presentations" -}}
+    <div class="accepted-presentations">
+        {{- range ($presentations.ByWeight) -}}
+            {{ partial "schedule-card.html" (dict "page" . "anchor" .Title) }}
+        {{- end -}}
+    </div>
+</article>
+{{ end }}

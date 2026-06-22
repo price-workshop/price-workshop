@@ -1,0 +1,21 @@
+<article class="accepted-presentation-card">
+    <h3 id="{{ .anchor | urlize }}"><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></h3>
+    <p class="paper-authors">
+        {{- $authors := .page.Params.authors -}}
+        {{- range $i, $a := $authors -}}
+        {{ if gt $i 0 }}, {{ end -}}
+        {{- if $a.affiliation }}
+        <span title="{{ $a.affiliation }}">{{ $a.name }}</span>
+        {{- else }}
+        {{- $a.name }}
+        {{- end -}}
+        {{- end }}
+    </p>
+    {{ if eq .page.Params.track "Invited" }}
+    <p class="paper-track">[Invited]</p>
+    {{ end }}
+    {{ with .page.Params.presenter }}
+    <p class="paper-presenter">Presenter: {{ . }}</p>
+    {{ end }}
+    <p class="paper-abstract">{{ .page.Params.abstract | markdownify }}</p>
+</article>
