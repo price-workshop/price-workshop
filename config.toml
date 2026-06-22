@@ -37,9 +37,9 @@ pygmentsUseClasses = true
     identifier = "year-dropdown"
     weight = 30
   [[menu.main]]
-    name = "2023"
-    identifier = "year-2023"
-    url = "/2023/"
+    name = "2026"
+    identifier = "year-2026"
+    url = "/2026/"
     weight = 31
   [[menu.main]]
     name = "2025"
@@ -47,9 +47,9 @@ pygmentsUseClasses = true
     url = "/2025/"
     weight = 32
   [[menu.main]]
-    name = "2026"
-    identifier = "year-2026"
-    url = "/2026/"
+    name = "2023"
+    identifier = "year-2023"
+    url = "/2023/"
     weight = 33
 
   [[menu.main_2026]]
@@ -70,6 +70,9 @@ pygmentsUseClasses = true
     weight = 20
 
   [[menu.main_2025]]
+    name = "About"
+    pageRef = "/2025/"
+    weight = 5
 
   [[menu.main_2023]]
     name = "Schedule"

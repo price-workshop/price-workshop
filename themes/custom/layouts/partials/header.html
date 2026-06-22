@@ -1,8 +1,17 @@
+{{ $logoURL := "/2026/" }}
+{{ $latest := 0 }}
+{{ range where .Site.Pages "Kind" "section" }}
+  {{ if hasPrefix .Section "20" }}
+    {{ $y := int (substr .Section 0 4) }}
+    {{ if gt $y $latest }}{{ $latest = $y }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ if gt $latest 0 }}{{ $logoURL = printf "/%d/" $latest }}{{ end }}
 <header>
     <nav>
         <div class="container">
             <div class="logo">
-                <a href="/2026/">
+                <a href="{{ $logoURL }}">
                     <span class="logo-name">PRICE</span>
                     <span class="logo-divider" aria-hidden="true"></span>
                     <span class="logo-tagline">Esports at SIGGRAPH</span>

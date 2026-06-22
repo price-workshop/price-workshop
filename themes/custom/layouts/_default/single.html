@@ -1,5 +1,8 @@
 {{ define "main" }}
-{{ if and (eq .Kind "page") (or (hasPrefix .RelPermalink "/2026/presentations/") (hasPrefix .RelPermalink "/presentations/")) }}
+{{ $year := .Section }}
+{{ $schedulePath := printf "/%s/schedule/" $year }}
+
+{{ if and (eq .Kind "page") (hasPrefix .RelPermalink (printf "/%s/presentations/" $year)) }}
 <article class="content-section presentation-page">
     <h1>{{ .Title }}</h1>
 
@@ -15,7 +18,7 @@
     </div>
 
     <nav class="presentation-nav">
-        <a href="/2026/schedule/">&larr; Back to Schedule</a>
+        <a href="{{ $schedulePath }}">&larr; Back to Schedule</a>
     </nav>
 </article>
 {{ else }}
