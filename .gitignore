@@ -19,3 +19,12 @@ node_modules/
 
 # Claude local settings
 .claude/*.local.json
+
+# Temporary uv stuff
+2021.pdf
+2025.pdf
+.python-version
+main.py
+pyproject.toml
+uv.lock
+
