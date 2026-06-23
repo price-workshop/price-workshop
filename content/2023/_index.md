@@ -2,6 +2,16 @@
 title: "Less is More: Rendering for Esports"
 heroSubtitle: "SIGGRAPH 2023 Frontiers Workshop · August 7, 2023"
 
+members:
+  - name: "Benjamin Watson"
+    title: "NC State University, Visual Experience Lab"
+  - name: "Josef Spjut"
+  - name: "Byungjoo Lee"
+    title: "Yonsei University"
+  - name: "Joohwan Kim"
+  - name: "Peter Shirley"
+    title: "Activision"
+
 submissionMessage: "This SIGGRAPH Frontiers Workshop examined if the computer graphics community should pivot toward performance-driven rendering for competitive gaming."
 
 cta:
@@ -33,14 +43,6 @@ This workshop examined whether SIGGRAPH should pivot since "esports players turn
 The format emphasized participant discussion, fomented by short provocative talks. The workshop featured three featured academic talks and summarized feedback from participating researchers and professionals, outlining upcoming conference initiatives.
 
 As noted by the authors: "Computer graphics research has long prioritized image quality over frame rate." Building on that observation, the publication addresses the modern shift toward performance optimization, captures workshop dialogues, and proposes new academic inquiries to guide future development in competitive gaming graphics.
-
-## Organizers
-
-- **Benjamin Watson** — NC State University, Visual Experience Lab
-- **Josef Spjut**
-- **Byungjoo Lee** — Yonsei University
-- **Joohwan Kim**
-- **Peter Shirley** — Activision
 
 ## Publication
 

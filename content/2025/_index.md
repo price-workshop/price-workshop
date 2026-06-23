@@ -2,6 +2,12 @@
 title: "Esports Rendering: Industry and Player Perspectives"
 heroSubtitle: "SIGGRAPH 2025 Frontiers Workshop · August 10, 2025"
 
+members:
+  - name: "Josef Spjut"
+    title: "Research Scientist, NVIDIA"
+  - name: "Benjamin Watson"
+    title: "Associate Professor, North Carolina State University"
+
 submissionMessage: "This SIGGRAPH Frontiers Workshop brought together industry practitioners and competitive players to discuss rendering needs in esports."
 
 cta:
@@ -30,13 +36,6 @@ This SIGGRAPH Frontiers Workshop brought together **three esports developers** a
 ## Format
 
 The workshop featured a three-part format: a traditional panel session with questions from a moderator and the panelists; an audience discussion session with groups led by organizers and panel members producing questions and raising issues; and a closing panel session addressing the questions raised by the audience.
-
-## Organizers
-
-- **Josef Spjut** — NVIDIA
-- **Benjamin Watson** — NC State University
-
-[View the full 2025 organizers and their biographies →](/2025/organizers/)
 
 ---
 

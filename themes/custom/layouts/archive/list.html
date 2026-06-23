@@ -20,6 +20,14 @@
                 <span class="archive-year">{{ substr .Section 0 4 }}</span>
                 <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
             </div>
+            {{- with .Params.members }}
+            <div class="archive-organizers">
+                {{- range $i, $member := . -}}
+                    {{- if $i }}, {{ end -}}
+                    <span class="archive-organizer">{{ $member.name }}</span>
+                {{- end }}
+            </div>
+            {{- end }}
             {{ with .Params.heroSubtitle }}
             <p class="archive-date">{{ . }}</p>{{ end }}
             {{ with .Content }}

@@ -669,6 +669,22 @@ tr:hover {
   border-radius: 20px;
 }
 
+.archive-organizers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.archive-organizer {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background-color: var(--bg);
+  border: 1px solid var(--border-color);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+}
+
 .archive-links {
   display: flex;
   flex-wrap: wrap;

@@ -2,6 +2,22 @@
 title: "Esports as a Driving Problem in Computer Graphics"
 heroSubtitle: "SIGGRAPH 2021 Panel · August 9–13, 2021"
 
+members:
+  - name: "Benjamin A. Watson"
+    title:
+      - "Associate Professor, NC State University"
+      - "Moderator"
+  - name: "Josef Spjut"
+    title: "Senior Research Scientist, NVIDIA"
+  - name: "Caitlin McGee"
+    title:
+      - "Co-Owner and Performance and Esports Medicine Director, 1HP"
+      - "Director of Performance, XO Academy (Red Bull)"
+  - name: "Amine Issa"
+    title: "Founder, Mobalytics"
+  - name: "Wayne Mackey"
+    title: "Founder, Statespace"
+
 submissionMessage: "This SIGGRAPH panel established esports as a compelling application domain for computer graphics research."
 
 cta:
@@ -25,16 +41,6 @@ categories:
 This SIGGRAPH panel presented esports as a driving problem in computer graphics — challenging the field's long-standing focus on photorealism and opening new directions in performance-driven rendering, human perception, and interactive systems.
 
 The panel gathered **esports experts in engineering, medicine, analytics, and cognitive science** to argue for the field's importance in computer graphics. Like film, esports is an important problem for computer graphics — one that demands novel approaches to rendering, interaction, and display.
-
-## Organizers
-
-- **Benjamin A. Watson** — NC State University
-- **Josef Spjut** — NVIDIA
-- **Caitlin McGee** — 1HP
-- **Amine Issa** — Mobalytics
-- **Wayne Mackey** — Statespace
-
-[View the full 2021 organizers and their biographies →](/2021/organizers/)
 
 Benjamin Watson and Josef Spjut would go on to organize every subsequent edition of the workshop series.
 

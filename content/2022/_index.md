@@ -2,6 +2,16 @@
 title: "The Esports Frontier: Rendering, Interaction and Display"
 heroSubtitle: "SIGGRAPH 2022 Frontiers Workshop · August 10, 2022"
 
+members:
+  - name: "Benjamin Watson"
+    title: "NC State University, Visual Experience Lab"
+  - name: "Josef Spjut"
+    title: "NVIDIA"
+  - name: "Byungjoo Lee"
+    title: "Yonsei University"
+  - name: "Greg Ward"
+    title: "Dolby Laboratories"
+
 submissionMessage: "This SIGGRAPH Frontiers Workshop explored the frontiers of rendering, interaction, and display technology in competitive gaming."
 
 cta:
@@ -29,15 +39,6 @@ The workshop featured presentation slides covering a general overview, rendering
 ## Key Questions
 
 > How can the SIGGRAPH community better support the expert performance esports athletes seek?
-
-## Organizers
-
-- **Benjamin Watson** — NC State University, Visual Experience Lab
-- **Josef Spjut**
-- **Byungjoo Lee** — Yonsei University
-- **Greg Ward** — Dolby Laboratories
-
-Additional contributions from **Scott Daly** — Dolby Laboratories
 
 ## Topics
 

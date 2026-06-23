@@ -1,6 +1,22 @@
 ---
 title: "PRICE Workshop"
 heroSubtitle: "Part of SIGGRAPH 2026 · July 19–23, Los Angeles · Workshop Day: July 23 (Afternoon)"
+
+members:
+  - name: "Josef Spjut"
+    title:
+      - "Senior Research Scientist at NVIDIA"
+      - "Adjunct Professor at Duke University"
+  - name: "Benjamin Watson"
+    title: "Associate Professor at NC State"
+  - name: "Dr. Madison Klarkowski"
+    title: "Lecturer at Queensland University of Technology (Brisbane, Australia)"
+  - name: "Rulon Raymond"
+    title: "Sr. Director of Technology at Infinity Ward"
+  - name: "Mark Claypool"
+    title: "Professor in Computer Science and Interactive Media & Game Development at Worcester Polytechnic Institute (WPI)"
+  - name: "Paul Ritaldato"
+    title: "Rendering Engineer at Epic Games"
 submissionMessage: "The submission period for technical workshop sketch submissions to the PRICE Workshop at SIGGRAPH 2026 has now closed."
 
 cta:
