@@ -31,7 +31,7 @@ pygmentsUseClasses = true
   [[menu.main]]
     name = "Contact"
     pageRef = "/contact/"
-    weight = 25
+    weight = 24
   [[menu.main]]
     name = "Year"
     identifier = "year-dropdown"
@@ -51,6 +51,21 @@ pygmentsUseClasses = true
     identifier = "year-2023"
     url = "/2023/"
     weight = 33
+  [[menu.main]]
+    name = "2022"
+    identifier = "year-2022"
+    url = "/2022/"
+    weight = 34
+  [[menu.main]]
+    name = "2021"
+    identifier = "year-2021"
+    url = "/2021/"
+    weight = 35
+  [[menu.main]]
+    name = "Archive"
+    identifier = "year-archive"
+    url = "/archive/"
+    weight = 36
 
   [[menu.main_2026]]
     name = "About"
@@ -75,10 +90,6 @@ pygmentsUseClasses = true
     weight = 5
 
   [[menu.main_2023]]
-    name = "Schedule"
-    pageRef = "/2023/schedule/"
-    weight = 10
-  [[menu.main_2023]]
-    name = "Speakers"
-    pageRef = "/2023/speakers/"
-    weight = 20
+    name = "About"
+    pageRef = "/2023/"
+    weight = 5

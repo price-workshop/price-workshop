@@ -582,6 +582,125 @@ tr:hover {
   color: var(--text-muted);
 }
 
+/* Archive / Past Events */
+.archive-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.archive-card {
+  background-color: var(--bg-alt);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.archive-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 16px rgba(85, 104, 110, 0.2);
+  transform: translateY(-3px);
+}
+
+.archive-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.archive-card-header h3 {
+  color: var(--text);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.archive-card-header h3 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.archive-card-header h3 a:hover {
+  color: var(--accent);
+}
+
+.archive-year {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: rgba(42, 66, 73, 0.1);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.archive-date {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.archive-body {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.archive-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.archive-topic {
+  font-size: 0.8rem;
+  color: var(--primary);
+  background-color: var(--bg);
+  border: 1px solid var(--border-color);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+}
+
+.archive-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.archive-links-main {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.archive-links a {
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.archive-links a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .archive-card-header {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
 /* CTA Button Variations */
 .cta-buttons-group {
   display: flex;

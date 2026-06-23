@@ -1,0 +1,47 @@
+{{ define "main" }}
+<article class="content-section">
+    <h1>{{ .Title }}</h1>
+    <p>The PRICE Workshop series has been held annually at SIGGRAPH since 2021, exploring the technical challenges of competitive esports from multiple angles.</p>
+
+    <div class="archive-grid">
+        {{ $currentYear := 2026 }}
+        {{ $archiveYears := slice }}
+        {{ range .Site.Sections }}
+            {{ if hasPrefix .Section "20" }}
+                {{ $y := int (substr .Section 0 4) }}
+                {{ if lt $y $currentYear }}
+                    {{ $archiveYears = $archiveYears | append . }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        {{ range sort $archiveYears ".Section" "desc" }}
+        <div class="archive-card">
+            <div class="archive-card-header">
+                <span class="archive-year">{{ substr .Section 0 4 }}</span>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            </div>
+            {{ with .Params.heroSubtitle }}
+            <p class="archive-date">{{ . }}</p>{{ end }}
+            {{ with .Content }}
+            <div class="archive-body">{{ . | truncate 300 }}</div>
+            {{ end }}
+            {{ with .Params.categories }}
+            <div class="archive-topics">
+                {{ range . }}
+                <span class="archive-topic">{{ .title }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+            <div class="archive-links">
+                {{ range .Params.cta }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
+                {{ end }}
+            </div>
+            <div class="archive-links archive-links-main">
+                <a href="{{ .RelPermalink }}">View details &rarr;</a>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</article>
+{{ end }}
