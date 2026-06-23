@@ -27,10 +27,19 @@ categories:
 
 This SIGGRAPH Frontiers Workshop brought together **three esports developers** and **three competitive esports athletes** for an expert panel on esports rendering needs. The workshop explored how industry practitioners design rendering pipelines and how competitive players perceive and interact with visual information during high-stakes gameplay.
 
+## Format
+
 The workshop featured a three-part format: a traditional panel session with questions from a moderator and the panelists; an audience discussion session with groups led by organizers and panel members producing questions and raising issues; and a closing panel session addressing the questions raised by the audience.
 
-**As a spiritual predecessor to the PRICE Workshop at SIGGRAPH 2026**, this event continued the series' exploration of rendering, interaction, and display technology in esports.
+## Organizers
 
-**[View the NVIDIA Research page →](https://research.nvidia.com/publication/2025-08_esports-rendering-industry-and-player-perspectives)**
+- **Josef Spjut** — NVIDIA
+- **Benjamin Watson** — NC State University
+
+[View the full 2025 organizers and their biographies →](/2025/organizers/)
+
+---
+
+**[View the NVIDIA Research Page →](https://research.nvidia.com/publication/2025-08_esports-rendering-industry-and-player-perspectives)**
 
 **[View the ACM proceedings →](https://dl.acm.org/doi/10.1145/3736539.3737498)**
