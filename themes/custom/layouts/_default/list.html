@@ -5,6 +5,7 @@
 {{ $cfpPath := printf "%scall-for-papers/" $sectionPath }}
 
 {{ $isYearRoot := and (eq .Kind "section") (eq .RelPermalink $sectionPath) }}
+{{ $isOrganizers := and (eq .Kind "section") (hasSuffix .RelPermalink "/organizers/") }}
 {{ $isPresentations := and (eq .Kind "section") (hasSuffix .RelPermalink "/presentations/") }}
 
 {{ if $isYearRoot }}
@@ -86,6 +87,34 @@
         </div>
     </section>
     {{ end }}
+
+{{ else if $isOrganizers }}
+    <article class="content-section">
+        <h1>{{ .Title }}</h1>
+        {{- $members := .Params.members -}}
+        {{- if $members -}}
+        <div class="organizers-grid">
+            {{- range $members -}}
+            <div class="organizer-card">
+                <h3>{{ .name }}</h3>
+                {{ with .title }}<p class="organizer-title">{{ if reflect.IsSlice . }}{{- range $i, $line := . -}}{{ if gt $i 0 }}<br />{{ end }}{{ $line }}{{ end }}{{ else }}{{ . }}{{ end }}</p>{{ end }}
+                {{ with .links }}
+                <div class="organizer-links">
+                    {{ range . }}
+                    {{- $icon := "" -}}
+                    {{ if eq .title "Website" }}{{ $icon = "fa-solid fa-house" }}{{ end }}
+                    {{ if eq .title "Google Scholar" }}{{ $icon = "fa-brands fa-google-scholar" }}{{ end }}
+                    {{ if eq .title "LinkedIn" }}{{ $icon = "fa-brands fa-square-linkedin" }}{{ end }}
+                    {{ if $icon }}<a href="{{ .url }}" title="{{ .title }}"><i class="{{ $icon }}"></i></a>{{ end }}
+                    {{ end }}
+                </div>
+                {{ end }}
+                {{ with .bio }}<p>{{ . }}</p>{{ end }}
+            </div>
+            {{- end -}}
+        </div>
+        {{- end -}}
+    </article>
 
 {{ else if eq .RelPermalink $schedulePath }}
     <article class="content-section schedule-page">
