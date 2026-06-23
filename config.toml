@@ -93,3 +93,16 @@ pygmentsUseClasses = true
     name = "About"
     pageRef = "/2023/"
     weight = 5
+
+  [[menu.main_2021]]
+    name = "About"
+    pageRef = "/2021/"
+    weight = 5
+  [[menu.main_2021]]
+    name = "Schedule"
+    pageRef = "/2021/schedule/"
+    weight = 10
+  [[menu.main_2021]]
+    name = "Organizers"
+    pageRef = "/2021/organizers/"
+    weight = 15

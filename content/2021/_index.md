@@ -1,6 +1,6 @@
 ---
 title: "Esports as a Driving Problem in Computer Graphics"
-heroSubtitle: "SIGGRAPH 2021 Panel · August 10, 2021"
+heroSubtitle: "SIGGRAPH 2021 Panel · August 9–13, 2021"
 
 submissionMessage: "This SIGGRAPH panel established esports as a compelling application domain for computer graphics research."
 
@@ -24,25 +24,19 @@ categories:
 
 This SIGGRAPH panel presented esports as a driving problem in computer graphics — challenging the field's long-standing focus on photorealism and opening new directions in performance-driven rendering, human perception, and interactive systems.
 
-The panel gathered **esports experts in engineering, medicine as well as cognitive and data science** to argue for the field's importance in computer graphics. Like film, esports is an important problem for computer graphics — one that demands novel approaches to rendering, interaction, and display.
-
-The discussion covered research challenges, potential benefits, and risks through moderated and audience questions.
+The panel gathered **esports experts in engineering, medicine, analytics, and cognitive science** to argue for the field's importance in computer graphics. Like film, esports is an important problem for computer graphics — one that demands novel approaches to rendering, interaction, and display.
 
 ## Organizers
 
 - **Benjamin A. Watson** — NC State University
-- **Josef Spjut** — NC State University
-- **C. McGee**
-- **A. Issa**
-- **W. Mackey**
+- **Josef Spjut** — NVIDIA
+- **Caitlin McGee** — 1HP
+- **Amine Issa** — Mobalytics
+- **Wayne Mackey** — Statespace
+
+[View the full 2021 organizers and their biographies →](/2021/organizers/)
 
 Benjamin Watson and Josef Spjut would go on to organize every subsequent edition of the workshop series.
-
-## Abstract
-
-> Esports is a major cultural and economic force with competitions requiring cutting-edge technology for optimal performance. This panel gathers experts from diverse disciplines — engineering, medicine, cognitive science, and data science — to discuss the research challenges, benefits, and risks posed by esports. Like film, esports is an important problem for computer graphics. The panel will make the case for why the SIGGRAPH community should care about this rapidly growing field.
-
----
 
 ## Related Events
 
