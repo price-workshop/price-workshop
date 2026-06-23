@@ -43,11 +43,4 @@ This SIGGRAPH panel presented esports as a driving problem in computer graphics 
 The panel gathered **esports experts in engineering, medicine, analytics, and cognitive science** to argue for the field's importance in computer graphics. Like film, esports is an important problem for computer graphics — one that demands novel approaches to rendering, interaction, and display.
 
 ## Related Events
-
-### [EHPhCI at CHI 2021](https://ehphci.org/)
-
-[Esports and High Performance HCI](https://ehphci.org/) was a related workshop held at ACM CHI 2021 (May 8, 2021, online). It was organized by Ben Watson, Josef Spjut, and others, exploring how insights from competitive gaming can advance human-computer interaction and broader performance optimization.
-
----
-
-**[View the ACM proceedings →](https://dl.acm.org/doi/10.1145/3450617.3464499)**
+[Esports and High Performance HCI](https://ehphci.org/) was a related workshop held at ACM CHI 2021 (May 8, 2021, online). It explored how insights from competitive gaming can advance human-computer interaction and broader performance optimization.
