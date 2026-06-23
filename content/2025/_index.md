@@ -31,14 +31,4 @@ categories:
 
 ---
 
-This SIGGRAPH Frontiers Workshop brought together **three esports developers** and **three competitive esports athletes** for an expert panel on esports rendering needs. The workshop explored how industry practitioners design rendering pipelines and how competitive players perceive and interact with visual information during high-stakes gameplay.
-
-## Format
-
-The workshop featured a three-part format: a traditional panel session with questions from a moderator and the panelists; an audience discussion session with groups led by organizers and panel members producing questions and raising issues; and a closing panel session addressing the questions raised by the audience.
-
----
-
-**[View the NVIDIA Research Page →](https://research.nvidia.com/publication/2025-08_esports-rendering-industry-and-player-perspectives)**
-
-**[View the ACM proceedings →](https://dl.acm.org/doi/10.1145/3736539.3737498)**
+This SIGGRAPH Frontiers Workshop brought together **esports developers** and **competitive esports athletes** for an expert panel on esports rendering needs. The workshop explored how industry practitioners design rendering pipelines and how competitive players perceive and interact with visual information during high-stakes gameplay.

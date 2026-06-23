@@ -42,8 +42,6 @@ This SIGGRAPH panel presented esports as a driving problem in computer graphics 
 
 The panel gathered **esports experts in engineering, medicine, analytics, and cognitive science** to argue for the field's importance in computer graphics. Like film, esports is an important problem for computer graphics — one that demands novel approaches to rendering, interaction, and display.
 
-Benjamin Watson and Josef Spjut would go on to organize every subsequent edition of the workshop series.
-
 ## Related Events
 
 ### [EHPhCI at CHI 2021](https://ehphci.org/)

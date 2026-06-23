@@ -36,10 +36,6 @@ Graphics research has historically prioritized photorealism, yet competitive pla
 
 The workshop featured presentation slides covering a general overview, rendering techniques, interaction design, and display innovation — with additional contribution from Scott Daly at Dolby Laboratories. Presentation materials are available covering general overview, rendering, interaction, and display.
 
-## Key Questions
-
-> How can the SIGGRAPH community better support the expert performance esports athletes seek?
-
 ## Topics
 
 - Computer graphics for competitive gaming
@@ -48,7 +44,3 @@ The workshop featured presentation slides covering a general overview, rendering
 - Rendering pipeline optimization
 - Interaction design for competitive play
 - Emerging display technologies
-
----
-
-**[View the NVIDIA Research Page →](https://research.nvidia.com/publication/2022-08_esports-frontier-rendering-interaction-and-display)**

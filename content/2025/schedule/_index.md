@@ -8,7 +8,7 @@ The history of computer graphics is one of continued improvements to imagery, fr
 
 This workshop began exploring the rendering needs of esports, from the perspective of both developers that make the games, and of competing athletes that play them. It engaged the audience and its expertise and interests in the discussion.
 
-Discussion was centered around an expert panel, composed of three esports developers, and three competing esports athletes. While the workshop fomented discussion with basic questions, it was largely open format, following the interests of the expert panel and the audience:
+Discussion was centered around an expert panel, composed of esports developers, and competing esports athletes. While the workshop fomented discussion with basic questions, it was largely open format, following the interests of the expert panel and the audience:
 
 - What are the goals for esports rendering, if not photorealism? Which existing graphics techniques do esports actually need or want?
 - How much does temporal accuracy matter in games (e.g. latency, frame rate, etc), and how should renderers trade off visual with temporal accuracy?
@@ -16,24 +16,28 @@ Discussion was centered around an expert panel, composed of three esports develo
 - How does rendering interact with fairness and gameplay?
 - Which innovations do esports developers and players want or need most?
 
+## Format
+
+The workshop featured a three-part format: a traditional panel session with questions from a moderator and the panelists; an audience discussion session with groups led by organizers and panel members producing questions and raising issues; and a closing panel session addressing the questions raised by the audience.
+
 ## Program
 
 Our goal with this workshop was to foment ideation and discussion, and to begin building an esports rendering research community at SIGGRAPH. With that in mind, about a third of the workshop's time was dedicated to audience discussion. Below was the program:
 
-| Time | Duration | Event |
+| Duration | Event |
 |:-----|:---------|:------|
-| 10 min | Welcome and introduction | |
-| 50 min | Moderated panel discussion | |
-| &nbsp;&nbsp;&nbsp;20 min | Panelists respond to moderator questions | |
-| &nbsp;&nbsp;&nbsp;15 min | Developer panelists respond to questions from athlete panelists | |
-| &nbsp;&nbsp;&nbsp;15 min | Athlete panelists respond to questions from developer panelists | |
-| 15 min | BREAK | |
-| 60 min | Organizers and panelists join audience discussion | |
-| &nbsp;&nbsp;&nbsp;5 min | Organizers describe goal: generate questions | |
-| &nbsp;&nbsp;&nbsp;55 min | Discussion | |
-| 15 min | BREAK (organizers compile questions) | |
-| 50 min | Panelists respond to audience questions | |
-| 10 min | Conclusions and next steps | |
+| 10 min | Welcome and introduction |
+| 50 min | Moderated panel discussion |
+| &nbsp;&nbsp;&nbsp;20 min | &nbsp;&nbsp;&nbsp;Panelists respond to moderator questions |
+| &nbsp;&nbsp;&nbsp;15 min | &nbsp;&nbsp;&nbsp;Developer panelists respond to questions from athlete panelists |
+| &nbsp;&nbsp;&nbsp;15 min | &nbsp;&nbsp;&nbsp;Athlete panelists respond to questions from developer panelists |
+| 15 min | BREAK |
+| 60 min | Organizers and panelists join audience discussion |
+| &nbsp;&nbsp;&nbsp;5 min | &nbsp;&nbsp;&nbsp;Organizers describe goal: generate questions |
+| &nbsp;&nbsp;&nbsp;55 min | &nbsp;&nbsp;&nbsp;Discussion |
+| 15 min | BREAK (organizers compile questions) |
+| 50 min | Panelists respond to audience questions |
+| 10 min | Conclusions and next steps |
 
 ## Differences from Previous Workshops
 
