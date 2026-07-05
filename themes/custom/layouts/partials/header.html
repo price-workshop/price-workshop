@@ -58,7 +58,11 @@
                 {{ if eq .Identifier "year-dropdown" }}
                 <li>
                     <details class="year-dropdown">
+                        {{ if hasPrefix $menuName "main_" }}
+                        <summary>{{ $menuName | replaceRE "^main_" "" }}</summary>
+                        {{ else }}
                         <summary>{{ .Name }}</summary>
+                        {{ end }}
                         <ul>
                         {{ range $yearItems }}
                             <li><a href="{{ .URL }}">{{ .Name }}</a></li>
