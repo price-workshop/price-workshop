@@ -1,6 +1,6 @@
 ---
 title: "PRICE Workshop"
-heroSubtitle: "<em>Performance, Rendering, and Interaction in Competitive Esports</em><br>Part of SIGGRAPH 2026 &middot; July 19&ndash;23, Los Angeles &middot; Workshop Day: July 23 (Afternoon)"
+heroSubtitle: "<em>Performance, Rendering, and Interaction in Competitive Esports</em><br>Part of SIGGRAPH 2026 &middot; July 19&ndash;23, Los Angeles &middot; Workshop Day: Thursday, July 23 (Afternoon)"
 
 members:
   - name: "Josef Spjut"
@@ -80,7 +80,7 @@ registration:
   url: "https://s2026.siggraph.org/register/"
   linkText: "Full registration details at SIGGRAPH 2026 →"
   body: |
-    Attending the PRICE Workshop requires **Full Conference** registration. If you plan to attend only on July 23, the **Full Conference One-Day** pass is the most cost-effective option — priced at $550 (member), $640 (non-member), or $215 (student member) with no early/advance pricing tiers.
+    Attending the PRICE Workshop requires **Full Conference** registration. If you plan to attend only on Thursday, July 23, the **Full Conference One-Day** pass is the most cost-effective option — priced at $550 (member), $640 (non-member), or $215 (student member) with no early/advance pricing tiers.
 
     Full Conference passes have tiered pricing: register by **May 8** for early rates or by **June 12** for advance rates (late/on-site rates apply after June 12). "Member" rates apply to ACM and/or SIGGRAPH members.
 ---
