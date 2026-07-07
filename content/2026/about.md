@@ -3,6 +3,10 @@ title: "About PRICE Workshop"
 date: 2026-03-19
 ---
 
+## About the PRICE Workshop
+
+The **Performance, Rendering, and Interaction in Competitive Esports (PRICE)** workshop is a venue for researchers and practitioners from graphics, systems, networking, and HCI to address the unique technical challenges of competitive esports.
+
 ## Motivation and Rationale
 
 Esports is no longer a niche hobby; it is a major cultural and economic force, with a global audience in the hundreds of millions and a market size exceeding $1 billion. The performance and experience of both players and spectators are critically dependent on the underlying technology. 

@@ -1,6 +1,6 @@
 ---
 title: "PRICE Workshop"
-heroSubtitle: "Part of SIGGRAPH 2026 · July 19–23, Los Angeles · Workshop Day: July 23 (Afternoon)"
+heroSubtitle: "<em>Performance, Rendering, and Interaction in Competitive Esports</em><br>Part of SIGGRAPH 2026 &middot; July 19&ndash;23, Los Angeles &middot; Workshop Day: July 23 (Afternoon)"
 
 members:
   - name: "Josef Spjut"
