@@ -23,8 +23,20 @@
 </article>
 {{ else }}
 <article class="content-section">
+    {{ with .Params.sidebarHTML }}
+    <div class="two-column-page">
+        <div class="two-column-content">
+            <h1>{{ $.Title }}</h1>
+            {{ $.Content }}
+        </div>
+        <aside class="two-column-sidebar">
+            {{ . | markdownify | safeHTML }}
+        </aside>
+    </div>
+    {{ else }}
     <h1>{{ .Title }}</h1>
     {{ .Content }}
+    {{ end }}
 </article>
 {{ end }}
 {{ end }}

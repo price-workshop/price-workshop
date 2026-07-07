@@ -1067,6 +1067,20 @@ footer p {
   .cta-section h2 {
     font-size: 1.5rem;
   }
+
+  .two-column-page {
+    flex-direction: column;
+  }
+
+  .two-column-sidebar {
+    width: 100%;
+    display: flex !important;
+  }
+
+  .two-column-sidebar iframe {
+    width: 100%;
+    height: 350px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1162,6 +1176,26 @@ footer p {
   .deadline-date {
     font-size: 1.1rem;
   }
+}
+
+/* Two-column page layout (title + sidebar adjacent) */
+.two-column-page {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.two-column-content {
+  flex: 1;
+}
+
+.two-column-sidebar {
+  flex-shrink: 0;
+  width: 350px;
+}
+
+.two-column-sidebar iframe {
+  border-radius: 8px;
 }
 
 /* Focus styles for keyboard navigation */
