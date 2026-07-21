@@ -46,8 +46,8 @@ categories:
 
 keynote:
   speaker: "Mark Claypool"
-  title: "To be announced"
-  abstract: "To be announced"
+  title: "A Better PRICE? Understanding and Improving Game Player Performance and Experience"
+  abstract: "Game system engineers have continually developed technologies that improve game performance, such as higher frame rates, better graphics, and faster response times. While 'more is better,' the actual benefits from system improvements to game players are not always straightforward. Drawing on results from various user studies, this talk looks at how the impact of game systems often depends on the type of game and, more importantly, the specific player actions in the game. Selected examples detail the interplay between latencies, frame rates, and graphics with player performance and quality of experience, with indications of treatments that may improve gameplay for players. Together, these findings ponit to where there may be more gains for system developers who can benefit game players, improving the performance and quality of experience in the games they love to play."
 
 deadlines:
   - type: "🎯 Call Opens"
