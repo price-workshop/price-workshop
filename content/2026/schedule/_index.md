@@ -17,7 +17,7 @@ date: 2026-03-20
 | Time | Duration | Event |
 |:-----|:---------|:------|
 | 2:00 PM | 5 min | Introduction |
-| 2:05 PM | 60 min | Keynote Presentation: Mark Claypool |
+| 2:05 PM | 60 min | Keynote Presentation: Mark Claypool -- A Better PRICE? Understanding and Improving Game Player Performance and Experience |
 | 3:05 PM | 10 min | Break |
 | 3:15 PM | 36 min | **Technical Sketch Session 1**<br>• [Towards Field Experiments in Esports Competition](#towards-field-experiments-in-esports-competition) (Madhusudan)<br>• [What Do Competitive Players Do With Their Settings? A Multi-Game Esports Configuration Survey](#what-do-competitive-players-do-with-their-settings-a-multi-game-esports-configuration-survey) (Rajpurohit)<br>• *[Invited]* [Tactical Telemetry: Using Replay Files for Gameplay Analytics](#tactical-telemetry-using-replay-files-for-gameplay-analytics) (Xenopoulos) |
 | 3:51 PM | 19 min | Panel Discussion |
@@ -32,6 +32,9 @@ Note that the order of sessions and talks is subject to change as needed.
 
 **Mark Claypool**
 Professor in Computer Science and Interactive Media & Game Development at Worcester Polytechnic Institute (WPI). Mark is an expert on the effects of latency on computer games, with over 75 peer-reviewed publications in this area. His research has been supported by NSF, MIT Lincoln Labs, Intel, Microsoft, Google, Viasat, and NVIDIA.
+
+**A Better PRICE? Understanding and Improving Game Player Performance and Experience**
+Game system engineers have continually developed technologies that improve game performance, such as higher frame rates, better graphics, and faster response times. While 'more is better,' the actual benefits from system improvements to game players are not always straightforward. Drawing on results from various user studies, this talk looks at how the impact of game systems often depends on the type of game and, more importantly, the specific player actions in the game. Selected examples detail the interplay between latencies, frame rates, and graphics with player performance and quality of experience, with indications of treatments that may improve gameplay for players. Together, these findings ponit to where there may be more gains for system developers who can benefit game players, improving the performance and quality of experience in the games they love to play.
 
 ---
 
