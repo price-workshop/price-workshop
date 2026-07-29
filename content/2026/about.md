@@ -54,7 +54,7 @@ A: All accepted authors must present their work in-person at the Los Angeles Con
 
 SIGGRAPH 2026 runs July 19–23, 2026 at the Los Angeles Convention Center. While the PRICE Workshop is only on July 23, we invite you to attend the full conference to explore the broader technical program.
 
-**Format:** Half-day technical workshop (3.5 hours)
+**Format:** Half-day technical workshop (3 hours 15 minutes)
 
 **Conference:** [SIGGRAPH 2026](https://s2026.siggraph.org/)
 

@@ -61,8 +61,10 @@
                     <details class="year-dropdown">
                         {{ if hasPrefix $menuName "main_" }}
                         <summary>{{ $menuName | replaceRE "^main_" "" }}</summary>
+                        {{ else if gt $latest 0 }}
+                        <summary>{{ $latest }}</summary>
                         {{ else }}
-                        <summary>{{ .Name }}</summary>
+                        <summary>Year</summary>
                         {{ end }}
                         <ul>
                         {{ range $yearItems }}

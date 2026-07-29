@@ -142,7 +142,7 @@
                 <p class="presentation-card-authors">
                     {{- $authors := .Params.authors -}}
                     {{- range $i, $a := $authors -}}
-                    {{ if gt $i 0 }}, {{ end }}{{ $a.name }}
+                    {{ if gt $i 0 }}, {{ end }}{{ $a.name }}{{ with $a.affiliation }}, {{ $a.affiliation }}{{ end }}
                     {{- end }}
                 </p>
                 <p>{{ .Params.abstract | plainify | truncate 200 }}</p>
