@@ -10,14 +10,14 @@ This is the official website for the PRICE Workshop at SIGGRAPH 2026. The site i
 
 ### Prerequisites
 
-- Hugo (v0.87.0 or later)
+- Hugo Extended (v0.128.0 or later, matching the CI build)
 - Git
 
 ### Installation & Local Development
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/price-workshop.git
+git clone git@github.com:price-workshop/price-workshop.git
 cd price-workshop
 ```
 
@@ -33,18 +33,25 @@ hugo server
 ```
 price-workshop/
 ├── content/              # Markdown content files
-│   ├── about.md
-│   ├── call-for-papers.md
-│   ├── schedule.md
-│   ├── organizers.md
-│   └── contact.md
+│   ├── _index.md         # Root redirect to the latest year
+│   ├── contact.md        # Shared contact page
+│   ├── 2026/             # Current year (homepage hero, CFP, schedule, presentations, organizers)
+│   │   ├── _index.md
+│   │   ├── about.md
+│   │   ├── call-for-papers.md
+│   │   ├── schedule/
+│   │   ├── presentations/
+│   │   └── organizers/
+│   ├── 2025/             # Past year (landing page, schedule, organizers)
+│   ├── 2023/ 2022/ 2021/ # Past years
+│   └── archive/          # Archive of all past events
 ├── themes/custom/        # Custom Hugo theme
 │   ├── layouts/
 │   ├── static/css/
 │   └── theme.toml
-├── static/               # Static assets (images, documents, etc.)
-├── config.toml           # Hugo configuration
-└── .github/workflows/    # GitHub Actions for deployment
+├── static/               # Static assets (CNAME for custom domain)
+├── config.toml           # Hugo configuration (site params + per-year nav menus)
+└── .github/workflows/    # GitHub Actions for deployment (hugo.yml)
 ```
 
 ## Building for Production
@@ -59,7 +66,7 @@ This creates the `public/` directory with the static HTML, CSS, and JavaScript f
 
 ## Deployment
 
-The site is automatically deployed to GitHub Pages via the GitHub Actions workflow in `.github/workflows/hugo-deploy.yml` whenever you push to the `main` branch.
+The site is automatically deployed to GitHub Pages via the GitHub Actions workflow in `.github/workflows/hugo.yml` whenever you push to the `main` branch.
 
 ### Custom Domain
 
@@ -74,12 +81,15 @@ The site is configured to use the custom domain `price-workshop.org`. Ensure you
 
 ### Pages
 
-- **Home** - Landing page with overview
+- **Home** (`/`) - Redirects to the latest year page
+- **Year pages** (`/2026/`, `/2025/`, ...) - Per-year landing pages; the current year shows the hero, keynote, topics, key dates, and CTA
 - **About** - Workshop motivation and rationale
 - **Call for Papers** - Submission guidelines and topics
-- **Schedule** - Workshop timeline and format
+- **Schedule** - Workshop timeline, format, and accepted presentations
+- **Presentations** - Abstracts for accepted papers
 - **Organizers** - Team member bios
-- **Contact** - Contact information and FAQ
+- **Archive** - All past PRICE and predecessor events
+- **Contact** - Contact information
 
 ## Customization
 
@@ -92,10 +102,10 @@ Edit the CSS custom properties in `themes/custom/static/css/style.css`:
   --primary: #55686e;      /* Greenish-gray - buttons, accents */
   --secondary: #D2C5B2;    /* Warm beige - secondary accent */
   --accent: #2A4249;       /* Dark greenish-gray - dark accents */
-  --dark-bg: #F1EFE3;      /* Light cream - main background */
-  --dark-alt: #E9E4DB;     /* Slightly darker cream - card backgrounds */
-  --light-text: #2A4249;   /* Dark text */
-  --gray-text: #55686e;    /* Muted text */
+  --bg: #F1EFE3;           /* Light cream - main background */
+  --bg-alt: #E9E4DB;       /* Slightly darker cream - card backgrounds */
+  --text: #2A4249;         /* Dark text */
+  --text-muted: #55686e;   /* Muted text */
   --border-color: #d9d7ce; /* Light borders */
 }
 ```
@@ -114,9 +124,9 @@ Edit the menu in `config.toml`:
 
 ### Adding New Pages
 
-1. Create a new Markdown file in `content/`:
+1. Create a new Markdown file under the relevant year section:
 ```
-content/new-page.md
+content/2026/new-page.md
 ```
 
 2. Add frontmatter:
@@ -127,7 +137,7 @@ date: 2026-03-19
 ---
 ```
 
-3. Add the menu item to `config.toml` (optional)
+3. Add the menu item to `config.toml` (optional) — year-specific pages use the per-year menu, e.g. `[[menu.main_2026]]`; shared pages (like Contact) use `[[menu.main]]`
 
 ## Performance Optimization
 

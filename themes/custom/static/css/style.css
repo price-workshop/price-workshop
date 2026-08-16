@@ -603,6 +603,11 @@ tr:hover {
   color: var(--text-muted);
 }
 
+.deadline-status.complete {
+  background-color: rgba(85, 104, 110, 0.12);
+  color: var(--text-muted);
+}
+
 /* Archive / Past Events */
 .archive-grid {
   display: grid;

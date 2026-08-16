@@ -67,7 +67,7 @@
                 <div class="deadline-title">{{ .title }}</div>
                 <div class="deadline-date">{{ .date }}</div>
                 <div class="deadline-status {{ .status }}">
-                    {{ if eq .status "closed" }}Closed{{ else if eq .status "open" }}Open{{ else }}Coming Soon{{ end }}
+                    {{ if eq .status "closed" }}Closed{{ else if eq .status "open" }}Open{{ else if eq .status "complete" }}Completed{{ else }}Coming Soon{{ end }}
                 </div>
             </div>
             {{ end }}

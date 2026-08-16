@@ -6,7 +6,7 @@ date: 2026-03-20
 ## Event Details
 
 **Workshop Date & Time:** Thursday, July 23, 2026, 2:00–5:15 PM at [SIGGRAPH 2026](https://s2026.siggraph.org/)  
-**SIGGRAPH 2026 Conference Dates:** July 19–23, 2026 — we invite you to attend the full conference.  
+**SIGGRAPH 2026 Conference Dates:** July 19–23, 2026  
 **Venue:** Los Angeles Convention Center, Los Angeles, CA  
 **Format:** [Half-day technical workshop](https://s2026.siggraph.org/program/technical-workshops/) (3 hours 15 minutes)
 
@@ -24,9 +24,7 @@ date: 2026-03-20
 | 4:10 PM | 10 min | Break |
 | 4:20 PM | 36 min | **Technical Sketch Session 2**<br>• [AI Level of Detail: Distance-Aware ML Model Precision Selection for Real-Time Human Motion Prediction in Games](#ai-level-of-detail-distance-aware-ml-model-precision-selection-for-real-time-human-motion-prediction-in-games) (Varghese)<br>• [Improving Interaction by Transforming the Render-Display Pipeline](#improving-interaction-by-transforming-the-render-display-pipeline) (Fulmer)<br>• [Understanding Emergent Non-Verbal Communication in the Delta Force Competitive Video Game through Multimodal AI Analysis](#understanding-emergent-non-verbal-communication-in-the-delta-force-competitive-video-game-through-multimodal-ai-analysis) (Guo) |
 | 4:56 PM | 19 min | Panel Discussion |
-| 5:15 PM | — | End
-
-Note that the order of sessions and talks is subject to change as needed.
+| 5:15 PM | — | End |
 
 ## Keynote Speaker
 
@@ -34,7 +32,7 @@ Note that the order of sessions and talks is subject to change as needed.
 Professor in Computer Science and Interactive Media & Game Development at Worcester Polytechnic Institute (WPI). Mark is an expert on the effects of latency on computer games, with over 75 peer-reviewed publications in this area. His research has been supported by NSF, MIT Lincoln Labs, Intel, Microsoft, Google, Viasat, and NVIDIA.
 
 **A Better PRICE? Understanding and Improving Game Player Performance and Experience**
-Game system engineers have continually developed technologies that improve game performance, such as higher frame rates, better graphics, and faster response times. While 'more is better,' the actual benefits from system improvements to game players are not always straightforward. Drawing on results from various user studies, this talk looks at how the impact of game systems often depends on the type of game and, more importantly, the specific player actions in the game. Selected examples detail the interplay between latencies, frame rates, and graphics with player performance and quality of experience, with indications of treatments that may improve gameplay for players. Together, these findings ponit to where there may be more gains for system developers who can benefit game players, improving the performance and quality of experience in the games they love to play.
+Game system engineers have continually developed technologies that improve game performance, such as higher frame rates, better graphics, and faster response times. While 'more is better,' the actual benefits from system improvements to game players are not always straightforward. Drawing on results from various user studies, this talk looks at how the impact of game systems often depends on the type of game and, more importantly, the specific player actions in the game. Selected examples detail the interplay between latencies, frame rates, and graphics with player performance and quality of experience, with indications of treatments that may improve gameplay for players. Together, these findings point to where there may be more gains for system developers who can benefit game players, improving the performance and quality of experience in the games they love to play.
 
 ---
 
@@ -53,27 +51,5 @@ Two panels bring together sketch authors to discuss research directions and emer
 
 ### Breaks
 Two breaks between sessions for discussion and collaboration.
-
----
-
-## Attendance & Travel
-
-**In-Person Attendance Required:** This is a fully in-person workshop with no virtual or remote participation option. All presenters and attendees must be present at the Los Angeles Convention Center.
-
-### Hotels
-
-[OnPeak](https://s2026.siggraph.org/hotels/) is the only official hotel provider for SIGGRAPH 2026. Discounted conference rates are available through **June 22, 2026** — book early as availability is not guaranteed after that date.
-
-[**Book hotels via OnPeak →**](https://compass.onpeak.com/e/012607856)
-
-### Getting There
-
-Los Angeles International Airport (LAX) is the primary gateway. The LA Metro Blue/Expo Line stops at **Pico Station**, directly across from the convention center. Parking is available at the West and South Hall garages; see the [LACC parking page](https://www.laconventioncenter.com/parking) for details.
-
-Full transport and local information: [SIGGRAPH 2026 Travel & Accommodations](https://s2026.siggraph.org/travel-accommodations/)
-
-### International Visitors
-
-Visa and travel documentation guidance is on the [SIGGRAPH 2026 International Visitors page](https://s2026.siggraph.org/international-visitors/).
 
 ---

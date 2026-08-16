@@ -23,8 +23,8 @@ cta:
   - label: "View Schedule"
     url: "/2026/schedule/"
     style: "primary"
-  - label: "Submission Info"
-    url: "/2026/call-for-papers/"
+  - label: "Presentations"
+    url: "/2026/presentations/"
     style: "secondary"
 
 categories:
@@ -47,7 +47,7 @@ categories:
 keynote:
   speaker: "Mark Claypool"
   title: "A Better PRICE? Understanding and Improving Game Player Performance and Experience"
-  abstract: "Game system engineers have continually developed technologies that improve game performance, such as higher frame rates, better graphics, and faster response times. While 'more is better,' the actual benefits from system improvements to game players are not always straightforward. Drawing on results from various user studies, this talk looks at how the impact of game systems often depends on the type of game and, more importantly, the specific player actions in the game. Selected examples detail the interplay between latencies, frame rates, and graphics with player performance and quality of experience, with indications of treatments that may improve gameplay for players. Together, these findings ponit to where there may be more gains for system developers who can benefit game players, improving the performance and quality of experience in the games they love to play."
+  abstract: "Game system engineers have continually developed technologies that improve game performance, such as higher frame rates, better graphics, and faster response times. While 'more is better,' the actual benefits from system improvements to game players are not always straightforward. Drawing on results from various user studies, this talk looks at how the impact of game systems often depends on the type of game and, more importantly, the specific player actions in the game. Selected examples detail the interplay between latencies, frame rates, and graphics with player performance and quality of experience, with indications of treatments that may improve gameplay for players. Together, these findings point to where there may be more gains for system developers who can benefit game players, improving the performance and quality of experience in the games they love to play."
 
 deadlines:
   - type: "🎯 Call Opens"
@@ -74,15 +74,7 @@ deadlines:
   - type: "🗓️ Workshop Day"
     title: "PRICE Workshop"
     date: "July 23, 2026"
-    status: "upcoming"
-
-registration:
-  url: "https://s2026.siggraph.org/register/"
-  linkText: "Full registration details at SIGGRAPH 2026 →"
-  body: |
-    Attending the PRICE Workshop requires **Full Conference** registration. If you plan to attend only on Thursday, July 23, the **Full Conference One-Day** pass is the most cost-effective option — priced at $550 (member), $640 (non-member), or $215 (student member) with no early/advance pricing tiers.
-
-    Full Conference passes have tiered pricing: register by **May 8** for early rates or by **June 12** for advance rates (late/on-site rates apply after June 12). "Member" rates apply to ACM and/or SIGGRAPH members.
+    status: "complete"
 ---
 
 The PRICE Workshop brings together researchers and practitioners from graphics, systems, networking, and HCI to address the unique technical challenges of competitive esports.
