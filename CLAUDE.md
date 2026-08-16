@@ -18,7 +18,7 @@ hugo -D
 hugo --logLevel debug
 ```
 
-No tests or linting tools are configured — always run `hugo server` and verify the affected pages in a browser at `http://localhost:1313` before considering a task complete.
+No tests or linting tools are configured. Verify changes by running `hugo` and inspecting the rendered HTML under `public/` (the static build artifacts) before considering a task complete. Do not start `hugo server` unless explicitly asked for a visual check — it is a live-reload dev server and leaves stale processes behind.
 
 ## Architecture
 
