@@ -17,6 +17,12 @@
         <p>{{ .Params.abstract | markdownify }}</p>
     </div>
 
+    {{ with .Params.links }}
+    <div class="presentation-links">
+        {{ range $i, $l := . }}{{ if gt $i 0 }} &middot; {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener noreferrer">{{ $l.title }}</a>{{ end }}
+    </div>
+    {{ end }}
+
     <nav class="presentation-nav">
         <a href="{{ $schedulePath }}">&larr; Back to Schedule</a>
     </nav>

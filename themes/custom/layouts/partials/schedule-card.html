@@ -17,5 +17,8 @@
     {{ with .page.Params.presenter }}
     <p class="paper-presenter">Presenter: {{ . }}</p>
     {{ end }}
+    {{ with .page.Params.links }}
+    <p class="paper-links">{{ range $i, $l := . }}{{ if gt $i 0 }} &middot; {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener noreferrer">{{ $l.title }}</a>{{ end }}</p>
+    {{ end }}
     <p class="paper-abstract">{{ .page.Params.abstract | markdownify }}</p>
 </article>

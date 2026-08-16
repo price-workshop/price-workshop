@@ -17,5 +17,7 @@ track: Sketch
 presenter: Arjun Madhusudan
 abstract: >
   Esports is having a significant societal impact. Yet scheduling competitive group play during experiments is difficult, and recreating competitive environments in the lab is challenging. To address these problems, we adopt the field experiment methodology, to create hybrid tournament-experiments --- experimentation integrated into the tournament itself. We run two Rocket League tournament-experiments and discuss their methodological and experimental implications.
-links: []
+links:
+  - title: "ACM Digital Library"
+    url: "https://dl.acm.org/doi/10.1145/3799828.3816005"
 ---
