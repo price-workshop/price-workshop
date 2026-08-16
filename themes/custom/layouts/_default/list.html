@@ -135,6 +135,7 @@
             <h1>{{ .Title }}</h1>
             <a href="{{ $schedulePath }}">&larr; Back to Schedule</a>
         </div>
+        {{ .Content }}
         <div class="presentations-list-grid">
             {{ range .Pages }}
             <article class="presentation-card">
