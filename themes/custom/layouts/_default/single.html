@@ -19,7 +19,9 @@
 
     {{ with .Params.links }}
     <div class="presentation-links">
-        {{ range $i, $l := . }}{{ if gt $i 0 }} &middot; {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener noreferrer">{{ $l.title }}</a>{{ end }}
+        {{ range . }}
+        <a href="{{ .url }}" class="link-button" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+        {{ end }}
     </div>
     {{ end }}
 

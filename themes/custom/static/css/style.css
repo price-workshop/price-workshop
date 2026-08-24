@@ -789,6 +789,27 @@ tr:hover {
   box-shadow: 0 8px 24px rgba(42, 66, 73, 0.3);
 }
 
+/* Compact button for inline resource links (e.g. ACM Digital Library) */
+.link-button {
+  display: inline-block;
+  background: transparent;
+  color: var(--primary);
+  padding: 0.4rem 1rem;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  background: var(--primary);
+  color: var(--bg);
+  box-shadow: 0 5px 16px rgba(85, 104, 110, 0.25);
+  transform: translateY(-2px);
+}
+
 /* Center CTA Section */
 .cta-section {
   text-align: center;
@@ -955,16 +976,9 @@ footer p {
 
 .presentation-links {
   margin-top: 1.25rem;
-  font-size: 1rem;
-}
-
-.presentation-links a {
-  color: var(--primary);
-  font-weight: 500;
-}
-
-.presentation-links a:hover {
-  color: var(--accent);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .presentation-nav {
@@ -1034,17 +1048,10 @@ footer p {
 }
 
 .paper-links {
-  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   margin-bottom: 0.75rem;
-}
-
-.paper-links a {
-  color: var(--primary);
-  font-weight: 500;
-}
-
-.paper-links a:hover {
-  color: var(--accent);
 }
 
 .paper-abstract {
@@ -1101,7 +1108,8 @@ footer p {
 
   .cta-button,
   .cta-button-secondary,
-  .cta-button-accent {
+  .cta-button-accent,
+  .link-button {
     width: 100%;
     text-align: center;
   }
