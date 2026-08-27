@@ -8,8 +8,6 @@ members:
   - name: "Benjamin Watson"
     title: "Associate Professor, North Carolina State University"
 
-submissionMessage: "This SIGGRAPH Frontiers Workshop brought together industry practitioners and competitive players to discuss rendering needs in esports."
-
 cta:
   - label: "NVIDIA Research Page"
     url: "https://research.nvidia.com/publication/2025-08_esports-rendering-industry-and-player-perspectives"

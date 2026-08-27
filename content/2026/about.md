@@ -3,9 +3,7 @@ title: "About PRICE Workshop"
 date: 2026-03-19
 ---
 
-## About the PRICE Workshop
-
-The **Performance, Rendering, and Interaction in Competitive Esports (PRICE)** workshop is a venue for researchers and practitioners from graphics, systems, networking, and HCI to address the unique technical challenges of competitive esports.
+The **Performance, Rendering, and Interaction for Competitive Esports (PRICE)** workshop is a venue for researchers and practitioners from graphics, systems, networking, and HCI to address the unique technical challenges of competitive esports.
 
 ## Motivation and Rationale
 
@@ -37,7 +35,7 @@ We hope to create an environment for close personal interaction and meaningful n
 ### Frequently Asked Questions
 
 **Q: What format should my submission be in?**  
-A: Submissions should be 4-8 pages of single-column format (excluding references) using the [ACM authoring template](https://www.acm.org/publications/proceedings-template). See our [Call for Papers](/call-for-papers/) for complete formatting requirements.
+A: Submissions should be 4-8 pages of single-column format (excluding references) using the [ACM authoring template](https://www.acm.org/publications/proceedings-template). See our [Call for Papers](/2026/call-for-papers/) for complete formatting requirements.
 
 **Q: Can I present work from industry?**  
 A: Absolutely! We welcome submissions from both academic researchers and industry professionals.

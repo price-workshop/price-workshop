@@ -18,11 +18,6 @@ For general inquiries, submissions, and partnership opportunities: **contact@pri
 Sign up for updates about the workshop in the embedded form or using [this form](https://forms.gle/mYskEpesWX9zrf9M7).
 
 
-### Follow Us
+### Related Links
 
-- **Website:** https://price-workshop.org
 - **SIGGRAPH 2026:** [https://s2026.siggraph.org/](https://s2026.siggraph.org/)
-
----
-
-*For general inquiries, sponsorship opportunities, or other questions, please reach out to us at contact@price-workshop.org*

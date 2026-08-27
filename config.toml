@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "PRICE Workshop"
 theme = "custom"
 
+# No taxonomies are used; suppress the unused /categories/ and /tags/ pages
+disableKinds = ["taxonomy", "term"]
+
 [pagination]
 pagerSize = 10
 
@@ -23,7 +26,7 @@ pygmentsUseClasses = true
 
 # Site parameters
 [params]
-  description = "SIGGRAPH Workshop on Performance and Rendering in Competitive Esports (PRICE)"
+  description = "SIGGRAPH Workshop on Performance, Rendering, and Interaction for Competitive Esports (PRICE)"
   author = "PRICE Workshop Organizers"
 
 # Navigation

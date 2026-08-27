@@ -3,6 +3,8 @@ title: "Call for Papers"
 date: 2026-05-20
 ---
 
+> **Note:** The submission period for the PRICE Workshop at SIGGRAPH 2026 closed on April 17, 2026. The guidelines below are retained for reference.
+
 ## Topics of Interest
 
 We invite submissions on a broad range of topics related to the technology of esports and competitive gaming. These papers will be reviewed by the workshop organizers and invited reviewers if needed.

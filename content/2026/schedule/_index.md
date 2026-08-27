@@ -17,9 +17,9 @@ date: 2026-03-20
 | Time | Duration | Event |
 |:-----|:---------|:------|
 | 2:00 PM | 5 min | Introduction |
-| 2:05 PM | 60 min | Keynote Presentation: Mark Claypool -- A Better PRICE? Understanding and Improving Game Player Performance and Experience |
+| 2:05 PM | 60 min | Keynote Presentation: Mark Claypool — A Better PRICE? Understanding and Improving Game Player Performance and Experience |
 | 3:05 PM | 10 min | Break |
-| 3:15 PM | 36 min | **Technical Sketch Session 1**<br>• [Towards Field Experiments in Esports Competition](#towards-field-experiments-in-esports-competition) (Madhusudan)<br>• [What Do Competitive Players Do With Their Settings? A Multi-Game Esports Configuration Survey](#what-do-competitive-players-do-with-their-settings-a-multi-game-esports-configuration-survey) (Rajpurohit)<br>• *[Invited]* [Tactical Telemetry: Using Replay Files for Gameplay Analytics](#tactical-telemetry-using-replay-files-for-gameplay-analytics) (Xenopoulos) |
+| 3:15 PM | 36 min | **Technical Sketch Session 1**<br>• [Towards Field Experiments in Esports Competition](#towards-field-experiments-in-esports-competition) (Madhusudan)<br>• [What Do Competitive Players Do With Their Settings? A Multi-Game Esports Configuration Survey](#what-do-competitive-players-do-with-their-settings-a-multi-game-esports-configuration-survey) (Rajpurohit)<br>• *[Invited]* [Tactical Telemetry: Leveraging Replay Files with AI, for AI](#tactical-telemetry-leveraging-replay-files-with-ai-for-ai) (Xenopoulos) |
 | 3:51 PM | 19 min | Panel Discussion |
 | 4:10 PM | 10 min | Break |
 | 4:20 PM | 36 min | **Technical Sketch Session 2**<br>• [AI Level of Detail: Distance-Aware ML Model Precision Selection for Real-Time Human Motion Prediction in Games](#ai-level-of-detail-distance-aware-ml-model-precision-selection-for-real-time-human-motion-prediction-in-games) (Varghese)<br>• [Improving Interaction by Transforming the Render-Display Pipeline](#improving-interaction-by-transforming-the-render-display-pipeline) (Fulmer)<br>• [Understanding Emergent Non-Verbal Communication in the Delta Force Competitive Video Game through Multimodal AI Analysis](#understanding-emergent-non-verbal-communication-in-the-delta-force-competitive-video-game-through-multimodal-ai-analysis) (Guo) |

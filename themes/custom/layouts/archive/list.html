@@ -4,7 +4,7 @@
 
     
     <div class="archive-grid">
-        {{ $currentYear := 2026 }}
+        {{ $currentYear := now.Year }}
         {{ $archiveYears := slice }}
         {{ range .Site.Sections }}
             {{ if hasPrefix .Section "20" }}

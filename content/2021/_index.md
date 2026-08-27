@@ -18,8 +18,6 @@ members:
   - name: "Wayne Mackey"
     title: "Founder, Statespace"
 
-submissionMessage: "This SIGGRAPH panel established esports as a compelling application domain for computer graphics research."
-
 cta:
   - label: "ACM Proceedings"
     url: "https://dl.acm.org/doi/10.1145/3450617.3464499"

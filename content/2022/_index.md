@@ -12,8 +12,6 @@ members:
   - name: "Greg Ward"
     title: "Dolby Laboratories"
 
-submissionMessage: "This SIGGRAPH Frontiers Workshop explored the frontiers of rendering, interaction, and display technology in competitive gaming."
-
 cta:
   - label: "NVIDIA Research Page"
     url: "https://research.nvidia.com/publication/2022-08_esports-frontier-rendering-interaction-and-display"
@@ -40,4 +38,4 @@ categories:
 
 Graphics research has historically prioritized photorealism, yet competitive players routinely disable these features to maximize frame rates. This workshop explored how the computer graphics community can better support the expert performance esports athletes seek, tackling technical hurdles across hardware, graphics pipelines, and user engagement.
 
-The workshop featured presentation slides covering a general overview, rendering techniques, interaction design, and display innovation — with additional contribution from Scott Daly at Dolby Laboratories. Presentation materials are available covering general overview, rendering, interaction, and display.
+The workshop featured presentation slides covering a general overview, rendering techniques, interaction design, and display innovation — with additional contribution from Scott Daly at Dolby Laboratories.

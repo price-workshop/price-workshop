@@ -91,6 +91,7 @@
 {{ else if $isOrganizers }}
     <article class="content-section">
         <h1>{{ .Title }}</h1>
+        {{ .Content }}
         {{- $members := .Params.members -}}
         {{- if $members -}}
         <div class="organizers-grid">

@@ -29,15 +29,16 @@ This is a **Hugo static site** with a fully custom theme. There are no external 
 Hugo's template lookup governs rendering:
 
 - `themes/custom/layouts/_default/baseof.html` — outer HTML shell; all pages extend this via `{{ block "main" . }}`
-- `themes/custom/layouts/index.html` — homepage only; defines `"main"` block with hero, categories grid, deadlines, and quick-nav sections
+- `themes/custom/layouts/index.html` — root `/` only; a static redirect (meta refresh + JS) to the current year page, e.g. `/2026/`
+- `themes/custom/layouts/_default/list.html` — all section pages; year roots (e.g. `/2026/`) render the hero, keynote, topics, key dates, and registration sections from frontmatter params, and also handle organizers grids, schedule pages (with accepted-presentation cards), and the presentations list
 - `themes/custom/layouts/_default/single.html` — all `content/*.md` pages
 - `themes/custom/layouts/partials/header.html` / `footer.html` — shared nav and footer
 
-### Homepage content vs. template split
+### Year landing page content vs. template split
 
-The homepage is data-driven: `content/_index.md` supplies frontmatter params that `index.html` renders via `{{ with .Params.X }}` / `{{ range . }}`. The page body (`.Content`) renders as the "About the Workshop" blurb. Add or update homepage sections by editing `_index.md` frontmatter — not the template.
+The year landing pages (e.g. `/2026/`) are data-driven: `content/2026/_index.md` supplies frontmatter params that `list.html` renders via `{{ with .Params.X }}` / `{{ range . }}`. The page body (`.Content`) renders as the "About the Workshop" blurb in the hero. Add or update landing page sections by editing the year's `_index.md` frontmatter — not the template. The root `content/_index.md` is only a redirect stub.
 
-Current params in `_index.md`:
+Current params in the year `_index.md` (2026):
 - `heroSubtitle` — subtitle line in the hero
 - `cta` — list of hero buttons, each with `label`, `url`, and `style` (`"primary"` or `"secondary"`)
 - `submissionMessage` — text shown below the Key Dates grid
@@ -46,21 +47,21 @@ Current params in `_index.md`:
 - `deadlines` — Key Dates grid cards (each: `type`, `title`, `date`, `status`)
 - `registration` — Registration section (`url`, `linkText`, `body` as markdown string)
 
-`deadlines[].status` controls the badge label and CSS class — valid values are `"closed"`, `"open"`, or `"upcoming"`. Any other value renders as "Coming Soon" with no CSS match.
+`deadlines[].status` controls the badge label and CSS class — valid values are `"closed"`, `"open"`, `"upcoming"`, and `"complete"`, rendering the badges Closed, Open, Coming Soon, and Completed respectively. Any other value renders as "Coming Soon" with no CSS match.
 
 ### Theme vs. content rules
 
 **Content** (all visible text, data, and URLs) belongs in `content/` files — never in `themes/`:
 - Paragraph text, labels, button text, link destinations
 - Structured data: prices, dates, names, descriptions
-- For the homepage, all text goes in `_index.md` frontmatter params and is rendered via `{{ .Params.X }}` or `{{ .Params.X | markdownify }}` for markdown-formatted strings
+- For the year landing pages, all text goes in the year's `_index.md` frontmatter params and is rendered via `{{ .Params.X }}` or `{{ .Params.X | markdownify }}` for markdown-formatted strings
 
 **Theme** (`themes/custom/`) is for structure only:
 - HTML element nesting and CSS classes
 - Conditional logic (`{{ if }}`) and iteration (`{{ range }}`)
 - Layout decisions (grid, card, section wrappers)
 
-If adding a new homepage section with text content: add the text as a frontmatter param in `_index.md`, then add a template block in `index.html` that renders only that param. Never write literal English sentences inside a template.
+If adding a new landing page section with text content: add the text as a frontmatter param in the year's `_index.md`, then add a template block in `list.html` that renders only that param. Never write literal English sentences inside a template.
 
 ### CSS
 
@@ -74,7 +75,7 @@ Push to `main` → GitHub Actions (`.github/workflows/hugo.yml`) builds with Hug
 
 - All pages are `content/*.md` with YAML frontmatter (`title` and `date` required)
 - Start body sections with `##` — the `#` heading is auto-generated from `title`
-- Internal links use relative paths: `/about/`, `/call-for-papers/`
+- Internal links use site-root paths: `/2026/about/`, `/2026/call-for-papers/`, `/contact/`
 - HTML is allowed in Markdown (configured via `markup.goldmark.renderer.unsafe = true` in `config.toml`)
 - Navigation order is controlled by `weight` in `[menu.main]` entries in `config.toml`
 

@@ -1,6 +1,6 @@
 # PRICE Workshop Website
 
-Performance and Rendering in Competitive Esports Workshop
+Performance, Rendering, and Interaction for Competitive Esports (PRICE) Workshop
 
 ## Overview
 

@@ -12,8 +12,6 @@ members:
   - name: "Peter Shirley"
     title: "Activision"
 
-submissionMessage: "This SIGGRAPH Frontiers Workshop examined if the computer graphics community should pivot toward performance-driven rendering for competitive gaming."
-
 cta:
   - label: "NVIDIA Research Page"
     url: "https://research.nvidia.com/publication/2023-08_less-more-rendering-esports"
@@ -49,5 +47,6 @@ As noted by the authors: "Computer graphics research has long prioritized image 
 This workshop led to a journal publication in **IEEE Computer Graphics and Applications** (March 27, 2024):
 
 - **Authors:** Benjamin Watson, Josef Spjut, Joohwan Kim, Byungjoo Lee, Mijin Yoo, Peter Shirley, and Rulon Raymond
-- **IEEE Xplore:** [DOI: 10.1145/10478358](https://ieeexplore.ieee.org/abstract/document/10478358)
+- **DOI:** [10.1109/MCG.2024.3361733](https://doi.org/10.1109/MCG.2024.3361733)
+- **IEEE Xplore:** [Document 10478358](https://ieeexplore.ieee.org/abstract/document/10478358)
 - **NVIDIA Research:** [Publication page](https://research.nvidia.com/publication/2024-03_less-more-rendering-esports)
